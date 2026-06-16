@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#06060c;}
+  image-slot[id^="case-"]{width:100% !important;height:158px !important;display:block !important;border-radius:0 !important;overflow:hidden;color:#7e9fd6;}
+  image-slot[id^="case-"]::part(frame){background:rgba(59,130,246,.06);outline:1.4px dashed rgba(96,165,250,.4);outline-offset:-3px;}
+  @keyframes atlas-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
+  @keyframes atlas-bob{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+  @keyframes atlas-spin{to{transform:rotateZ(360deg);}}
+  @keyframes atlas-pulse{0%,100%{opacity:.4;transform:scale(1);}50%{opacity:.85;transform:scale(1.08);}}
+  @keyframes atlas-blink{0%,49%{opacity:1;}50%,100%{opacity:0;}}
+  @keyframes atlas-marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @keyframes atlas-bounce{0%,100%{transform:translateY(0);opacity:.5;}50%{transform:translateY(8px);opacity:1;}}
+  @keyframes atlas-sheen{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+  @keyframes atlas-rise{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:none;}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="font-family:'Space Grotesk',Helvetica,Arial,sans-serif;background:#06060c;color:#eef0f6;-webkit-font-smoothing:antialiased;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(6,6,12,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);">
+    <div style="display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.02em;">
+      <span style="width:10px;height:10px;background:var(--atlas-accent,#3b82f6);border-radius:50%;display:inline-block;box-shadow:0 0 16px var(--atlas-accent,#3b82f6);"></span>Atlas
+    </div>
+    <div style="display:flex;gap:30px;font-size:13.5px;color:#aeb3c4;">
+      <span>Expertises</span><span>Méthode</span><span>Références</span><span>Contact</span>
+    </div>
+    <button style="font-size:13px;color:#06060c;background:linear-gradient(120deg,#93c5fd,#3b82f6);border:none;padding:10px 18px;border-radius:999px;cursor:pointer;font-weight:600;" style-hover="filter:brightness(1.08);transform:translateY(-1px);">Démarrer un projet</button>
+  </nav>
+
+  <!-- HERO -->
+  <section data-glowzone data-screen-label="Héro — Atlas porte le monde" style="position:relative;overflow:hidden;">
+    <canvas data-constellation style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div style="position:absolute;top:-120px;left:6%;width:560px;height:560px;background:radial-gradient(circle,rgba(59,130,246,.34),transparent 64%);filter:blur(22px);pointer-events:none;z-index:0;animation:atlas-pulse 8s ease-in-out infinite;"></div>
+    <div style="position:absolute;top:120px;right:-100px;width:520px;height:520px;background:radial-gradient(circle,rgba(37,99,235,.3),transparent 64%);filter:blur(22px);pointer-events:none;z-index:0;animation:atlas-pulse 11s ease-in-out infinite;"></div>
+    <div data-glow style="position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,.22),transparent 60%);pointer-events:none;left:0;top:0;transform:translate(-50%,-50%);opacity:0;transition:opacity .4s;z-index:1;"></div>
+
+    <!-- STAGE -->
+    <div style="position:relative;height:880px;max-width:1280px;margin:0 auto;">
+
+      <!-- SOLAR SYSTEM (backdrop) -->
+      <div data-parallax="-0.04" style="position:absolute;left:50%;margin-left:-390px;top:80px;width:780px;height:780px;z-index:1;pointer-events:none;">
+        <div data-scrollspin="0.05" style="position:absolute;inset:0;will-change:transform;">
+          <!-- orbit paths -->
+          <div style="position:absolute;inset:300px;border:1px solid rgba(120,170,255,.34);border-radius:50%;"></div>
+          <div style="position:absolute;inset:230px;border:1px solid rgba(120,170,255,.24);border-radius:50%;"></div>
+          <div style="position:absolute;inset:140px;border:1px solid rgba(120,170,255,.17);border-radius:50%;"></div>
+          <div style="position:absolute;inset:50px;border:1px solid rgba(120,170,255,.12);border-radius:50%;"></div>
+
+          <!-- sun glow + core -->
+          <div style="position:absolute;left:50%;top:50%;width:380px;height:380px;margin:-190px 0 0 -190px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,.4),transparent 62%);filter:blur(6px);animation:atlas-pulse 7s ease-in-out infinite;"></div>
+          <div style="position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#eaf2ff,#93c5fd 42%,#3b82f6 78%,#1d4ed8);box-shadow:0 0 60px 10px rgba(59,130,246,.7),inset -8px -8px 22px rgba(12,30,80,.55);"></div>
+
+          <!-- orbit 1 (inner, fast) -->
+          <div data-orbit style="position:absolute;inset:140px;animation:atlas-spin 13s linear infinite;">
+            <div style="position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#dbeafe,#60a5fa);box-shadow:0 0 14px rgba(96,165,250,.85);"></div>
+          </div>
+          <!-- orbit 2 -->
+          <div data-orbit style="position:absolute;inset:230px;animation:atlas-spin 21s linear infinite reverse;">
+            <div style="position:absolute;top:-11px;left:50%;margin-left:-11px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#bfdbfe,#3b82f6 70%,#1e3a8a);box-shadow:0 0 18px rgba(59,130,246,.8),inset -4px -4px 9px rgba(8,20,60,.6);"></div>
+          </div>
+          <!-- orbit 3 -->
+          <div data-orbit style="position:absolute;inset:50px;animation:atlas-spin 30s linear infinite;">
+            <div style="position:absolute;top:-9px;left:50%;margin-left:-9px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a5f3fc,#22d3ee 65%,#0e7490);box-shadow:0 0 16px rgba(34,211,238,.7);"></div>
+          </div>
+          <!-- orbit 4 (outer planet) -->
+          <div data-orbit style="position:absolute;inset:300px;animation:atlas-spin 40s linear infinite reverse;">
+            <div style="position:absolute;top:-13px;left:50%;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#dbeafe,#6366f1 72%,#312e81);box-shadow:0 0 18px rgba(99,102,241,.7);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- eyebrow + title resting on the world -->
+      <div style="position:absolute;left:0;right:0;top:96px;z-index:5;text-align:center;padding:0 24px;">
+        <div style="display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#bfd6ff;border:1px solid rgba(59,130,246,.42);background:rgba(59,130,246,.1);padding:7px 15px;border-radius:999px;">
+          <span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;animation:atlas-pulse 2s infinite;"></span>Conseil SI · AMOA · Cyber · Data &amp; IA
+        </div>
+        <h1 style="font-size:clamp(42px,6vw,86px);line-height:.98;letter-spacing:-.035em;font-weight:600;margin:22px auto 0;max-width:16ch;text-shadow:0 2px 40px rgba(6,8,30,.7);">Nous portons votre <span style="background:linear-gradient(120deg,#bfdbfe,#3b82f6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">transformation</span>.</h1>
+      </div>
+
+      <!-- subtitle + CTAs -->
+      <div style="position:absolute;left:0;right:0;bottom:72px;z-index:5;text-align:center;padding:0 24px;">
+        <p style="font-size:18px;line-height:1.6;color:#c2c6d6;max-width:54ch;margin:0 auto;text-shadow:0 2px 24px rgba(6,8,30,.8);">Comme le Titan porte le monde, Atlas soutient le système d'information des organisations exigeantes — de la stratégie à l'IA en production.</p>
+        <div style="display:flex;gap:14px;justify-content:center;margin-top:26px;">
+          <button style="background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;font-size:14.5px;border:none;padding:15px 28px;border-radius:999px;cursor:pointer;box-shadow:0 18px 44px -16px rgba(59,130,246,.9);" style-hover="transform:translateY(-2px);box-shadow:0 24px 52px -16px rgba(59,130,246,1);">Prendre rendez-vous</button>
+          <button style="background:rgba(255,255,255,.05);color:#eef0f6;font-size:14.5px;border:1px solid rgba(255,255,255,.18);padding:15px 28px;border-radius:999px;cursor:pointer;backdrop-filter:blur(8px);" style-hover="background:rgba(255,255,255,.1);">Découvrir Atlas</button>
+        </div>
+      </div>
+
+      <!-- scroll cue -->
+      <div style="position:absolute;left:50%;margin-left:-9px;bottom:22px;z-index:5;color:#7e84a0;animation:atlas-bounce 2.2s ease-in-out infinite;">
+        <svg width="18" height="26" viewBox="0 0 18 26" fill="none"><rect x="1" y="1" width="16" height="24" rx="8" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="8" r="2" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISES -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:40px 40px 20px;">
+    <div data-reveal="up" style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px;">
+      <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:0;">Quatre piliers, un seul cap.</h2>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a90a6;">04 expertises</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <div data-reveal="up" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,background .3s;" style-hover="transform:translateY(-6px);border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.07);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent,#3b82f6);">01</div>
+        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Conseil SI</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Schéma directeur, urbanisation, architecture cible et choix de solutions.</p>
+      </div>
+      <div data-reveal="up" data-delay="90" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,background .3s;" style-hover="transform:translateY(-6px);border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.07);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent,#3b82f6);">02</div>
+        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">AMOA</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Cadrage, expression de besoin, pilotage de programme, conduite du changement.</p>
+      </div>
+      <div data-reveal="up" data-delay="180" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,background .3s;" style-hover="transform:translateY(-6px);border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.07);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent,#3b82f6);">03</div>
+        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Cybersécurité</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Audit, conformité NIS2 &amp; ISO 27001, gouvernance et résilience.</p>
+      </div>
+      <div data-reveal="up" data-delay="270" style="background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.36);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,background .3s;" style-hover="transform:translateY(-6px);border-color:rgba(59,130,246,.7);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent,#3b82f6);">04</div>
+        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Data &amp; IA</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#c4cbe2;margin:0;">Plateformes data, gouvernance, IA générative et industrialisation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTHODE -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 20px;">
+    <div data-reveal="up" style="margin-bottom:34px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent,#3b82f6);">Notre méthode</div>
+      <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:14px 0 0;max-width:20ch;">Une trajectoire claire, du cadrage à la valeur.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.12);">
+      <div data-reveal="up" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
+        <div style="font-size:13px;color:var(--atlas-accent,#3b82f6);font-family:'IBM Plex Mono',monospace;">01 — Cadrer</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Comprendre l'enjeu métier, qualifier le besoin, fixer la cible.</p>
+      </div>
+      <div data-reveal="up" data-delay="80" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
+        <div style="font-size:13px;color:var(--atlas-accent,#3b82f6);font-family:'IBM Plex Mono',monospace;">02 — Concevoir</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Architecture, trajectoire et plan d'exécution activable.</p>
+      </div>
+      <div data-reveal="up" data-delay="160" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
+        <div style="font-size:13px;color:var(--atlas-accent,#3b82f6);font-family:'IBM Plex Mono',monospace;">03 — Déployer</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Piloter la mise en œuvre, sécuriser, embarquer les équipes.</p>
+      </div>
+      <div data-reveal="up" data-delay="240" style="padding:26px 22px 30px;">
+        <div style="font-size:13px;color:var(--atlas-accent,#3b82f6);font-family:'IBM Plex Mono',monospace;">04 — Valoriser</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Mesurer l'impact, industrialiser, transmettre l'autonomie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:64px 40px;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;">
+      <div data-reveal="up"><div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="18">0</span></div><div style="font-size:13px;color:#9aa0b4;margin-top:4px;">ans d'expertise</div></div>
+      <div data-reveal="up" data-delay="80"><div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="140">0</span>+</div><div style="font-size:13px;color:#9aa0b4;margin-top:4px;">missions livrées</div></div>
+      <div data-reveal="up" data-delay="160"><div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="50">0</span></div><div style="font-size:13px;color:#9aa0b4;margin-top:4px;">consultants</div></div>
+      <div data-reveal="up" data-delay="240"><div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="96">0</span>%</div><div style="font-size:13px;color:#9aa0b4;margin-top:4px;">clients fidèles</div></div>
+    </div>
+  </section>
+
+  <!-- RÉFÉRENCES (logos clients) -->
+  <section style="position:relative;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0 46px;overflow:hidden;">
+    <div data-reveal="up" style="text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a90a6;margin-bottom:36px;">Nous les accompagnons</div>
+    <div style="position:relative;">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:130px;background:linear-gradient(90deg,#06060c,transparent);z-index:2;pointer-events:none;"></div>
+      <div style="position:absolute;right:0;top:0;bottom:0;width:130px;background:linear-gradient(270deg,#06060c,transparent);z-index:2;pointer-events:none;"></div>
+      <div style="display:flex;align-items:center;width:max-content;animation:atlas-marquee 44s linear infinite;">
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/amundi.png" alt="Amundi" style="max-height:50px;max-width:170px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/thales.png" alt="Thales" style="max-height:58px;max-width:180px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/sncf.png" alt="SNCF" style="max-height:40px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/edf.png" alt="EDF" style="max-height:40px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/saint-gobain.webp" alt="Saint-Gobain" style="max-height:42px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/lafarge.png" alt="Lafarge" style="max-height:40px;max-width:152px;width:auto;object-fit:contain;display:block;filter:brightness(0) saturate(100%) invert(45%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(97%) contrast(94%);opacity:.95;transition:filter .35s,opacity .35s;" style-hover="opacity:1;filter:brightness(0) saturate(100%) invert(52%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(106%) contrast(94%);"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/carrefour.svg" alt="Carrefour" style="max-height:42px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/dassault.svg" alt="Dassault Aviation" style="max-height:34px;max-width:150px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/hec.png" alt="HEC Paris" style="max-height:46px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/montpellier.png" alt="Ville de Montpellier" style="max-height:58px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/tbs.png" alt="TBS Education" style="max-height:74px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/opco.png" alt="OPCO EP" style="max-height:70px;max-width:165px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/amundi.png" alt="Amundi" style="max-height:50px;max-width:170px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/thales.png" alt="Thales" style="max-height:58px;max-width:180px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/sncf.png" alt="SNCF" style="max-height:40px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/edf.png" alt="EDF" style="max-height:40px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/saint-gobain.webp" alt="Saint-Gobain" style="max-height:42px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/lafarge.png" alt="Lafarge" style="max-height:40px;max-width:152px;width:auto;object-fit:contain;display:block;filter:brightness(0) saturate(100%) invert(45%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(97%) contrast(94%);opacity:.95;transition:filter .35s,opacity .35s;" style-hover="opacity:1;filter:brightness(0) saturate(100%) invert(52%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(106%) contrast(94%);"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/carrefour.svg" alt="Carrefour" style="max-height:42px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/dassault.svg" alt="Dassault Aviation" style="max-height:34px;max-width:150px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/hec.png" alt="HEC Paris" style="max-height:46px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/montpellier.png" alt="Ville de Montpellier" style="max-height:58px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/tbs.png" alt="TBS Education" style="max-height:74px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;padding:0;"><img src="logos/opco.png" alt="OPCO EP" style="max-height:70px;max-width:165px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;transition:filter .35s,opacity .35s;" style-hover="filter:grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08);opacity:1;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="position:relative;text-align:center;padding:90px 40px 40px;overflow:hidden;">
+    <div style="position:absolute;left:50%;margin-left:-300px;top:0;width:600px;height:320px;background:radial-gradient(circle,rgba(59,130,246,.26),transparent 66%);filter:blur(20px);pointer-events:none;"></div>
+    <h2 data-reveal="up" style="position:relative;font-size:clamp(30px,4vw,56px);font-weight:600;letter-spacing:-.025em;margin:0 auto;max-width:18ch;">Confiez le poids du monde à&nbsp;Atlas.</h2>
+    <p data-reveal="up" data-delay="100" style="position:relative;font-size:17px;color:#c2c6d6;margin:20px auto 0;max-width:48ch;">Parlons de votre prochaine étape — un échange de 30 minutes pour cadrer votre enjeu.</p>
+    <div data-reveal="up" data-delay="180" style="position:relative;display:flex;align-items:center;gap:18px;justify-content:center;margin-top:30px;flex-wrap:wrap;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#aeb3c4;">contact@atlas-conseil.fr</span>
+      <button style="background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;border:none;padding:15px 30px;border-radius:999px;cursor:pointer;box-shadow:0 18px 44px -16px rgba(59,130,246,.9);" style-hover="transform:translateY(-2px);">Prendre rendez-vous →</button>
+    </div>
+  </section>
+
+  <!-- MANIFESTE / VISION -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:70px 40px 30px;overflow:hidden;">
+    <div style="position:absolute;right:-120px;top:-40px;width:420px;height:420px;border:1px solid rgba(96,165,250,.16);border-radius:50%;pointer-events:none;animation:atlas-spin 60s linear infinite;"></div>
+    <div style="position:absolute;right:-40px;top:60px;width:260px;height:260px;border:1px solid rgba(96,165,250,.1);border-radius:50%;pointer-events:none;animation:atlas-spin 44s linear infinite reverse;"></div>
+    <div data-reveal="up" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent,#3b82f6);position:relative;">Notre conviction</div>
+    <h2 data-reveal="up" data-delay="80" style="position:relative;font-size:clamp(28px,3.6vw,50px);line-height:1.16;font-weight:600;letter-spacing:-.02em;margin:18px 0 0;max-width:24ch;">La technologie n'a de valeur que lorsqu'elle sert <span style="background:linear-gradient(120deg,#bfdbfe,#3b82f6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">une décision</span>. Nous transformons la complexité des systèmes en leviers <span style="color:var(--atlas-accent,#3b82f6);">clairs, mesurables et durables</span>.</h2>
+    <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid rgba(255,255,255,.12);">
+      <div data-reveal="up" style="padding:26px 24px 6px;border-right:1px solid rgba(255,255,255,.1);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent,#3b82f6);">/ 01</div>
+        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Indépendance</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Aucun lien éditeur. Nos recommandations ne servent que votre intérêt.</p>
+      </div>
+      <div data-reveal="up" data-delay="90" style="padding:26px 24px 6px;border-right:1px solid rgba(255,255,255,.1);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent,#3b82f6);">/ 02</div>
+        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Exigence d'exécution</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Du slide à la production. Une mission Atlas se mesure à ses résultats.</p>
+      </div>
+      <div data-reveal="up" data-delay="180" style="padding:26px 24px 6px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent,#3b82f6);">/ 03</div>
+        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Transmission</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Nous repartons quand vos équipes sont autonomes. L'autonomie est le livrable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTUDES DE CAS -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 20px;">
+    <div data-reveal="up" style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent,#3b82f6);">Études de cas</div>
+        <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:12px 0 0;">Des résultats, pas des intentions.</h2>
+      </div>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a90a6;">sélection 2024–2026</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div data-reveal="up" data-tilt style="position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,background .35s;" style-hover="transform:translateY(-8px);border-color:rgba(59,130,246,.55);background:rgba(59,130,246,.06);">
+        <div style="margin:-26px -24px 18px;position:relative;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="case-1" shape="rect" fit="cover" placeholder="Image libre de droit — banque / finance" hint-size="100%,158px"></x-import><div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div></div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
+          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Conseil SI</span>
+          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">AMOA</span>
+        </div>
+        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Banque &amp; Assurance</div>
+        <div style="font-size:19px;font-weight:600;line-height:1.3;">Refonte du socle core banking</div>
+        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">−38%</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">d'incidents en production après urbanisation et reprise du pilotage.</p>
+      </div>
+      <div data-reveal="up" data-delay="100" data-tilt style="position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,background .35s;" style-hover="transform:translateY(-8px);border-color:rgba(59,130,246,.55);background:rgba(59,130,246,.06);">
+        <div style="margin:-26px -24px 18px;position:relative;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="case-2" shape="rect" fit="cover" placeholder="Image libre de droit — industrie / data" hint-size="100%,158px"></x-import><div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div></div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
+          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Data &amp; IA</span>
+        </div>
+        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Industrie</div>
+        <div style="font-size:19px;font-weight:600;line-height:1.3;">Plateforme data temps réel</div>
+        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">×3</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">sur la vélocité décisionnelle grâce à une gouvernance data industrialisée.</p>
+      </div>
+      <div data-reveal="up" data-delay="200" data-tilt style="position:relative;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.34);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,background .35s;" style-hover="transform:translateY(-8px);border-color:rgba(59,130,246,.7);">
+        <div style="margin:-26px -24px 18px;position:relative;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="case-3" shape="rect" fit="cover" placeholder="Image libre de droit — secteur public / cyber" hint-size="100%,158px"></x-import><div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div></div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
+          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Cybersécurité</span>
+        </div>
+        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Secteur Public</div>
+        <div style="font-size:19px;font-weight:600;line-height:1.3;">Mise en conformité NIS2</div>
+        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#bcd3f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">8 mois</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#bcd0ee;margin:0;">pour couvrir 100% des exigences, audit et gouvernance compris.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section style="position:relative;max-width:1280px;margin:0 auto;padding:64px 40px 20px;">
+    <div data-reveal="up" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent,#3b82f6);margin-bottom:26px;">Ils nous font confiance</div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:16px;">
+      <div data-reveal="up" style="position:relative;background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.3);border-radius:20px;padding:40px 38px;overflow:hidden;">
+        <div style="position:absolute;left:-30px;top:-50px;width:240px;height:240px;background:radial-gradient(circle,rgba(59,130,246,.28),transparent 65%);filter:blur(14px);pointer-events:none;"></div>
+        <div style="position:relative;font-size:clamp(20px,2.3vw,30px);line-height:1.4;font-weight:500;letter-spacing:-.01em;">«&nbsp;Atlas a structuré une trajectoire SI que nos équipes se sont réellement appropriée. De la vision au déploiement, sans rupture.&nbsp;»</div>
+        <div style="position:relative;display:flex;align-items:center;gap:13px;margin-top:28px;">
+          <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#1e3a8a);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;">DV</div>
+          <div><div style="font-weight:600;font-size:14px;">Directrice des SI</div><div style="font-size:12.5px;color:#9aa0b4;">Groupe industriel · 12 000 collaborateurs</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div data-reveal="up" data-delay="90" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px 26px;backdrop-filter:blur(10px);">
+          <div style="font-size:15px;line-height:1.55;color:#d4d8e4;">«&nbsp;Un niveau d'exigence rare sur l'exécution. Les jalons sont tenus.&nbsp;»</div>
+          <div style="font-size:12.5px;color:#9aa0b4;margin-top:14px;font-family:'IBM Plex Mono',monospace;">— Responsable programme, Énergie</div>
+        </div>
+        <div data-reveal="up" data-delay="170" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px 26px;backdrop-filter:blur(10px);">
+          <div style="font-size:15px;line-height:1.55;color:#d4d8e4;">«&nbsp;Ils ont rendu notre gouvernance data enfin lisible par le métier.&nbsp;»</div>
+          <div style="font-size:12.5px;color:#9aa0b4;margin-top:14px;font-family:'IBM Plex Mono',monospace;">— COMEX, Distribution</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="position:relative;max-width:920px;margin:0 auto;padding:64px 40px 30px;">
+    <div data-reveal="up" style="text-align:center;margin-bottom:34px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent,#3b82f6);">Questions fréquentes</div>
+      <h2 style="font-size:clamp(26px,3.2vw,42px);font-weight:600;letter-spacing:-.025em;margin:12px 0 0;">Avant de se parler.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div data-reveal="up" data-faq style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;transition:border-color .3s,background .3s;">
+        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:inherit;font-size:16.5px;font-weight:500;">Intervenez-vous au forfait ou en régie ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent,#3b82f6);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
+        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Les deux. Nous cadrons au forfait quand le périmètre est défini et passons en régie encadrée pour les phases d'exploration ou de pilotage long. Le mode d'engagement est toujours discuté en amont.</p></div>
+      </div>
+      <div data-reveal="up" data-delay="70" data-faq style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;transition:border-color .3s,background .3s;">
+        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:inherit;font-size:16.5px;font-weight:500;">Travaillez-vous avec nos équipes internes ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent,#3b82f6);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
+        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Toujours. Nous travaillons en binôme avec vos équipes, jamais en silo. La montée en compétence interne fait partie intégrante de chaque mission.</p></div>
+      </div>
+      <div data-reveal="up" data-delay="140" data-faq style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;transition:border-color .3s,background .3s;">
+        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:inherit;font-size:16.5px;font-weight:500;">Quels secteurs accompagnez-vous ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent,#3b82f6);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
+        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Banque-assurance, industrie, secteur public, énergie, santé et transport. Nos méthodes sont transverses ; notre connaissance sectorielle accélère le cadrage.</p></div>
+      </div>
+      <div data-reveal="up" data-delay="210" data-faq style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;transition:border-color .3s,background .3s;">
+        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:inherit;font-size:16.5px;font-weight:500;">Comment démarre une mission ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent,#3b82f6);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
+        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Par un échange de 30 minutes pour qualifier l'enjeu, suivi d'une note de cadrage gratuite. Vous décidez ensuite, sans engagement.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="position:relative;border-top:1px solid rgba(255,255,255,.08);margin-top:60px;overflow:hidden;">
+    <div style="position:absolute;left:50%;margin-left:-340px;bottom:-220px;width:680px;height:340px;background:radial-gradient(circle,rgba(59,130,246,.16),transparent 68%);filter:blur(20px);pointer-events:none;"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 30px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px;">
+      <div data-reveal="up">
+        <div style="display:flex;align-items:center;gap:11px;font-weight:700;font-size:18px;"><span style="width:11px;height:11px;background:var(--atlas-accent,#3b82f6);border-radius:50%;display:inline-block;box-shadow:0 0 14px var(--atlas-accent,#3b82f6);"></span>Atlas</div>
+        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;max-width:34ch;margin:16px 0 0;">Cabinet indépendant de conseil et d'ingénierie. Nous portons les transformations critiques des systèmes d'information.</p>
+        <a href="#" style="display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;font-size:13.5px;text-decoration:none;padding:13px 22px;border-radius:999px;box-shadow:0 14px 36px -16px rgba(59,130,246,.9);">Prendre rendez-vous →</a>
+      </div>
+      <div data-reveal="up" data-delay="80">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7e84a0;">Expertises</div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-top:18px;font-size:14px;color:#bcc2d2;">
+          <span>Conseil SI</span><span>AMOA</span><span>Cybersécurité</span><span>Data &amp; IA</span>
+        </div>
+      </div>
+      <div data-reveal="up" data-delay="160">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7e84a0;">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-top:18px;font-size:14px;color:#bcc2d2;">
+          <span>contact@atlas-conseil.fr</span><span>+33 1 84 80 00 00</span><span>Paris · Lyon</span>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative;border-top:1px solid rgba(255,255,255,.07);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#7e84a0;font-size:12.5px;max-width:1280px;margin:0 auto;">
+      <div style="font-family:'IBM Plex Mono',monospace;">© 2026 Atlas · Conseil &amp; Ingénierie</div>
+      <div style="display:flex;gap:22px;font-family:'IBM Plex Mono',monospace;"><span>Mentions légales</span><span>Confidentialité</span><span>LinkedIn</span></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#3b82f6&quot;,&quot;options&quot;:[&quot;#3b82f6&quot;,&quot;#2563eb&quot;,&quot;#06b6d4&quot;,&quot;#6366f1&quot;,&quot;#a78bfa&quot;]}}">
+class Component extends DCLogic {
+  constructor(props){ super(props); this.rootRef = React.createRef(); this._rafs = []; this._ios = []; }
+
+  componentDidMount(){
+    this.applyAccent();
+    const root = this.rootRef.current; if(!root) return;
+    this.setupReveals(root);
+    this.setupCounters(root);
+    this.setupParallax(root);
+    this.setupFaq(root);
+    root.querySelectorAll('[data-constellation]').forEach(c => this.initCanvas(c));
+    root.querySelectorAll('[data-glowzone]').forEach(z => this.initCursor(z));
+  }
+  componentDidUpdate(){ this.applyAccent(); }
+  componentWillUnmount(){
+    this._rafs.forEach(id=>cancelAnimationFrame(id));
+    this._ios.forEach(io=>io.disconnect());
+    if(this._onScroll) window.removeEventListener('scroll', this._onScroll);
+  }
+
+  applyAccent(){
+    const root = this.rootRef.current; if(!root) return;
+    root.style.setProperty('--atlas-accent', this.props.accent || '#3b82f6');
+  }
+
+  reveal(el){
+    if(el.__revealed) return; el.__revealed = true;
+    // Resting state: in place + fully visible. The offset set at hide-time
+    // (transform only, opacity untouched) transitions back to none via CSS, so
+    // the element is never invisible — a snapshot caught mid-move just shows it
+    // slightly offset. delay staggers the start.
+    const d = parseFloat(el.getAttribute('data-delay')||'0');
+    if(d > 0 && this._live){ setTimeout(()=>{ el.style.transform=''; el.style.willChange=''; }, d); }
+    else { el.style.transform=''; el.style.willChange=''; }
+  }
+  setupReveals(root){
+    const items = [...root.querySelectorAll('[data-reveal]')];
+    // Items rest VISIBLE by default. We only enable the hide-then-animate
+    // reveal effect after confirming SUSTAINED frame flow (3 consecutive rAFs) —
+    // a throttled/hidden iframe or a static html-to-image capture paints at most
+    // a frame or two, so it never hides content and every snapshot renders it.
+    const startLive = ()=>{
+      this._live = true;
+      const vh = window.innerHeight || 800;
+      // hide-for-reveal via TRANSFORM only (offset), opacity untouched → always visible
+      items.forEach(el=>{ if(!el.__revealed){ const dir=el.getAttribute('data-reveal'); el.style.transform = dir==='left'?'translateX(-30px)':dir==='right'?'translateX(30px)':'translateY(34px)'; el.style.transition='transform .8s cubic-bezier(.2,.7,.2,1)'; } });
+      requestAnimationFrame(()=>{
+        items.forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < vh*0.95 && r.bottom > 0) this.reveal(el); });
+      });
+    };
+    // Go "live" only once the ANIMATION clock is confirmed to be advancing.
+    // In a throttled preview / static capture, rAF callbacks may still fire but
+    // document.timeline (which drives CSS + WAAPI animations) stays frozen — so
+    // we check real timeline progress across frames instead of counting frames.
+    const now = ()=> (document.timeline && document.timeline.currentTime) || 0;
+    const t0 = now();
+    requestAnimationFrame(()=>{
+      const t1 = now();
+      requestAnimationFrame(()=>{
+        const t2 = now();
+        if((t1 - t0) > 4 && (t2 - t1) > 4) startLive();
+      });
+    });
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ this.reveal(e.target); io.unobserve(e.target); } });
+    }, { threshold:0.14, rootMargin:'0px 0px -7% 0px' });
+    items.forEach(el=>io.observe(el));
+    this._ios.push(io);
+    // Hard safety: guarantee everything ends visible no matter what.
+    this._revealAll = setTimeout(()=>{ items.forEach(el=>{ if(!el.__revealed){ el.__revealed=true; el.style.opacity=''; } }); }, 2600);
+  }
+
+  setupCounters(root){
+    const counters = root.querySelectorAll('[data-count]');
+    // Resting value = the real target, so any static capture shows the number
+    // (not 0). The 0→target count-up plays only when frames are live.
+    counters.forEach(el=>{ el.textContent = (parseFloat(el.getAttribute('data-count'))||0).toString(); });
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ this.animateCount(e.target); io.unobserve(e.target); } });
+    }, { threshold:0.6 });
+    counters.forEach(el=>io.observe(el));
+    this._ios.push(io);
+  }
+  animateCount(el){
+    if(!this._live) return; // keep resting target value when frames aren't flowing
+    const target = parseFloat(el.getAttribute('data-count'))||0;
+    const dur = 1500; const start = performance.now();
+    const step = (now)=>{
+      const t = Math.min(1,(now-start)/dur);
+      const eased = 1 - Math.pow(1-t, 3);
+      el.textContent = Math.round(target*eased).toString();
+      if(t<1){ this._rafs.push(requestAnimationFrame(step)); }
+    };
+    this._rafs.push(requestAnimationFrame(step));
+  }
+
+  setupFaq(root){
+    const items = [...root.querySelectorAll('[data-faq]')];
+    items.forEach(item=>{
+      const q = item.querySelector('[data-faq-q]');
+      const a = item.querySelector('[data-faq-a]');
+      const icon = item.querySelector('[data-faq-icon]');
+      if(!q || !a) return;
+      q.addEventListener('click', ()=>{
+        const open = item.__open === true;
+        if(open){
+          a.style.maxHeight = '0px';
+          if(icon) icon.style.transform = 'rotate(0deg)';
+          item.style.borderColor = 'rgba(255,255,255,.1)';
+          item.style.background = 'rgba(255,255,255,.035)';
+          item.__open = false;
+        } else {
+          // close siblings for a clean single-open accordion
+          items.forEach(o=>{ if(o!==item && o.__open){ const oa=o.querySelector('[data-faq-a]'); const oi=o.querySelector('[data-faq-icon]'); if(oa)oa.style.maxHeight='0px'; if(oi)oi.style.transform='rotate(0deg)'; o.style.borderColor='rgba(255,255,255,.1)'; o.style.background='rgba(255,255,255,.035)'; o.__open=false; } });
+          a.style.maxHeight = a.scrollHeight + 'px';
+          if(icon) icon.style.transform = 'rotate(45deg)';
+          item.style.borderColor = 'rgba(59,130,246,.5)';
+          item.style.background = 'rgba(59,130,246,.06)';
+          item.__open = true;
+        }
+      });
+    });
+  }
+
+  setupParallax(root){
+    const els = [...root.querySelectorAll('[data-parallax]')].map(el=>({el, s:parseFloat(el.getAttribute('data-parallax'))||0}));
+    const spins = [...root.querySelectorAll('[data-scrollspin]')].map(el=>({el, s:parseFloat(el.getAttribute('data-scrollspin'))||0}));
+    if(!els.length && !spins.length) return;
+    let ticking = false;
+    // Scroll position derived from the root's viewport rect, so it works whether
+    // the page scrolls on window OR an inner container (preview/embeds).
+    const scrolled = ()=>{ const r = root.getBoundingClientRect(); return Math.max(0, -r.top); };
+    const update = ()=>{
+      const y = scrolled();
+      els.forEach(o=>{ o.el.style.transform = 'translate3d(0,'+(y*o.s).toFixed(1)+'px,0)'; });
+      // scroll drives the whole solar system's rotation + a subtle zoom
+      spins.forEach(o=>{ const sc = (1 + Math.min(y,1400)*0.00018).toFixed(4); o.el.style.transform = 'rotate('+(y*o.s).toFixed(2)+'deg) scale('+sc+')'; });
+      ticking = false;
+    };
+    this._onScroll = ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(update); } };
+    // capture=true also catches scroll from inner scroll containers
+    window.addEventListener('scroll', this._onScroll, { passive:true, capture:true });
+    update();
+  }
+
+  initCanvas(canvas){
+    const ctx = canvas.getContext('2d'); if(!ctx) return;
+    let w=0,h=0,dpr=Math.min(2,window.devicePixelRatio||1);
+    const pts=[];
+    const resize=()=>{
+      const r=canvas.getBoundingClientRect();
+      w=r.width; h=r.height; if(!w||!h) return;
+      canvas.width=w*dpr; canvas.height=h*dpr;
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    };
+    resize();
+    const N = Math.max(34, Math.min(76, Math.floor(w/20)));
+    for(let i=0;i<N;i++){ pts.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22}); }
+    const ro = new ResizeObserver(resize); ro.observe(canvas);
+    const draw=()=>{
+      ctx.clearRect(0,0,w,h);
+      for(const p of pts){
+        p.x+=p.vx; p.y+=p.vy;
+        if(p.x<0||p.x>w)p.vx*=-1; if(p.y<0||p.y>h)p.vy*=-1;
+      }
+      for(let i=0;i<pts.length;i++){
+        for(let j=i+1;j<pts.length;j++){
+          const a=pts[i],b=pts[j];
+          const dx=a.x-b.x, dy=a.y-b.y; const dist=Math.hypot(dx,dy);
+          if(dist<120){
+            ctx.strokeStyle='rgba(59,130,246,'+(0.18*(1-dist/120))+')';
+            ctx.lineWidth=1;
+            ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+          }
+        }
+      }
+      for(const p of pts){
+        ctx.fillStyle='rgba(147,197,253,.7)';
+        ctx.beginPath(); ctx.arc(p.x,p.y,1.4,0,Math.PI*2); ctx.fill();
+      }
+      this._rafs.push(requestAnimationFrame(draw));
+    };
+    draw();
+  }
+
+  initCursor(zone){
+    const glow = zone.querySelector('[data-glow]'); if(!glow) return;
+    zone.addEventListener('mousemove', (e)=>{
+      const r = zone.getBoundingClientRect();
+      glow.style.left = (e.clientX - r.left) + 'px';
+      glow.style.top = (e.clientY - r.top) + 'px';
+      glow.style.opacity = '1';
+    });
+    zone.addEventListener('mouseleave', ()=>{ glow.style.opacity='0'; });
+  }
+
+  renderVals(){ return { rootRef: this.rootRef }; }
+}
+</script>
+</body>
+</html>
