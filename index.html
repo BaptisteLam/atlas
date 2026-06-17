@@ -3,591 +3,461 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atlas — Conseil SI · AMOA · Cyber · Data &amp; IA</title>
+  <title>Atlas — Conseil en transformation IA | Stratégie, audit & agents IA</title>
+  <meta name="description" content="Atlas est un cabinet indépendant de conseil en transformation IA. Stratégie IA, audit & conformité (AI Act), automatisation, agents IA et refonte des processus — de la vision à la production.">
+  <meta name="keywords" content="conseil transformation IA, stratégie IA, audit IA, AI Act, automatisation, agents IA, agentique, conseil process IA, intelligence artificielle entreprise">
+  <meta name="author" content="Atlas">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.atlas-conseil.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Atlas">
+  <meta property="og:title" content="Atlas — Conseil en transformation IA">
+  <meta property="og:description" content="Cabinet indépendant de conseil en transformation IA : stratégie, audit, automatisation & agents IA. De la vision à la production.">
+  <meta property="og:url" content="https://www.atlas-conseil.fr/">
+  <meta property="og:image" content="https://www.atlas-conseil.fr/project/assets/atlas-src.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atlas — Conseil en transformation IA">
+  <meta name="twitter:description" content="Stratégie IA, audit & conformité, automatisation et agents IA. De la vision à la production.">
+  <meta name="twitter:image" content="https://www.atlas-conseil.fr/project/assets/atlas-src.jpg">
+  <meta name="theme-color" content="#06060c">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: #06060c; }
-    :root { --atlas-accent: #3b82f6; }
+  <link rel="stylesheet" href="assets/atlas.css">
 
-    @keyframes atlas-pulse  { 0%,100%{opacity:.4;transform:scale(1);}50%{opacity:.85;transform:scale(1.08);} }
-    @keyframes atlas-spin   { to { transform: rotateZ(360deg); } }
-    @keyframes atlas-marquee{ from{transform:translateX(0);}to{transform:translateX(-50%);} }
-    @keyframes atlas-bounce { 0%,100%{transform:translateY(0);opacity:.5;}50%{transform:translateY(8px);opacity:1;} }
-
-    /* ── Reveal ── */
-    [data-reveal] { transition: transform .8s cubic-bezier(.2,.7,.2,1), opacity .7s ease; }
-    [data-reveal].r-hidden  { transform: translateY(34px); opacity: 0; }
-    [data-reveal="left"].r-hidden  { transform: translateX(-30px); opacity: 0; }
-    [data-reveal="right"].r-hidden { transform: translateX(30px); opacity: 0; }
-    [data-reveal].r-visible { transform: none !important; opacity: 1 !important; }
-
-    /* ── Hover ── */
-    .expertise-card { transition: transform .3s, border-color .3s, background .3s; }
-    .expertise-card:hover { transform: translateY(-6px); border-color: rgba(59,130,246,.5) !important; background: rgba(59,130,246,.07) !important; }
-    .expertise-card.accent:hover { border-color: rgba(59,130,246,.7) !important; background: rgba(59,130,246,.12) !important; }
-
-    .method-cell { transition: background .25s; }
-    .method-cell:hover { background: rgba(59,130,246,.04); }
-
-    .case-card { transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .35s, background .35s; }
-    .case-card:hover { transform: translateY(-8px); border-color: rgba(59,130,246,.55) !important; background: rgba(59,130,246,.06) !important; }
-    .case-card.accent:hover { border-color: rgba(59,130,246,.7) !important; }
-
-    .faq-item { transition: border-color .3s, background .3s; }
-
-    .btn-primary { cursor: pointer; transition: transform .2s, box-shadow .2s; font-family: 'Space Grotesk', sans-serif; }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 24px 52px -16px rgba(59,130,246,1) !important; }
-    .btn-outline { cursor: pointer; transition: background .2s; font-family: 'Space Grotesk', sans-serif; }
-    .btn-outline:hover { background: rgba(255,255,255,.1) !important; }
-    .btn-nav { cursor: pointer; transition: filter .2s, transform .2s; font-family: 'Space Grotesk', sans-serif; }
-    .btn-nav:hover { filter: brightness(1.08); transform: translateY(-1px); }
-    .nav-link { cursor: pointer; transition: color .2s; }
-    .nav-link:hover { color: #eef0f6 !important; }
-
-    .logo-img { transition: filter .35s, opacity .35s; }
-    .logo-img:hover { filter: grayscale(1) sepia(1) saturate(1100%) hue-rotate(186deg) brightness(1.08) !important; opacity: 1 !important; }
-    .logo-lafarge:hover { filter: brightness(0) saturate(100%) invert(52%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(106%) contrast(94%) !important; opacity: 1 !important; }
-
-    .img-slot {
-      width: 100%; height: 158px;
-      background: rgba(59,130,246,.06);
-      outline: 1.4px dashed rgba(96,165,250,.4);
-      outline-offset: -3px;
-      display: flex; align-items: center; justify-content: center;
-      color: #7e9fd6; font-size: 12px;
-      font-family: 'IBM Plex Mono', monospace;
-      text-align: center; padding: 12px;
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Atlas",
+    "description": "Cabinet indépendant de conseil en transformation IA.",
+    "url": "https://www.atlas-conseil.fr/",
+    "logo": "https://www.atlas-conseil.fr/project/assets/atlas-src.jpg",
+    "email": "contact@atlas-conseil.fr",
+    "telephone": "+33 1 84 80 00 00",
+    "areaServed": "FR",
+    "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+    "sameAs": ["https://www.linkedin.com/company/atlas-conseil-ia"],
+    "knowsAbout": ["Transformation IA", "Stratégie IA", "Audit IA", "AI Act", "Automatisation", "Agents IA", "Process IA"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Atlas — Conseil en transformation IA",
+    "url": "https://www.atlas-conseil.fr/"
+  }
+  </script>
 </head>
 <body>
-<div id="atlas-root" style="font-family:'Space Grotesk',Helvetica,Arial,sans-serif;background:#06060c;color:#eef0f6;-webkit-font-smoothing:antialiased;overflow-x:hidden;">
+<div id="atlas-root">
 
-  <!-- NAV -->
-  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(6,6,12,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);">
-    <div style="display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.02em;">
-      <span style="width:10px;height:10px;background:var(--atlas-accent);border-radius:50%;display:inline-block;box-shadow:0 0 16px var(--atlas-accent);"></span>Atlas
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="brand-dot"></span>Atlas</a>
+    <div class="nav-links">
+      <div class="has-drop">
+        <button class="drop-toggle nav-link active">Expertises <span class="chev">▾</span></button>
+        <div class="drop">
+          <a href="transformation-ia.html"><span class="di-num">01</span><span><span class="di-t">Transformation IA</span><span class="di-d">Piloter votre transformation de bout en bout</span></span></a>
+          <a href="strategie-ia.html"><span class="di-num">02</span><span><span class="di-t">Stratégie IA</span><span class="di-d">Vision, feuille de route & cas d'usage</span></span></a>
+          <a href="audit-ia.html"><span class="di-num">03</span><span><span class="di-t">Audit IA</span><span class="di-d">Maturité, conformité AI Act & data readiness</span></span></a>
+          <a href="automatisation-agentique.html"><span class="di-num">04</span><span><span class="di-t">Automatisation & Agentique</span><span class="di-d">Agents IA & copilotes en production</span></span></a>
+          <a href="process-ia.html"><span class="di-num">05</span><span><span class="di-t">Process IA</span><span class="di-d">Réinventer vos processus métier</span></span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="#methode">Méthode</a>
+      <a class="nav-link" href="#realisations">Réalisations</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </div>
-    <div style="display:flex;gap:30px;font-size:13.5px;color:#aeb3c4;">
-      <span class="nav-link">Expertises</span><span class="nav-link">Méthode</span><span class="nav-link">Références</span><span class="nav-link">Contact</span>
-    </div>
-    <button class="btn-nav" style="font-size:13px;color:#06060c;background:linear-gradient(120deg,#93c5fd,#3b82f6);border:none;padding:10px 18px;border-radius:999px;font-weight:600;">Démarrer un projet</button>
+    <a class="btn btn-primary btn-sm" href="contact.html">Prendre rendez-vous</a>
+    <button class="nav-burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- HERO -->
-  <section data-glowzone style="position:relative;overflow:hidden;">
-    <canvas data-constellation style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
-    <div style="position:absolute;top:-120px;left:6%;width:560px;height:560px;background:radial-gradient(circle,rgba(59,130,246,.34),transparent 64%);filter:blur(22px);pointer-events:none;z-index:0;animation:atlas-pulse 8s ease-in-out infinite;"></div>
-    <div style="position:absolute;top:120px;right:-100px;width:520px;height:520px;background:radial-gradient(circle,rgba(37,99,235,.3),transparent 64%);filter:blur(22px);pointer-events:none;z-index:0;animation:atlas-pulse 11s ease-in-out infinite;"></div>
-    <div data-glow style="position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,.22),transparent 60%);pointer-events:none;left:0;top:0;transform:translate(-50%,-50%);opacity:0;transition:opacity .4s;z-index:1;"></div>
+  <!-- mobile menu -->
+  <div class="mobile-menu">
+    <button class="mm-close" aria-label="Fermer le menu">&times;</button>
+    <div class="mm-kicker">Expertises</div>
+    <div class="mm-sub">
+      <a href="transformation-ia.html">Transformation IA</a>
+      <a href="strategie-ia.html">Stratégie IA</a>
+      <a href="audit-ia.html">Audit IA</a>
+      <a href="automatisation-agentique.html">Automatisation & Agentique</a>
+      <a href="process-ia.html">Process IA</a>
+    </div>
+    <div class="mm-kicker">Cabinet</div>
+    <a href="#methode">Méthode</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <div style="position:relative;height:880px;max-width:1280px;margin:0 auto;">
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" data-glowzone>
+    <canvas class="bg-canvas" data-constellation aria-hidden="true"></canvas>
+    <div class="blob blob-a" aria-hidden="true"></div>
+    <div class="blob blob-b" aria-hidden="true"></div>
+    <div class="cursor-glow" data-glow aria-hidden="true"></div>
 
-      <!-- SOLAR SYSTEM -->
-      <div data-parallax="-0.04" style="position:absolute;left:50%;margin-left:-390px;top:80px;width:780px;height:780px;z-index:1;pointer-events:none;">
+    <div class="hero-inner">
+      <!-- solar system -->
+      <div class="solar" data-parallax="-0.04" aria-hidden="true">
         <div data-scrollspin="0.05" style="position:absolute;inset:0;will-change:transform;">
-          <div style="position:absolute;inset:300px;border:1px solid rgba(120,170,255,.34);border-radius:50%;"></div>
-          <div style="position:absolute;inset:230px;border:1px solid rgba(120,170,255,.24);border-radius:50%;"></div>
-          <div style="position:absolute;inset:140px;border:1px solid rgba(120,170,255,.17);border-radius:50%;"></div>
-          <div style="position:absolute;inset:50px;border:1px solid rgba(120,170,255,.12);border-radius:50%;"></div>
-          <!-- sun -->
-          <div style="position:absolute;left:50%;top:50%;width:380px;height:380px;margin:-190px 0 0 -190px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,.4),transparent 62%);filter:blur(6px);animation:atlas-pulse 7s ease-in-out infinite;"></div>
-          <div style="position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#eaf2ff,#93c5fd 42%,#3b82f6 78%,#1d4ed8);box-shadow:0 0 60px 10px rgba(59,130,246,.7),inset -8px -8px 22px rgba(12,30,80,.55);"></div>
-          <!-- orbit 1 -->
-          <div style="position:absolute;inset:140px;animation:atlas-spin 13s linear infinite;">
-            <div style="position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#dbeafe,#60a5fa);box-shadow:0 0 14px rgba(96,165,250,.85);"></div>
-          </div>
-          <!-- orbit 2 -->
-          <div style="position:absolute;inset:230px;animation:atlas-spin 21s linear infinite reverse;">
-            <div style="position:absolute;top:-11px;left:50%;margin-left:-11px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#bfdbfe,#3b82f6 70%,#1e3a8a);box-shadow:0 0 18px rgba(59,130,246,.8),inset -4px -4px 9px rgba(8,20,60,.6);"></div>
-          </div>
-          <!-- orbit 3 -->
-          <div style="position:absolute;inset:50px;animation:atlas-spin 30s linear infinite;">
-            <div style="position:absolute;top:-9px;left:50%;margin-left:-9px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a5f3fc,#22d3ee 65%,#0e7490);box-shadow:0 0 16px rgba(34,211,238,.7);"></div>
-          </div>
-          <!-- orbit 4 -->
-          <div style="position:absolute;inset:300px;animation:atlas-spin 40s linear infinite reverse;">
-            <div style="position:absolute;top:-13px;left:50%;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#dbeafe,#6366f1 72%,#312e81);box-shadow:0 0 18px rgba(99,102,241,.7);"></div>
-          </div>
+          <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div>
+          <div class="sun-glow"></div><div class="sun"></div>
+          <div class="orbit o1"><div class="planet p1"></div></div>
+          <div class="orbit o2"><div class="planet p2"></div></div>
+          <div class="orbit o3"><div class="planet p3"></div></div>
+          <div class="orbit o4"><div class="planet p4"></div></div>
         </div>
       </div>
 
-      <!-- eyebrow + h1 -->
-      <div style="position:absolute;left:0;right:0;top:96px;z-index:5;text-align:center;padding:0 24px;">
-        <div style="display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#bfd6ff;border:1px solid rgba(59,130,246,.42);background:rgba(59,130,246,.1);padding:7px 15px;border-radius:999px;">
-          <span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;animation:atlas-pulse 2s infinite;"></span>Conseil SI · AMOA · Cyber · Data &amp; IA
-        </div>
-        <h1 style="font-size:clamp(42px,6vw,86px);line-height:.98;letter-spacing:-.035em;font-weight:600;margin:22px auto 0;max-width:16ch;text-shadow:0 2px 40px rgba(6,8,30,.7);">Nous portons votre <span style="background:linear-gradient(120deg,#bfdbfe,#3b82f6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">transformation</span>.</h1>
-      </div>
-
-      <!-- subtitle + CTAs -->
-      <div style="position:absolute;left:0;right:0;bottom:72px;z-index:5;text-align:center;padding:0 24px;">
-        <p style="font-size:18px;line-height:1.6;color:#c2c6d6;max-width:54ch;margin:0 auto;text-shadow:0 2px 24px rgba(6,8,30,.8);">Comme le Titan porte le monde, Atlas soutient le système d'information des organisations exigeantes — de la stratégie à l'IA en production.</p>
-        <div style="display:flex;gap:14px;justify-content:center;margin-top:26px;">
-          <button class="btn-primary" style="background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;font-size:14.5px;border:none;padding:15px 28px;border-radius:999px;box-shadow:0 18px 44px -16px rgba(59,130,246,.9);">Prendre rendez-vous</button>
-          <button class="btn-outline" style="background:rgba(255,255,255,.05);color:#eef0f6;font-size:14.5px;border:1px solid rgba(255,255,255,.18);padding:15px 28px;border-radius:999px;backdrop-filter:blur(8px);">Découvrir Atlas</button>
+      <div style="position:relative;z-index:2;">
+        <span class="eyebrow"><span class="dot"></span>Conseil en transformation IA</span>
+        <h1 class="h1">Nous portons votre <span class="grad">transformation IA</span>.</h1>
+        <p class="lead">Comme le Titan porte le monde, Atlas soutient les organisations exigeantes dans leur passage à l'intelligence artificielle — de la stratégie aux agents en production, avec méthode et conformité.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Prendre rendez-vous</a>
+          <a class="btn btn-outline" href="#expertises">Découvrir nos expertises</a>
         </div>
       </div>
+    </div>
+    <a class="scroll-cue" href="#expertises" aria-label="Défiler vers les expertises">
+      <svg width="18" height="26" viewBox="0 0 18 26" fill="none"><rect x="1" y="1" width="16" height="24" rx="8" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="8" r="2" fill="currentColor"/></svg>
+    </a>
+  </header>
 
-      <!-- scroll cue -->
-      <div style="position:absolute;left:50%;margin-left:-9px;bottom:22px;z-index:5;color:#7e84a0;animation:atlas-bounce 2.2s ease-in-out infinite;">
-        <svg width="18" height="26" viewBox="0 0 18 26" fill="none"><rect x="1" y="1" width="16" height="24" rx="8" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="8" r="2" fill="currentColor"/></svg>
+  <!-- ===================== EXPERTISES ===================== -->
+  <section class="section section-tight" id="expertises">
+    <div class="container">
+      <div class="section-head" data-reveal="up">
+        <h2 class="h2">Cinq leviers, une seule trajectoire IA.</h2>
+        <span class="mono muted">05 expertises</span>
+      </div>
+
+      <a href="transformation-ia.html" class="card accent expertise-card flagship" data-reveal="up">
+        <div>
+          <div class="c-num">01 — Offre phare</div>
+          <div class="c-title">Conseil en transformation IA</div>
+          <p>De la vision à l'industrialisation : nous orchestrons votre transformation IA de bout en bout — gouvernance, portefeuille de cas d'usage, montée en compétence des équipes et passage à l'échelle.</p>
+          <span class="c-link">Découvrir l'offre →</span>
+        </div>
+        <ul class="checks">
+          <li>Feuille de route IA priorisée par la valeur</li>
+          <li>Gouvernance & conformité AI Act intégrées</li>
+          <li>Des cas d'usage en production, pas en slide</li>
+        </ul>
+      </a>
+
+      <div class="grid grid-4">
+        <a href="strategie-ia.html" data-reveal="up" data-delay="60" class="card expertise-card">
+          <div class="c-num">02</div>
+          <div class="c-title">Stratégie IA</div>
+          <p>Vision, feuille de route, portefeuille de cas d'usage priorisés et modèle opérationnel (IA Operating Model).</p>
+          <span class="c-link">En savoir plus →</span>
+        </a>
+        <a href="audit-ia.html" data-reveal="up" data-delay="120" class="card expertise-card">
+          <div class="c-num">03</div>
+          <div class="c-title">Audit IA</div>
+          <p>Diagnostic de maturité, data readiness, évaluation des modèles, risques, biais et conformité AI Act / RGPD.</p>
+          <span class="c-link">En savoir plus →</span>
+        </a>
+        <a href="automatisation-agentique.html" data-reveal="up" data-delay="180" class="card expertise-card">
+          <div class="c-num">04</div>
+          <div class="c-title">Automatisation & Agentique</div>
+          <p>Agents IA, copilotes, RAG et orchestration multi-agents. De la preuve de valeur au LLMOps en production.</p>
+          <span class="c-link">En savoir plus →</span>
+        </a>
+        <a href="process-ia.html" data-reveal="up" data-delay="240" class="card expertise-card">
+          <div class="c-num">05</div>
+          <div class="c-title">Process IA</div>
+          <p>Process mining, refonte des flux et augmentation des équipes par l'IA — productivité et qualité mesurées.</p>
+          <span class="c-link">En savoir plus →</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- EXPERTISES -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:40px 40px 20px;">
-    <div data-reveal="up" style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px;">
-      <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:0;">Quatre piliers, un seul cap.</h2>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a90a6;">04 expertises</span>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
-      <div data-reveal="up" class="expertise-card" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent);">01</div>
-        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Conseil SI</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Schéma directeur, urbanisation, architecture cible et choix de solutions.</p>
+  <!-- ===================== MÉTHODE ===================== -->
+  <section class="section" id="methode">
+    <div class="container">
+      <div data-reveal="up" style="margin-bottom:34px;">
+        <div class="kicker">Notre méthode</div>
+        <h2 class="h2" style="margin-top:14px;max-width:22ch;">Une trajectoire claire, du cadrage à la valeur en production.</h2>
       </div>
-      <div data-reveal="up" data-delay="90" class="expertise-card" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent);">02</div>
-        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">AMOA</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Cadrage, expression de besoin, pilotage de programme, conduite du changement.</p>
-      </div>
-      <div data-reveal="up" data-delay="180" class="expertise-card" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent);">03</div>
-        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Cybersécurité</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">Audit, conformité NIS2 &amp; ISO 27001, gouvernance et résilience.</p>
-      </div>
-      <div data-reveal="up" data-delay="270" class="expertise-card accent" style="background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.36);border-radius:18px;padding:28px 22px;backdrop-filter:blur(10px);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--atlas-accent);">04</div>
-        <div style="font-size:20px;font-weight:600;margin:16px 0 10px;">Data &amp; IA</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#c4cbe2;margin:0;">Plateformes data, gouvernance, IA générative et industrialisation.</p>
+      <div class="method">
+        <div class="method-cell" data-reveal="up">
+          <div class="m-step">01 — Cadrer</div>
+          <p>Comprendre l'enjeu métier, qualifier les cas d'usage IA, fixer la cible de valeur et les garde-fous.</p>
+        </div>
+        <div class="method-cell" data-reveal="up" data-delay="80">
+          <div class="m-step">02 — Prototyper</div>
+          <p>Prouver la valeur vite : POC sur données réelles, évaluation rigoureuse, décision go / no-go factuelle.</p>
+        </div>
+        <div class="method-cell" data-reveal="up" data-delay="160">
+          <div class="m-step">03 — Industrialiser</div>
+          <p>Passer en production : MLOps / LLMOps, sécurité, conformité AI Act, monitoring et qualité continue.</p>
+        </div>
+        <div class="method-cell" data-reveal="up" data-delay="240">
+          <div class="m-step">04 — Mettre à l'échelle</div>
+          <p>Diffuser les usages, mesurer l'impact, former les équipes et transmettre l'autonomie.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- MÉTHODE -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 20px;">
-    <div data-reveal="up" style="margin-bottom:34px;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent);">Notre méthode</div>
-      <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:14px 0 0;max-width:20ch;">Une trajectoire claire, du cadrage à la valeur.</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.12);">
-      <div data-reveal="up" class="method-cell" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
-        <div style="font-size:13px;color:var(--atlas-accent);font-family:'IBM Plex Mono',monospace;">01 — Cadrer</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Comprendre l'enjeu métier, qualifier le besoin, fixer la cible.</p>
-      </div>
-      <div data-reveal="up" data-delay="80" class="method-cell" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
-        <div style="font-size:13px;color:var(--atlas-accent);font-family:'IBM Plex Mono',monospace;">02 — Concevoir</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Architecture, trajectoire et plan d'exécution activable.</p>
-      </div>
-      <div data-reveal="up" data-delay="160" class="method-cell" style="padding:26px 22px 30px;border-right:1px solid rgba(255,255,255,.1);">
-        <div style="font-size:13px;color:var(--atlas-accent);font-family:'IBM Plex Mono',monospace;">03 — Déployer</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Piloter la mise en œuvre, sécuriser, embarquer les équipes.</p>
-      </div>
-      <div data-reveal="up" data-delay="240" class="method-cell" style="padding:26px 22px 30px;">
-        <div style="font-size:13px;color:var(--atlas-accent);font-family:'IBM Plex Mono',monospace;">04 — Valoriser</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:14px 0 0;">Mesurer l'impact, industrialiser, transmettre l'autonomie.</p>
+  <!-- ===================== CHIFFRES ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats">
+        <div data-reveal="up">
+          <div class="stat-num grad-soft"><span data-count="120">120</span>+</div>
+          <div class="stat-lbl">cas d'usage IA déployés</div>
+        </div>
+        <div data-reveal="up" data-delay="80">
+          <div class="stat-num grad-soft"><span data-count="40">40</span></div>
+          <div class="stat-lbl">experts IA & data</div>
+        </div>
+        <div data-reveal="up" data-delay="160">
+          <div class="stat-num grad-soft">×<span data-count="3.5">3.5</span></div>
+          <div class="stat-lbl">ROI médian à 12 mois</div>
+        </div>
+        <div data-reveal="up" data-delay="240">
+          <div class="stat-num grad-soft"><span data-count="96">96</span>%</div>
+          <div class="stat-lbl">clients fidèles</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CHIFFRES -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:64px 40px;">
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;">
-      <div data-reveal="up">
-        <div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="18">18</span></div>
-        <div style="font-size:13px;color:#9aa0b4;margin-top:4px;">ans d'expertise</div>
-      </div>
-      <div data-reveal="up" data-delay="80">
-        <div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="140">140</span>+</div>
-        <div style="font-size:13px;color:#9aa0b4;margin-top:4px;">missions livrées</div>
-      </div>
-      <div data-reveal="up" data-delay="160">
-        <div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="50">50</span></div>
-        <div style="font-size:13px;color:#9aa0b4;margin-top:4px;">consultants</div>
-      </div>
-      <div data-reveal="up" data-delay="240">
-        <div style="font-size:clamp(34px,3.4vw,52px);font-weight:600;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;"><span data-count="96">96</span>%</div>
-        <div style="font-size:13px;color:#9aa0b4;margin-top:4px;">clients fidèles</div>
+  <!-- ===================== CLIENTS (marquee) ===================== -->
+  <section class="section marquee" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0 46px;">
+    <div data-reveal="up" style="text-align:center;font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);margin-bottom:34px;">Nous les accompagnons</div>
+    <div class="marquee-track" aria-label="Logos de nos clients">
+      <div class="logo-cell"><img src="project/logos/amundi.png" alt="Amundi" class="logo-img" style="max-height:50px;max-width:170px;"></div>
+      <div class="logo-cell"><img src="project/logos/thales.png" alt="Thales" class="logo-img" style="max-height:58px;max-width:180px;"></div>
+      <div class="logo-cell"><img src="project/logos/sncf.png" alt="SNCF" class="logo-img" style="max-height:40px;max-width:120px;"></div>
+      <div class="logo-cell"><img src="project/logos/edf.png" alt="EDF" class="logo-img" style="max-height:40px;max-width:110px;"></div>
+      <div class="logo-cell"><img src="project/logos/saint-gobain.webp" alt="Saint-Gobain" class="logo-img" style="max-height:42px;max-width:140px;"></div>
+      <div class="logo-cell"><img src="project/logos/lafarge.png" alt="Lafarge" class="logo-img logo-lafarge" style="max-height:40px;max-width:152px;"></div>
+      <div class="logo-cell"><img src="project/logos/carrefour.svg" alt="Carrefour" class="logo-img" style="max-height:42px;max-width:120px;"></div>
+      <div class="logo-cell"><img src="project/logos/dassault.svg" alt="Dassault Aviation" class="logo-img" style="max-height:34px;max-width:150px;"></div>
+      <div class="logo-cell"><img src="project/logos/hec.png" alt="HEC Paris" class="logo-img" style="max-height:46px;max-width:110px;"></div>
+      <div class="logo-cell"><img src="project/logos/montpellier.png" alt="Ville de Montpellier" class="logo-img" style="max-height:58px;max-width:120px;"></div>
+      <div class="logo-cell"><img src="project/logos/tbs.png" alt="TBS Education" class="logo-img" style="max-height:74px;max-width:140px;"></div>
+      <div class="logo-cell"><img src="project/logos/opco.png" alt="OPCO EP" class="logo-img" style="max-height:70px;max-width:165px;"></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/amundi.png" alt="" class="logo-img" style="max-height:50px;max-width:170px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/thales.png" alt="" class="logo-img" style="max-height:58px;max-width:180px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/sncf.png" alt="" class="logo-img" style="max-height:40px;max-width:120px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/edf.png" alt="" class="logo-img" style="max-height:40px;max-width:110px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/saint-gobain.webp" alt="" class="logo-img" style="max-height:42px;max-width:140px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/lafarge.png" alt="" class="logo-img logo-lafarge" style="max-height:40px;max-width:152px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/carrefour.svg" alt="" class="logo-img" style="max-height:42px;max-width:120px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/dassault.svg" alt="" class="logo-img" style="max-height:34px;max-width:150px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/hec.png" alt="" class="logo-img" style="max-height:46px;max-width:110px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/montpellier.png" alt="" class="logo-img" style="max-height:58px;max-width:120px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/tbs.png" alt="" class="logo-img" style="max-height:74px;max-width:140px;"></div>
+      <div class="logo-cell" aria-hidden="true"><img src="project/logos/opco.png" alt="" class="logo-img" style="max-height:70px;max-width:165px;"></div>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFESTE ===================== -->
+  <section class="section" style="overflow:hidden;">
+    <div class="container" style="position:relative;">
+      <div class="manifesto-ring" style="right:-120px;top:-40px;width:420px;height:420px;animation:atlas-spin 60s linear infinite;"></div>
+      <div class="manifesto-ring" style="right:-40px;top:60px;width:260px;height:260px;animation:atlas-spin 44s linear infinite reverse;"></div>
+      <div class="kicker" data-reveal="up" style="position:relative;">Notre conviction</div>
+      <h2 data-reveal="up" data-delay="80" style="position:relative;font-size:clamp(28px,3.6vw,50px);line-height:1.16;font-weight:600;letter-spacing:-.02em;margin:18px 0 0;max-width:25ch;">L'IA n'a de valeur que lorsqu'elle sert <span class="grad">une décision</span>. Nous transformons la complexité des modèles en leviers <span style="color:var(--accent);">clairs, mesurables et durables</span>.</h2>
+      <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line);">
+        <div class="principle" data-reveal="up">
+          <div class="p-num">/ 01</div>
+          <div class="p-t">Indépendance</div>
+          <p>Aucun lien éditeur ni cloud. Nos recommandations IA ne servent que votre intérêt.</p>
+        </div>
+        <div class="principle" data-reveal="up" data-delay="90">
+          <div class="p-num">/ 02</div>
+          <div class="p-t">Exigence d'exécution</div>
+          <p>Du prototype à la production. Une mission Atlas se mesure à ses résultats, pas à ses slides.</p>
+        </div>
+        <div class="principle" data-reveal="up" data-delay="180">
+          <div class="p-num">/ 03</div>
+          <div class="p-t">IA responsable</div>
+          <p>Conformité AI Act, maîtrise des risques et des biais, transparence. L'IA digne de confiance par défaut.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- RÉFÉRENCES (logo carousel) -->
-  <section style="position:relative;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0 46px;overflow:hidden;">
-    <div data-reveal="up" style="text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a90a6;margin-bottom:36px;">Nous les accompagnons</div>
-    <div style="position:relative;">
-      <div style="position:absolute;left:0;top:0;bottom:0;width:130px;background:linear-gradient(90deg,#06060c,transparent);z-index:2;pointer-events:none;"></div>
-      <div style="position:absolute;right:0;top:0;bottom:0;width:130px;background:linear-gradient(270deg,#06060c,transparent);z-index:2;pointer-events:none;"></div>
-      <div style="display:flex;align-items:center;width:max-content;animation:atlas-marquee 44s linear infinite;">
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/amundi.png" alt="Amundi" class="logo-img" style="max-height:50px;max-width:170px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/thales.png" alt="Thales" class="logo-img" style="max-height:58px;max-width:180px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/sncf.png" alt="SNCF" class="logo-img" style="max-height:40px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/edf.png" alt="EDF" class="logo-img" style="max-height:40px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/saint-gobain.webp" alt="Saint-Gobain" class="logo-img" style="max-height:42px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/lafarge.png" alt="Lafarge" class="logo-img logo-lafarge" style="max-height:40px;max-width:152px;width:auto;object-fit:contain;display:block;filter:brightness(0) saturate(100%) invert(45%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(97%) contrast(94%);opacity:.95;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/carrefour.svg" alt="Carrefour" class="logo-img" style="max-height:42px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/dassault.svg" alt="Dassault Aviation" class="logo-img" style="max-height:34px;max-width:150px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/hec.png" alt="HEC Paris" class="logo-img" style="max-height:46px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/montpellier.png" alt="Ville de Montpellier" class="logo-img" style="max-height:58px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/tbs.png" alt="TBS Education" class="logo-img" style="max-height:74px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/opco.png" alt="OPCO EP" class="logo-img" style="max-height:70px;max-width:165px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <!-- duplicate set for seamless loop -->
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/amundi.png" alt="Amundi" class="logo-img" style="max-height:50px;max-width:170px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/thales.png" alt="Thales" class="logo-img" style="max-height:58px;max-width:180px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/sncf.png" alt="SNCF" class="logo-img" style="max-height:40px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/edf.png" alt="EDF" class="logo-img" style="max-height:40px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/saint-gobain.webp" alt="Saint-Gobain" class="logo-img" style="max-height:42px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/lafarge.png" alt="Lafarge" class="logo-img logo-lafarge" style="max-height:40px;max-width:152px;width:auto;object-fit:contain;display:block;filter:brightness(0) saturate(100%) invert(45%) sepia(99%) saturate(1747%) hue-rotate(199deg) brightness(97%) contrast(94%);opacity:.95;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/carrefour.svg" alt="Carrefour" class="logo-img" style="max-height:42px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/dassault.svg" alt="Dassault Aviation" class="logo-img" style="max-height:34px;max-width:150px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/hec.png" alt="HEC Paris" class="logo-img" style="max-height:46px;max-width:110px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/montpellier.png" alt="Ville de Montpellier" class="logo-img" style="max-height:58px;max-width:120px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/tbs.png" alt="TBS Education" class="logo-img" style="max-height:74px;max-width:140px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
-        <div style="flex:none;margin-right:52px;display:flex;align-items:center;justify-content:center;height:80px;"><img src="project/logos/opco.png" alt="OPCO EP" class="logo-img" style="max-height:70px;max-width:165px;width:auto;object-fit:contain;display:block;filter:grayscale(1) sepia(1) saturate(720%) hue-rotate(186deg) brightness(.95) contrast(1.05);opacity:.9;"></div>
+  <!-- ===================== RÉALISATIONS ===================== -->
+  <section class="section section-tight" id="realisations">
+    <div class="container">
+      <div class="section-head" data-reveal="up">
+        <div>
+          <div class="kicker">Réalisations</div>
+          <h2 class="h2" style="margin-top:12px;">Des résultats, pas des intentions.</h2>
+        </div>
+        <span class="mono muted">sélection 2024–2026</span>
+      </div>
+      <div class="grid grid-3">
+        <article class="case-card" data-reveal="up">
+          <div class="case-media">
+            <div class="tile"><div class="grid-lines"></div>
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            </div>
+            <div class="fade"></div>
+          </div>
+          <div class="tags"><span class="tag">Stratégie IA</span><span class="tag">Transformation IA</span></div>
+          <div class="case-sector">Banque & Assurance</div>
+          <div class="case-title">Portefeuille de 30 cas d'usage IA priorisés</div>
+          <div class="case-metric grad-soft">×3,5</div>
+          <p>de ROI sur les 6 premiers cas d'usage mis en production en moins d'un an.</p>
+        </article>
+        <article class="case-card" data-reveal="up" data-delay="100">
+          <div class="case-media">
+            <div class="tile"><div class="grid-lines"></div>
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+            </div>
+            <div class="fade"></div>
+          </div>
+          <div class="tags"><span class="tag">Automatisation</span><span class="tag">Agentique</span></div>
+          <div class="case-sector">Industrie</div>
+          <div class="case-title">Agents IA pour le support technique N1/N2</div>
+          <div class="case-metric grad-soft">−42%</div>
+          <p>de temps de traitement grâce à un copilote RAG branché sur la base documentaire.</p>
+        </article>
+        <article class="case-card accent" data-reveal="up" data-delay="200">
+          <div class="case-media">
+            <div class="tile"><div class="grid-lines"></div>
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="fade"></div>
+          </div>
+          <div class="tags"><span class="tag">Audit IA</span><span class="tag">AI Act</span></div>
+          <div class="case-sector">Secteur Public</div>
+          <div class="case-title">Mise en conformité AI Act & RGPD</div>
+          <div class="case-metric grad-soft">100%</div>
+          <p>des systèmes IA cartographiés, classés par risque et documentés en 4 mois.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section style="position:relative;text-align:center;padding:90px 40px 40px;overflow:hidden;">
-    <div style="position:absolute;left:50%;margin-left:-300px;top:0;width:600px;height:320px;background:radial-gradient(circle,rgba(59,130,246,.26),transparent 66%);filter:blur(20px);pointer-events:none;"></div>
-    <h2 data-reveal="up" style="position:relative;font-size:clamp(30px,4vw,56px);font-weight:600;letter-spacing:-.025em;margin:0 auto;max-width:18ch;">Confiez le poids du monde à&nbsp;Atlas.</h2>
-    <p data-reveal="up" data-delay="100" style="position:relative;font-size:17px;color:#c2c6d6;margin:20px auto 0;max-width:48ch;">Parlons de votre prochaine étape — un échange de 30 minutes pour cadrer votre enjeu.</p>
+  <!-- ===================== TÉMOIGNAGES ===================== -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="kicker" data-reveal="up" style="margin-bottom:26px;">Ils nous font confiance</div>
+      <div class="grid" style="grid-template-columns:1.5fr 1fr;">
+        <div class="quote-main" data-reveal="up">
+          <div class="q-glow"></div>
+          <div class="q-text">«&nbsp;Atlas a structuré une trajectoire IA que nos équipes se sont réellement appropriée. De la stratégie aux agents en production, sans rupture ni dépendance.&nbsp;»</div>
+          <div class="quote-who">
+            <div class="avatar">DV</div>
+            <div><div style="font-weight:600;font-size:14px;">Directrice Data & IA</div><div style="font-size:12.5px;color:var(--muted);">Groupe industriel · 12 000 collaborateurs</div></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="quote-mini" data-reveal="up" data-delay="90">
+            <div class="qm-text">«&nbsp;Un niveau d'exigence rare sur l'exécution. Le premier agent était en production en huit semaines.&nbsp;»</div>
+            <div class="qm-who">— Responsable transformation, Énergie</div>
+          </div>
+          <div class="quote-mini" data-reveal="up" data-delay="170">
+            <div class="qm-text">«&nbsp;Ils ont rendu notre conformité AI Act enfin lisible par le métier comme par la DSI.&nbsp;»</div>
+            <div class="qm-who">— Secrétaire général, Secteur public</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section">
+    <div class="container narrow">
+      <div data-reveal="up" style="text-align:center;margin-bottom:34px;">
+        <div class="kicker">Questions fréquentes</div>
+        <h2 class="h2" style="margin-top:12px;">Avant de se parler.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-reveal="up" data-faq>
+          <button class="faq-q" data-faq-q>Faut-il une stratégie data mature avant de se lancer dans l'IA ?<span class="faq-icon" data-faq-icon>+</span></button>
+          <div class="faq-a" data-faq-a><p>Non. Nous commençons par les cas d'usage à plus forte valeur et faisons monter la donnée au rythme des besoins. Une stratégie « big bang » data avant toute IA est souvent un facteur d'échec ; nous privilégions des boucles courtes qui prouvent la valeur et financent la suite.</p></div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="70" data-faq>
+          <button class="faq-q" data-faq-q>Êtes-vous liés à un éditeur ou un cloud ?<span class="faq-icon" data-faq-icon>+</span></button>
+          <div class="faq-a" data-faq-a><p>Non, Atlas est strictement indépendant. Nous travaillons aussi bien avec les modèles propriétaires (Anthropic Claude, OpenAI, Mistral…) qu'open-weight et auto-hébergés. Le choix se fait sur vos contraintes de souveraineté, de coût et de performance — jamais sur une commission.</p></div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="140" data-faq>
+          <button class="faq-q" data-faq-q>Comment gérez-vous la conformité AI Act et le RGPD ?<span class="faq-icon" data-faq-icon>+</span></button>
+          <div class="faq-a" data-faq-a><p>La conformité est intégrée dès le cadrage, pas ajoutée à la fin. Nous classons chaque système par niveau de risque au sens de l'AI Act, documentons les modèles, encadrons les données personnelles et mettons en place la gouvernance et le monitoring nécessaires à une IA digne de confiance.</p></div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="210" data-faq>
+          <button class="faq-q" data-faq-q>En combien de temps voit-on des résultats ?<span class="faq-icon" data-faq-icon>+</span></button>
+          <div class="faq-a" data-faq-a><p>Un premier prototype évaluable en 4 à 6 semaines, un cas d'usage en production en 2 à 4 mois selon la complexité et l'accès aux données. Chaque jalon est mesurable : nous décidons d'industrialiser sur des preuves, pas sur des promesses.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta">
+    <div class="cta-glow"></div>
+    <h2 class="h2" data-reveal="up" style="position:relative;font-size:clamp(30px,4vw,56px);margin:0 auto;max-width:18ch;">Confiez le poids de l'IA à&nbsp;Atlas.</h2>
+    <p class="lead" data-reveal="up" data-delay="100" style="position:relative;margin:20px auto 0;max-width:50ch;">Parlons de votre prochaine étape — un échange de 30 minutes pour cadrer votre enjeu et identifier vos premiers cas d'usage IA.</p>
     <div data-reveal="up" data-delay="180" style="position:relative;display:flex;align-items:center;gap:18px;justify-content:center;margin-top:30px;flex-wrap:wrap;">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#aeb3c4;">contact@atlas-conseil.fr</span>
-      <button class="btn-primary" style="background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;border:none;padding:15px 30px;border-radius:999px;box-shadow:0 18px 44px -16px rgba(59,130,246,.9);">Prendre rendez-vous →</button>
+      <a class="mono" href="mailto:contact@atlas-conseil.fr" style="font-size:13.5px;color:var(--muted);">contact@atlas-conseil.fr</a>
+      <a class="btn btn-primary" href="contact.html">Prendre rendez-vous →</a>
     </div>
   </section>
 
-  <!-- MANIFESTE -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:70px 40px 30px;overflow:hidden;">
-    <div style="position:absolute;right:-120px;top:-40px;width:420px;height:420px;border:1px solid rgba(96,165,250,.16);border-radius:50%;pointer-events:none;animation:atlas-spin 60s linear infinite;"></div>
-    <div style="position:absolute;right:-40px;top:60px;width:260px;height:260px;border:1px solid rgba(96,165,250,.1);border-radius:50%;pointer-events:none;animation:atlas-spin 44s linear infinite reverse;"></div>
-    <div data-reveal="up" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent);position:relative;">Notre conviction</div>
-    <h2 data-reveal="up" data-delay="80" style="position:relative;font-size:clamp(28px,3.6vw,50px);line-height:1.16;font-weight:600;letter-spacing:-.02em;margin:18px 0 0;max-width:24ch;">La technologie n'a de valeur que lorsqu'elle sert <span style="background:linear-gradient(120deg,#bfdbfe,#3b82f6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">une décision</span>. Nous transformons la complexité des systèmes en leviers <span style="color:var(--atlas-accent);">clairs, mesurables et durables</span>.</h2>
-    <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid rgba(255,255,255,.12);">
-      <div data-reveal="up" style="padding:26px 24px 6px;border-right:1px solid rgba(255,255,255,.1);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent);">/ 01</div>
-        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Indépendance</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Aucun lien éditeur. Nos recommandations ne servent que votre intérêt.</p>
-      </div>
-      <div data-reveal="up" data-delay="90" style="padding:26px 24px 6px;border-right:1px solid rgba(255,255,255,.1);">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent);">/ 02</div>
-        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Exigence d'exécution</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Du slide à la production. Une mission Atlas se mesure à ses résultats.</p>
-      </div>
-      <div data-reveal="up" data-delay="180" style="padding:26px 24px 6px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--atlas-accent);">/ 03</div>
-        <div style="font-size:19px;font-weight:600;margin:12px 0 8px;">Transmission</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;margin:0;">Nous repartons quand vos équipes sont autonomes. L'autonomie est le livrable.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ÉTUDES DE CAS -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 20px;">
-    <div data-reveal="up" style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px;">
-      <div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent);">Études de cas</div>
-        <h2 style="font-size:clamp(28px,3.4vw,44px);font-weight:600;letter-spacing:-.025em;margin:12px 0 0;">Des résultats, pas des intentions.</h2>
-      </div>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8a90a6;">sélection 2024–2026</span>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-      <div data-reveal="up" class="case-card" style="position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);">
-        <div style="margin:-26px -24px 18px;position:relative;">
-          <div class="img-slot">Image libre de droit — banque / finance</div>
-          <div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div>
-        </div>
-        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
-          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Conseil SI</span>
-          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">AMOA</span>
-        </div>
-        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Banque &amp; Assurance</div>
-        <div style="font-size:19px;font-weight:600;line-height:1.3;">Refonte du socle core banking</div>
-        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">−38%</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">d'incidents en production après urbanisation et reprise du pilotage.</p>
-      </div>
-      <div data-reveal="up" data-delay="100" class="case-card" style="position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);">
-        <div style="margin:-26px -24px 18px;position:relative;">
-          <div class="img-slot">Image libre de droit — industrie / data</div>
-          <div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div>
-        </div>
-        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
-          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Data &amp; IA</span>
-        </div>
-        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Industrie</div>
-        <div style="font-size:19px;font-weight:600;line-height:1.3;">Plateforme data temps réel</div>
-        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#9dc1f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">×3</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#9aa0b4;margin:0;">sur la vélocité décisionnelle grâce à une gouvernance data industrialisée.</p>
-      </div>
-      <div data-reveal="up" data-delay="200" class="case-card accent" style="position:relative;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.34);border-radius:18px;padding:26px 24px;overflow:hidden;backdrop-filter:blur(10px);">
-        <div style="margin:-26px -24px 18px;position:relative;">
-          <div class="img-slot">Image libre de droit — secteur public / cyber</div>
-          <div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to top,rgba(6,8,16,.55),transparent);pointer-events:none;"></div>
-        </div>
-        <div style="display:flex;gap:7px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#9fc0f5;">
-          <span style="border:1px solid rgba(96,165,250,.4);border-radius:999px;padding:4px 9px;white-space:nowrap;">Cybersécurité</span>
-        </div>
-        <div style="font-size:11.5px;color:#8a90a6;font-family:'IBM Plex Mono',monospace;margin:18px 0 6px;">Secteur Public</div>
-        <div style="font-size:19px;font-weight:600;line-height:1.3;">Mise en conformité NIS2</div>
-        <div style="font-size:clamp(28px,3vw,40px);font-weight:600;margin:22px 0 4px;background:linear-gradient(180deg,#fff,#bcd3f5);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">8 mois</div>
-        <p style="font-size:13.5px;line-height:1.6;color:#bcd0ee;margin:0;">pour couvrir 100% des exigences, audit et gouvernance compris.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TÉMOIGNAGES -->
-  <section style="position:relative;max-width:1280px;margin:0 auto;padding:64px 40px 20px;">
-    <div data-reveal="up" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent);margin-bottom:26px;">Ils nous font confiance</div>
-    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:16px;">
-      <div data-reveal="up" style="position:relative;background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.3);border-radius:20px;padding:40px 38px;overflow:hidden;">
-        <div style="position:absolute;left:-30px;top:-50px;width:240px;height:240px;background:radial-gradient(circle,rgba(59,130,246,.28),transparent 65%);filter:blur(14px);pointer-events:none;"></div>
-        <div style="position:relative;font-size:clamp(20px,2.3vw,30px);line-height:1.4;font-weight:500;letter-spacing:-.01em;">«&nbsp;Atlas a structuré une trajectoire SI que nos équipes se sont réellement appropriée. De la vision au déploiement, sans rupture.&nbsp;»</div>
-        <div style="position:relative;display:flex;align-items:center;gap:13px;margin-top:28px;">
-          <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#1e3a8a);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;">DV</div>
-          <div><div style="font-weight:600;font-size:14px;">Directrice des SI</div><div style="font-size:12.5px;color:#9aa0b4;">Groupe industriel · 12 000 collaborateurs</div></div>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:16px;">
-        <div data-reveal="up" data-delay="90" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px 26px;backdrop-filter:blur(10px);">
-          <div style="font-size:15px;line-height:1.55;color:#d4d8e4;">«&nbsp;Un niveau d'exigence rare sur l'exécution. Les jalons sont tenus.&nbsp;»</div>
-          <div style="font-size:12.5px;color:#9aa0b4;margin-top:14px;font-family:'IBM Plex Mono',monospace;">— Responsable programme, Énergie</div>
-        </div>
-        <div data-reveal="up" data-delay="170" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px 26px;backdrop-filter:blur(10px);">
-          <div style="font-size:15px;line-height:1.55;color:#d4d8e4;">«&nbsp;Ils ont rendu notre gouvernance data enfin lisible par le métier.&nbsp;»</div>
-          <div style="font-size:12.5px;color:#9aa0b4;margin-top:14px;font-family:'IBM Plex Mono',monospace;">— COMEX, Distribution</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section style="position:relative;max-width:920px;margin:0 auto;padding:64px 40px 30px;">
-    <div data-reveal="up" style="text-align:center;margin-bottom:34px;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--atlas-accent);">Questions fréquentes</div>
-      <h2 style="font-size:clamp(26px,3.2vw,42px);font-weight:600;letter-spacing:-.025em;margin:12px 0 0;">Avant de se parler.</h2>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:12px;">
-      <div data-reveal="up" data-faq class="faq-item" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;">
-        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-size:16.5px;font-weight:500;">Intervenez-vous au forfait ou en régie ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
-        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Les deux. Nous cadrons au forfait quand le périmètre est défini et passons en régie encadrée pour les phases d'exploration ou de pilotage long. Le mode d'engagement est toujours discuté en amont.</p></div>
-      </div>
-      <div data-reveal="up" data-delay="70" data-faq class="faq-item" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;">
-        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-size:16.5px;font-weight:500;">Travaillez-vous avec nos équipes internes ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
-        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Toujours. Nous travaillons en binôme avec vos équipes, jamais en silo. La montée en compétence interne fait partie intégrante de chaque mission.</p></div>
-      </div>
-      <div data-reveal="up" data-delay="140" data-faq class="faq-item" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;">
-        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-size:16.5px;font-weight:500;">Quels secteurs accompagnez-vous ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
-        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Banque-assurance, industrie, secteur public, énergie, santé et transport. Nos méthodes sont transverses ; notre connaissance sectorielle accélère le cadrage.</p></div>
-      </div>
-      <div data-reveal="up" data-delay="210" data-faq class="faq-item" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;">
-        <button data-faq-q style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:transparent;border:none;color:#eef0f6;padding:20px 24px;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-size:16.5px;font-weight:500;">Comment démarre une mission ?<span data-faq-icon style="flex:none;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;color:var(--atlas-accent);font-size:20px;transition:transform .35s cubic-bezier(.2,.7,.2,1);">+</span></button>
-        <div data-faq-a style="max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.7,.2,1);"><p style="margin:0;padding:0 24px 20px;font-size:14.5px;line-height:1.65;color:#9aa0b4;">Par un échange de 30 minutes pour qualifier l'enjeu, suivi d'une note de cadrage gratuite. Vous décidez ensuite, sans engagement.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer style="position:relative;border-top:1px solid rgba(255,255,255,.08);margin-top:60px;overflow:hidden;">
-    <div style="position:absolute;left:50%;margin-left:-340px;bottom:-220px;width:680px;height:340px;background:radial-gradient(circle,rgba(59,130,246,.16),transparent 68%);filter:blur(20px);pointer-events:none;"></div>
-    <div style="position:relative;max-width:1280px;margin:0 auto;padding:60px 40px 30px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px;">
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="f-glow"></div>
+    <div class="footer-grid">
       <div data-reveal="up">
-        <div style="display:flex;align-items:center;gap:11px;font-weight:700;font-size:18px;"><span style="width:11px;height:11px;background:var(--atlas-accent);border-radius:50%;display:inline-block;box-shadow:0 0 14px var(--atlas-accent);"></span>Atlas</div>
-        <p style="font-size:14px;line-height:1.6;color:#9aa0b4;max-width:34ch;margin:16px 0 0;">Cabinet indépendant de conseil et d'ingénierie. Nous portons les transformations critiques des systèmes d'information.</p>
-        <a href="#" style="display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:linear-gradient(120deg,#93c5fd,#3b82f6);color:#06060c;font-weight:600;font-size:13.5px;text-decoration:none;padding:13px 22px;border-radius:999px;box-shadow:0 14px 36px -16px rgba(59,130,246,.9);">Prendre rendez-vous →</a>
+        <div class="brand" style="font-size:18px;"><span class="brand-dot"></span>Atlas</div>
+        <p class="muted" style="font-size:14px;line-height:1.6;max-width:34ch;margin:16px 0 0;">Cabinet indépendant de conseil en transformation IA. Nous portons les transformations critiques par l'intelligence artificielle, de la vision à la production.</p>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:22px;">Prendre rendez-vous →</a>
       </div>
       <div data-reveal="up" data-delay="80">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7e84a0;">Expertises</div>
-        <div style="display:flex;flex-direction:column;gap:11px;margin-top:18px;font-size:14px;color:#bcc2d2;">
-          <span>Conseil SI</span><span>AMOA</span><span>Cybersécurité</span><span>Data &amp; IA</span>
+        <div class="f-col-title">Expertises</div>
+        <div class="f-links">
+          <a href="transformation-ia.html">Transformation IA</a>
+          <a href="strategie-ia.html">Stratégie IA</a>
+          <a href="audit-ia.html">Audit IA</a>
+          <a href="automatisation-agentique.html">Automatisation & Agentique</a>
+          <a href="process-ia.html">Process IA</a>
         </div>
       </div>
-      <div data-reveal="up" data-delay="160">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7e84a0;">Contact</div>
-        <div style="display:flex;flex-direction:column;gap:11px;margin-top:18px;font-size:14px;color:#bcc2d2;">
-          <span>contact@atlas-conseil.fr</span><span>+33 1 84 80 00 00</span><span>Paris · Lyon</span>
+      <div data-reveal="up" data-delay="140">
+        <div class="f-col-title">Cabinet</div>
+        <div class="f-links">
+          <a href="#methode">Méthode</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#expertises">Expertises</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div data-reveal="up" data-delay="200">
+        <div class="f-col-title">Contact</div>
+        <div class="f-links">
+          <a href="mailto:contact@atlas-conseil.fr">contact@atlas-conseil.fr</a>
+          <a href="tel:+33184800000">+33 1 84 80 00 00</a>
+          <span>Paris · Lyon</span>
         </div>
       </div>
     </div>
-    <div style="position:relative;border-top:1px solid rgba(255,255,255,.07);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#7e84a0;font-size:12.5px;max-width:1280px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;">© 2026 Atlas · Conseil &amp; Ingénierie</div>
-      <div style="display:flex;gap:22px;font-family:'IBM Plex Mono',monospace;"><span style="cursor:pointer;">Mentions légales</span><span style="cursor:pointer;">Confidentialité</span><span style="cursor:pointer;">LinkedIn</span></div>
+    <div class="footer-bottom">
+      <div>© 2026 Atlas · Conseil en transformation IA</div>
+      <div class="fb-links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="https://www.linkedin.com/company/atlas-conseil-ia">LinkedIn</a></div>
     </div>
   </footer>
 
 </div>
-<script>
-(function () {
-  const root = document.getElementById('atlas-root');
-
-  // ── Constellation canvas ───────────────────────────────────────────────
-  function initCanvas(canvas) {
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    let w = 0, h = 0;
-    const dpr = Math.min(2, window.devicePixelRatio || 1);
-    const pts = [];
-
-    function resize() {
-      const r = canvas.getBoundingClientRect();
-      w = r.width; h = r.height;
-      if (!w || !h) return;
-      canvas.width = w * dpr; canvas.height = h * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    }
-    resize();
-    const N = Math.max(34, Math.min(76, Math.floor(w / 20)));
-    for (let i = 0; i < N; i++) {
-      pts.push({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .22, vy: (Math.random() - .5) * .22 });
-    }
-    new ResizeObserver(resize).observe(canvas);
-
-    function draw() {
-      ctx.clearRect(0, 0, w, h);
-      for (const p of pts) {
-        p.x += p.vx; p.y += p.vy;
-        if (p.x < 0 || p.x > w) p.vx *= -1;
-        if (p.y < 0 || p.y > h) p.vy *= -1;
-      }
-      for (let i = 0; i < pts.length; i++) {
-        for (let j = i + 1; j < pts.length; j++) {
-          const a = pts[i], b = pts[j];
-          const dist = Math.hypot(a.x - b.x, a.y - b.y);
-          if (dist < 120) {
-            ctx.strokeStyle = 'rgba(59,130,246,' + (0.18 * (1 - dist / 120)) + ')';
-            ctx.lineWidth = 1;
-            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-          }
-        }
-      }
-      for (const p of pts) {
-        ctx.fillStyle = 'rgba(147,197,253,.7)';
-        ctx.beginPath(); ctx.arc(p.x, p.y, 1.4, 0, Math.PI * 2); ctx.fill();
-      }
-      requestAnimationFrame(draw);
-    }
-    draw();
-  }
-
-  root.querySelectorAll('[data-constellation]').forEach(initCanvas);
-
-  // ── Cursor glow ────────────────────────────────────────────────────────
-  root.querySelectorAll('[data-glowzone]').forEach(zone => {
-    const glow = zone.querySelector('[data-glow]');
-    if (!glow) return;
-    zone.addEventListener('mousemove', e => {
-      const r = zone.getBoundingClientRect();
-      glow.style.left = (e.clientX - r.left) + 'px';
-      glow.style.top  = (e.clientY - r.top)  + 'px';
-      glow.style.opacity = '1';
-    });
-    zone.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
-  });
-
-  // ── Scroll reveals ─────────────────────────────────────────────────────
-  const revealItems = [...root.querySelectorAll('[data-reveal]')];
-  revealItems.forEach(el => el.classList.add('r-hidden'));
-
-  const revealIO = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target;
-      const delay = parseFloat(el.getAttribute('data-delay') || '0');
-      setTimeout(() => { el.classList.remove('r-hidden'); el.classList.add('r-visible'); }, delay);
-      revealIO.unobserve(el);
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
-
-  // Reveal what's already visible on load
-  requestAnimationFrame(() => {
-    const vh = window.innerHeight;
-    revealItems.forEach(el => {
-      const r = el.getBoundingClientRect();
-      if (r.top < vh * 0.98 && r.bottom > 0) {
-        el.classList.remove('r-hidden'); el.classList.add('r-visible');
-      } else {
-        revealIO.observe(el);
-      }
-    });
-  });
-
-  // ── Animated counters ──────────────────────────────────────────────────
-  const counterIO = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      animateCount(e.target);
-      counterIO.unobserve(e.target);
-    });
-  }, { threshold: 0.6 });
-
-  root.querySelectorAll('[data-count]').forEach(el => counterIO.observe(el));
-
-  function animateCount(el) {
-    const target = parseFloat(el.getAttribute('data-count')) || 0;
-    const dur = 1500; const start = performance.now();
-    function step(now) {
-      const t = Math.min(1, (now - start) / dur);
-      const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = Math.round(target * eased).toString();
-      if (t < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-
-  // ── Parallax + solar spin ──────────────────────────────────────────────
-  const parallaxEls = [...root.querySelectorAll('[data-parallax]')].map(el => ({ el, s: parseFloat(el.getAttribute('data-parallax')) }));
-  const spinEls     = [...root.querySelectorAll('[data-scrollspin]')].map(el => ({ el, s: parseFloat(el.getAttribute('data-scrollspin')) }));
-
-  let ticking = false;
-  function scrolled() { const r = root.getBoundingClientRect(); return Math.max(0, -r.top); }
-  function updateParallax() {
-    const y = scrolled();
-    parallaxEls.forEach(o => { o.el.style.transform = 'translate3d(0,' + (y * o.s).toFixed(1) + 'px,0)'; });
-    spinEls.forEach(o => {
-      const sc = (1 + Math.min(y, 1400) * 0.00018).toFixed(4);
-      o.el.style.transform = 'rotate(' + (y * o.s).toFixed(2) + 'deg) scale(' + sc + ')';
-    });
-    ticking = false;
-  }
-  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); } }, { passive: true, capture: true });
-  updateParallax();
-
-  // ── FAQ accordion ──────────────────────────────────────────────────────
-  const faqItems = [...root.querySelectorAll('[data-faq]')];
-  faqItems.forEach(item => {
-    const q    = item.querySelector('[data-faq-q]');
-    const a    = item.querySelector('[data-faq-a]');
-    const icon = item.querySelector('[data-faq-icon]');
-    if (!q || !a) return;
-    q.addEventListener('click', () => {
-      const open = item._open === true;
-      // close all
-      faqItems.forEach(o => {
-        if (o._open) {
-          o.querySelector('[data-faq-a]').style.maxHeight = '0px';
-          const i = o.querySelector('[data-faq-icon]'); if (i) i.style.transform = 'rotate(0deg)';
-          o.style.borderColor = 'rgba(255,255,255,.1)';
-          o.style.background  = 'rgba(255,255,255,.035)';
-          o._open = false;
-        }
-      });
-      if (!open) {
-        a.style.maxHeight = a.scrollHeight + 'px';
-        if (icon) icon.style.transform = 'rotate(45deg)';
-        item.style.borderColor = 'rgba(59,130,246,.5)';
-        item.style.background  = 'rgba(59,130,246,.06)';
-        item._open = true;
-      }
-    });
-  });
-})();
-</script>
+<script src="assets/atlas.js" defer></script>
 </body>
 </html>
