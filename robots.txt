@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.atlas-conseil.fr/sitemap.xml
+Sitemap: https://atlasconseil.netlify.app/sitemap.xml
