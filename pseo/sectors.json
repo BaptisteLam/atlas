@@ -1,0 +1,574 @@
+[
+  {
+    "slug": "banque",
+    "title": "Banque",
+    "name": "la banque",
+    "angle": "Les banques font face à une pression réglementaire intense (LCB-FT, Bâle, DORA) et à la concurrence des néobanques, tout en disposant de gisements de données transactionnelles considérables encore sous-exploités.",
+    "bullets": [
+      "Détection de fraude et lutte anti-blanchiment en temps réel",
+      "Scoring de crédit et évaluation du risque assistés par IA",
+      "Automatisation du KYC et de l'entrée en relation client",
+      "Assistants conversationnels pour les conseillers et le service client"
+    ],
+    "stat": "Jusqu'à 40% de temps gagné sur l'analyse documentaire réglementaire et l'instruction des dossiers de crédit."
+  },
+  {
+    "slug": "assurance",
+    "title": "Assurance",
+    "name": "l'assurance",
+    "angle": "L'assurance combine des processus de souscription et d'indemnisation lourds en pièces justificatives avec un besoin croissant de tarification fine, dans un cadre prudentiel (Solvabilité II) et de protection des données exigeant.",
+    "bullets": [
+      "Automatisation de la gestion des sinistres et de l'expertise à distance",
+      "Tarification et segmentation actuarielle assistées par IA",
+      "Détection des fraudes à la déclaration et aux remboursements",
+      "Extraction de données depuis contrats et constats amiables"
+    ],
+    "stat": "Réduction de 30 à 50% du délai de traitement d'un sinistre simple grâce à l'automatisation documentaire."
+  },
+  {
+    "slug": "mutuelle-prevoyance",
+    "title": "Mutuelle & prévoyance",
+    "name": "le secteur de la mutuelle et de la prévoyance",
+    "angle": "Mutuelles et institutions de prévoyance gèrent des volumes massifs de demandes de remboursement santé et de dossiers prévoyance, sous forte contrainte de marge et de conformité aux règles de gestion des données de santé.",
+    "bullets": [
+      "Automatisation du tiers payant et du traitement des feuilles de soins",
+      "Analyse des parcours de soins pour piloter le risque santé",
+      "Assistance aux adhérents sur les garanties et remboursements",
+      "Détection des anomalies et abus de consommation médicale"
+    ],
+    "stat": "Jusqu'à 60% des demandes de remboursement de routine traitées sans intervention humaine."
+  },
+  {
+    "slug": "gestion-actifs",
+    "title": "Gestion d'actifs",
+    "name": "la gestion d'actifs",
+    "angle": "Les sociétés de gestion doivent générer de l'alpha dans des marchés efficients tout en absorbant une charge croissante de reporting réglementaire (SFDR, MIF II) et d'analyse ESG sur des données non structurées.",
+    "bullets": [
+      "Analyse de données alternatives et signaux de marché",
+      "Automatisation du reporting réglementaire et investisseur",
+      "Notation ESG et analyse de documents extra-financiers",
+      "Synthèse de recherche financière et de comptes rendus d'analystes"
+    ],
+    "stat": "Jusqu'à 70% de temps gagné sur la production des reportings périodiques et le screening ESG."
+  },
+  {
+    "slug": "fintech",
+    "title": "Fintech",
+    "name": "le secteur de la fintech",
+    "angle": "Les fintechs doivent industrialiser des parcours 100% digitaux et passer à l'échelle rapidement, avec des équipes réduites, tout en respectant les exigences d'agrément et de lutte contre la fraude des acteurs régulés.",
+    "bullets": [
+      "Onboarding instantané et vérification d'identité automatisée",
+      "Moteurs de scoring et de décision de crédit en temps réel",
+      "Support client multicanal piloté par IA générative",
+      "Surveillance des transactions et conformité automatisée"
+    ],
+    "stat": "Diminution de 50% du coût d'acquisition par client grâce à l'automatisation de l'onboarding et du support."
+  },
+  {
+    "slug": "sante-hopital",
+    "title": "Santé & hôpital",
+    "name": "le secteur de la santé et de l'hôpital",
+    "angle": "Les établissements de santé conjuguent pénurie de personnel soignant, masse de données patients sensibles (RGPD, HDS) et besoin d'optimiser des parcours de soins coûteux, sans jamais compromettre la sécurité du patient.",
+    "bullets": [
+      "Aide au diagnostic et analyse d'imagerie médicale",
+      "Transcription automatique des comptes rendus médicaux",
+      "Optimisation de la programmation des blocs et des lits",
+      "Codage automatisé des actes pour la facturation T2A"
+    ],
+    "stat": "Jusqu'à 2 heures par jour rendues aux médecins grâce à la transcription et au codage automatisés."
+  },
+  {
+    "slug": "pharmacie-biotech",
+    "title": "Pharmacie & biotech",
+    "name": "le secteur de la pharmacie et de la biotech",
+    "angle": "L'industrie pharmaceutique et biotech cherche à raccourcir des cycles de R&D longs et coûteux et à fluidifier les soumissions réglementaires, dans un environnement de validation (GxP) et de pharmacovigilance très strict.",
+    "bullets": [
+      "Accélération de la découverte de molécules par modélisation",
+      "Analyse de la littérature scientifique et veille brevets",
+      "Automatisation des dossiers d'AMM et soumissions réglementaires",
+      "Détection de signaux en pharmacovigilance"
+    ],
+    "stat": "Réduction de plusieurs mois sur la phase de criblage préclinique et la constitution des dossiers réglementaires."
+  },
+  {
+    "slug": "medico-social",
+    "title": "Médico-social",
+    "name": "le secteur médico-social",
+    "angle": "Le secteur médico-social (EHPAD, handicap, aide à domicile) fait face à une tension extrême sur les ressources humaines et à une charge administrative lourde, qui détourne les professionnels du temps passé auprès des personnes accompagnées.",
+    "bullets": [
+      "Automatisation des transmissions et du dossier de l'usager",
+      "Optimisation des plannings d'intervention à domicile",
+      "Détection précoce des situations de fragilité",
+      "Assistance à la rédaction des projets personnalisés"
+    ],
+    "stat": "Jusqu'à 30% de charge administrative en moins pour les soignants et accompagnants."
+  },
+  {
+    "slug": "industrie-manufacturiere",
+    "title": "Industrie manufacturière",
+    "name": "l'industrie manufacturière",
+    "angle": "L'industrie manufacturière doit accroître sa compétitivité face à la concurrence internationale en réduisant les arrêts de production et les rebuts, en exploitant les données de ses lignes et de ses capteurs encore largement silotées.",
+    "bullets": [
+      "Maintenance prédictive des équipements de production",
+      "Contrôle qualité par vision industrielle",
+      "Optimisation des plans de production et de la supply chain",
+      "Assistance technique aux opérateurs sur le terrain"
+    ],
+    "stat": "Jusqu'à 25% de réduction des arrêts non planifiés grâce à la maintenance prédictive."
+  },
+  {
+    "slug": "automobile",
+    "title": "Automobile",
+    "name": "le secteur automobile",
+    "angle": "La filière automobile traverse une transition profonde (électrification, logiciel embarqué, ADAS) qui démultiplie les volumes de données véhicule, tout en imposant des exigences strictes de sécurité fonctionnelle et de traçabilité.",
+    "bullets": [
+      "Validation des systèmes d'aide à la conduite par simulation",
+      "Optimisation de la qualité et du rappel en usine",
+      "Diagnostic embarqué et maintenance prédictive véhicule",
+      "Personnalisation de l'expérience à bord et des services connectés"
+    ],
+    "stat": "Jusqu'à 30% de cycles d'essais routiers économisés grâce à la validation par simulation."
+  },
+  {
+    "slug": "aeronautique-defense",
+    "title": "Aéronautique & défense",
+    "name": "le secteur de l'aéronautique et de la défense",
+    "angle": "L'aéronautique et la défense évoluent dans un univers de certification exigeant et de souveraineté des données, où la fiabilité des appareils et la maîtrise de chaînes d'approvisionnement complexes sont critiques.",
+    "bullets": [
+      "Maintenance prédictive des moteurs et cellules d'aéronefs",
+      "Analyse documentaire et conformité aux normes de certification",
+      "Optimisation de la chaîne d'approvisionnement de pièces critiques",
+      "Inspection automatisée et contrôle non destructif"
+    ],
+    "stat": "Jusqu'à 20% de disponibilité opérationnelle gagnée sur les flottes grâce à la maintenance prédictive."
+  },
+  {
+    "slug": "energie-utilities",
+    "title": "Énergie & utilities",
+    "name": "le secteur de l'énergie et des utilities",
+    "angle": "Les énergéticiens et utilities doivent intégrer une production renouvelable intermittente, piloter des réseaux complexes et répondre aux exigences de transition énergétique, en exploitant les données massives des compteurs communicants.",
+    "bullets": [
+      "Prévision de la production et de la consommation énergétique",
+      "Optimisation et équilibrage des réseaux intelligents",
+      "Maintenance prédictive des infrastructures de distribution",
+      "Détection des pertes non techniques et de la fraude au compteur"
+    ],
+    "stat": "Jusqu'à 15% d'amélioration de la précision des prévisions de charge sur les réseaux."
+  },
+  {
+    "slug": "petrole-gaz",
+    "title": "Pétrole & gaz",
+    "name": "le secteur du pétrole et du gaz",
+    "angle": "L'industrie pétrolière et gazière opère des actifs lourds dans des environnements à hauts risques, où l'optimisation de la production, la sécurité des sites et la réduction de l'empreinte carbone sont des enjeux majeurs.",
+    "bullets": [
+      "Optimisation de la production sur champs et puits",
+      "Maintenance prédictive des installations et pipelines",
+      "Surveillance HSE et détection d'anomalies par capteurs",
+      "Interprétation des données sismiques et géologiques"
+    ],
+    "stat": "Jusqu'à 20% de réduction des coûts de maintenance sur les actifs critiques de production."
+  },
+  {
+    "slug": "btp-construction",
+    "title": "BTP & construction",
+    "name": "le secteur du BTP et de la construction",
+    "angle": "Le BTP cumule faible productivité historique, marges serrées et dérives fréquentes de coûts et de délais, alors que la donnée des chantiers et des maquettes BIM reste peu exploitée pour le pilotage.",
+    "bullets": [
+      "Estimation et chiffrage automatisés à partir des plans et du BIM",
+      "Suivi de chantier et détection des écarts par imagerie",
+      "Prévention des risques et sécurité sur site",
+      "Optimisation de la planification et des approvisionnements"
+    ],
+    "stat": "Jusqu'à 30% de temps gagné sur le chiffrage des appels d'offres et les métrés."
+  },
+  {
+    "slug": "immobilier",
+    "title": "Immobilier",
+    "name": "le secteur de l'immobilier",
+    "angle": "L'immobilier dispose de gisements de données transactionnelles et documentaires importants, mais reste freiné par des processus manuels d'estimation, de gestion locative et de due diligence, dans un marché sensible aux taux.",
+    "bullets": [
+      "Estimation automatisée de la valeur des biens",
+      "Analyse des baux et automatisation de la gestion locative",
+      "Qualification et matching des prospects acquéreurs",
+      "Due diligence documentaire sur les actifs immobiliers"
+    ],
+    "stat": "Jusqu'à 50% de temps gagné sur l'analyse des baux et la due diligence d'un portefeuille."
+  },
+  {
+    "slug": "distribution-retail",
+    "title": "Distribution & retail",
+    "name": "le secteur de la distribution et du retail",
+    "angle": "La distribution affronte une guerre des prix et l'omnicanalité, avec des marges faibles qui imposent d'optimiser finement les stocks, les assortiments et l'expérience client à partir des données de caisse et de fidélité.",
+    "bullets": [
+      "Prévision de la demande et optimisation des réassorts",
+      "Personnalisation des offres et de la relation client",
+      "Optimisation des prix et de la promotion en temps réel",
+      "Réduction de la démarque et analyse des flux en magasin"
+    ],
+    "stat": "Jusqu'à 20% de réduction des ruptures de stock grâce à une prévision affinée de la demande."
+  },
+  {
+    "slug": "e-commerce",
+    "title": "E-commerce",
+    "name": "le secteur de l'e-commerce",
+    "angle": "Les acteurs de l'e-commerce évoluent dans un environnement ultra-concurrentiel où le taux de conversion, la qualité du contenu produit et la maîtrise des coûts logistiques font la différence, avec une donnée comportementale abondante.",
+    "bullets": [
+      "Génération et enrichissement automatisés des fiches produits",
+      "Moteurs de recommandation et personnalisation du parcours",
+      "Recherche sémantique et assistants d'achat conversationnels",
+      "Optimisation des retours et de la logistique du dernier kilomètre"
+    ],
+    "stat": "Jusqu'à 90% de temps gagné sur la production des descriptions produits à grande échelle."
+  },
+  {
+    "slug": "luxe",
+    "title": "Luxe",
+    "name": "le secteur du luxe",
+    "angle": "Les maisons de luxe doivent préserver l'exclusivité et l'excellence de leur expérience client tout en luttant contre la contrefaçon et en exploitant la donnée clienteling, sans jamais diluer la valeur de leur image de marque.",
+    "bullets": [
+      "Clienteling augmenté et personnalisation haut de gamme",
+      "Authentification des produits et lutte anti-contrefaçon",
+      "Analyse des tendances et veille créative",
+      "Optimisation de la rareté et de l'allocation des stocks"
+    ],
+    "stat": "Jusqu'à 25% d'augmentation du taux de réachat grâce à un clienteling personnalisé."
+  },
+  {
+    "slug": "agroalimentaire",
+    "title": "Agroalimentaire",
+    "name": "le secteur agroalimentaire",
+    "angle": "L'agroalimentaire doit garantir une sécurité sanitaire et une traçabilité sans faille tout en optimisant des process industriels et en réduisant le gaspillage, sous la pression des distributeurs et d'une réglementation exigeante.",
+    "bullets": [
+      "Contrôle qualité et détection de corps étrangers par vision",
+      "Optimisation des recettes et de la durée de conservation",
+      "Traçabilité et conformité sanitaire automatisées",
+      "Prévision de la demande et réduction du gaspillage"
+    ],
+    "stat": "Jusqu'à 30% de réduction des pertes matières grâce à l'optimisation des process et des prévisions."
+  },
+  {
+    "slug": "agriculture",
+    "title": "Agriculture",
+    "name": "le secteur de l'agriculture",
+    "angle": "L'agriculture conjugue aléas climatiques croissants, exigences environnementales et besoin de productivité, avec une donnée de plus en plus riche issue des capteurs, drones et imagerie satellite encore peu valorisée.",
+    "bullets": [
+      "Agriculture de précision et modulation des intrants",
+      "Détection des maladies et ravageurs par imagerie",
+      "Prévision des rendements et aide à la décision culturale",
+      "Optimisation de l'irrigation et gestion de la ressource en eau"
+    ],
+    "stat": "Jusqu'à 20% de réduction des intrants phytosanitaires grâce à la modulation de précision."
+  },
+  {
+    "slug": "chimie",
+    "title": "Chimie",
+    "name": "le secteur de la chimie",
+    "angle": "L'industrie chimique pilote des procédés continus complexes et énergivores sous fortes contraintes de sécurité (Seveso) et environnementales, avec un enjeu majeur d'optimisation des rendements et de réduction des consommations.",
+    "bullets": [
+      "Optimisation des procédés et des rendements de réaction",
+      "Maintenance prédictive des installations de production",
+      "Modélisation et formulation de nouveaux matériaux",
+      "Surveillance de la sécurité des procédés et détection d'anomalies"
+    ],
+    "stat": "Jusqu'à 10% d'économie d'énergie sur les unités de production grâce à l'optimisation des procédés."
+  },
+  {
+    "slug": "cosmetique",
+    "title": "Cosmétique",
+    "name": "le secteur de la cosmétique",
+    "angle": "La cosmétique doit accélérer l'innovation produit et la personnalisation tout en garantissant la conformité réglementaire (INCI, dossiers cosmétovigilance) et en répondant à une demande croissante de naturalité et de transparence.",
+    "bullets": [
+      "Formulation assistée et accélération de l'innovation produit",
+      "Diagnostic de peau et recommandation personnalisée",
+      "Conformité réglementaire et gestion des dossiers d'ingrédients",
+      "Analyse des tendances beauté et veille consommateur"
+    ],
+    "stat": "Jusqu'à 40% de temps gagné sur les cycles de formulation et de mise en conformité produit."
+  },
+  {
+    "slug": "mode-textile",
+    "title": "Mode & textile",
+    "name": "le secteur de la mode et du textile",
+    "angle": "La mode et le textile sont confrontés à des cycles courts, à une forte volatilité des tendances et à une pression sur la surproduction, alors que la maîtrise de la demande et de la chaîne d'approvisionnement reste un défi.",
+    "bullets": [
+      "Prévision des tendances et planification des collections",
+      "Optimisation des stocks et démarques par anticipation",
+      "Génération de visuels et de contenus de catalogue",
+      "Recommandation de taille et réduction des retours"
+    ],
+    "stat": "Jusqu'à 25% de réduction des invendus grâce à une planification pilotée par la demande."
+  },
+  {
+    "slug": "transport-logistique",
+    "title": "Transport & logistique",
+    "name": "le secteur du transport et de la logistique",
+    "angle": "Le transport et la logistique évoluent sous forte pression sur les coûts et les délais, avec des réseaux complexes où l'optimisation des tournées, des entrepôts et la visibilité de bout en bout sont déterminantes.",
+    "bullets": [
+      "Optimisation des tournées et planification du transport",
+      "Prévision de la demande et dimensionnement des capacités",
+      "Automatisation des entrepôts et de la gestion des stocks",
+      "Visibilité temps réel et anticipation des retards"
+    ],
+    "stat": "Jusqu'à 15% de réduction des kilomètres parcourus grâce à l'optimisation des tournées."
+  },
+  {
+    "slug": "ferroviaire",
+    "title": "Ferroviaire",
+    "name": "le secteur ferroviaire",
+    "angle": "Le ferroviaire exploite des infrastructures et des matériels lourds soumis à de fortes exigences de sécurité et de régularité, où l'indisponibilité du réseau et des rames a un impact direct sur la qualité de service.",
+    "bullets": [
+      "Maintenance prédictive du matériel roulant et des voies",
+      "Optimisation des plans de transport et de la régularité",
+      "Inspection automatisée des infrastructures par imagerie",
+      "Information voyageurs et gestion des situations perturbées"
+    ],
+    "stat": "Jusqu'à 20% de réduction des incidents liés à l'infrastructure grâce à la maintenance prédictive."
+  },
+  {
+    "slug": "transport-aerien",
+    "title": "Transport aérien",
+    "name": "le secteur du transport aérien",
+    "angle": "Les compagnies aériennes et aéroports gèrent des opérations à très faible marge et à forte intensité capitalistique, où l'optimisation du revenu, la ponctualité et la maintenance des appareils conditionnent la rentabilité.",
+    "bullets": [
+      "Revenue management et tarification dynamique",
+      "Optimisation des rotations et de la gestion des aléas",
+      "Maintenance prédictive des appareils",
+      "Personnalisation de l'expérience passager et services au sol"
+    ],
+    "stat": "Jusqu'à 5% d'amélioration du revenu par siège grâce à une tarification dynamique optimisée."
+  },
+  {
+    "slug": "telecoms",
+    "title": "Télécoms",
+    "name": "le secteur des télécoms",
+    "angle": "Les opérateurs télécoms gèrent des réseaux massifs et capitalistiques dans un marché saturé où la réduction du churn, l'optimisation du réseau et l'efficacité du service client sont des leviers de rentabilité essentiels.",
+    "bullets": [
+      "Optimisation et supervision intelligente des réseaux",
+      "Prédiction et réduction du churn client",
+      "Automatisation du service client et du support technique",
+      "Détection des fraudes et sécurisation des usages"
+    ],
+    "stat": "Jusqu'à 15% de réduction du churn grâce à la détection précoce des clients à risque."
+  },
+  {
+    "slug": "medias-presse",
+    "title": "Médias & presse",
+    "name": "le secteur des médias et de la presse",
+    "angle": "Les médias et la presse doivent défendre leur modèle économique face à la baisse des revenus publicitaires et à la concurrence des plateformes, tout en accélérant la production éditoriale et en garantissant la fiabilité de l'information.",
+    "bullets": [
+      "Aide à la production éditoriale et au format multicanal",
+      "Recommandation de contenus et personnalisation de l'audience",
+      "Vérification des faits et lutte contre la désinformation",
+      "Optimisation de l'abonnement et de la conversion lecteurs"
+    ],
+    "stat": "Jusqu'à 30% de productivité gagnée sur la déclinaison des contenus en formats multiples."
+  },
+  {
+    "slug": "edition",
+    "title": "Édition",
+    "name": "le secteur de l'édition",
+    "angle": "L'édition cherche à fluidifier des chaînes de production longues (manuscrit, relecture, mise en page, traduction) et à mieux exploiter ses catalogues, dans un contexte de transformation numérique et de tension sur les marges.",
+    "bullets": [
+      "Aide à la correction, relecture et préparation de copie",
+      "Traduction et adaptation multilingue assistées",
+      "Valorisation et recommandation du fonds éditorial",
+      "Génération de métadonnées et résumés de catalogue"
+    ],
+    "stat": "Jusqu'à 50% de temps gagné sur les étapes de relecture et de préparation des ouvrages."
+  },
+  {
+    "slug": "jeux-video-divertissement",
+    "title": "Jeux vidéo & divertissement",
+    "name": "le secteur des jeux vidéo et du divertissement",
+    "angle": "Le jeu vidéo et le divertissement font face à des coûts de production en forte hausse et à une exigence d'engagement permanent des joueurs, où la génération de contenu et la modération des communautés deviennent stratégiques.",
+    "bullets": [
+      "Génération assistée d'assets, de niveaux et de contenus",
+      "Personnalisation de l'expérience et équilibrage du gameplay",
+      "Modération automatisée des communautés en ligne",
+      "Analyse du comportement joueur et réduction du churn"
+    ],
+    "stat": "Jusqu'à 40% de temps gagné sur la production des assets et des contenus de jeu."
+  },
+  {
+    "slug": "secteur-public-administration",
+    "title": "Secteur public & administration",
+    "name": "le secteur public et l'administration",
+    "angle": "Les administrations doivent améliorer la qualité du service aux usagers à moyens contraints, dans un cadre exigeant de souveraineté, de transparence et de protection des données, sur des volumes documentaires considérables.",
+    "bullets": [
+      "Automatisation de l'instruction des dossiers et démarches",
+      "Assistants pour l'orientation et la relation usager",
+      "Recherche et synthèse dans les corpus réglementaires",
+      "Détection des fraudes et fiabilisation des données"
+    ],
+    "stat": "Jusqu'à 50% de réduction des délais d'instruction des demandes administratives courantes."
+  },
+  {
+    "slug": "collectivites-territoriales",
+    "title": "Collectivités territoriales",
+    "name": "le secteur des collectivités territoriales",
+    "angle": "Les collectivités territoriales doivent optimiser des services publics locaux (voirie, déchets, énergie) sous contrainte budgétaire forte, tout en répondant aux attentes des citoyens et aux objectifs de transition écologique.",
+    "bullets": [
+      "Optimisation de la gestion des déchets et de la voirie",
+      "Pilotage énergétique du patrimoine bâti public",
+      "Relation citoyen et traitement des signalements",
+      "Aide à la décision et analyse des données du territoire"
+    ],
+    "stat": "Jusqu'à 20% d'économies sur les tournées de collecte grâce à l'optimisation des circuits."
+  },
+  {
+    "slug": "defense-securite",
+    "title": "Défense & sécurité",
+    "name": "le secteur de la défense et de la sécurité",
+    "angle": "La défense et la sécurité exigent une souveraineté technologique absolue et une maîtrise stricte des données sensibles, où la rapidité d'analyse du renseignement et la protection des systèmes sont des enjeux critiques.",
+    "bullets": [
+      "Analyse et fusion de renseignement multi-sources",
+      "Détection des cybermenaces et sécurisation des systèmes",
+      "Traitement et exploitation de l'imagerie de surveillance",
+      "Aide à la décision et soutien opérationnel"
+    ],
+    "stat": "Jusqu'à 60% de temps gagné sur l'analyse et le recoupement de sources de renseignement."
+  },
+  {
+    "slug": "education-enseignement-superieur",
+    "title": "Éducation & enseignement supérieur",
+    "name": "le secteur de l'éducation et de l'enseignement supérieur",
+    "angle": "L'éducation et l'enseignement supérieur cherchent à personnaliser les apprentissages et à alléger la charge administrative des enseignants, tout en encadrant un usage responsable de l'IA et en préservant l'intégrité académique.",
+    "bullets": [
+      "Personnalisation des parcours et du soutien aux apprenants",
+      "Génération de contenus pédagogiques et d'évaluations",
+      "Assistance administrative et orientation des étudiants",
+      "Détection du décrochage et accompagnement ciblé"
+    ],
+    "stat": "Jusqu'à 30% de temps gagné par les enseignants sur la préparation et la correction."
+  },
+  {
+    "slug": "recherche",
+    "title": "Recherche",
+    "name": "le secteur de la recherche",
+    "angle": "Les organismes de recherche font face à une explosion du volume de publications et de données expérimentales, où l'accélération de la revue de littérature et de l'analyse des données conditionne la productivité scientifique.",
+    "bullets": [
+      "Revue de littérature et synthèse de l'état de l'art",
+      "Analyse de données expérimentales massives",
+      "Aide à la rédaction d'articles et de demandes de financement",
+      "Modélisation et accélération de l'expérimentation"
+    ],
+    "stat": "Jusqu'à 70% de temps gagné sur la revue systématique de littérature scientifique."
+  },
+  {
+    "slug": "services-juridiques",
+    "title": "Services juridiques",
+    "name": "le secteur des services juridiques",
+    "angle": "Les directions juridiques et cabinets d'avocats traitent des volumes documentaires considérables sous forte exigence de confidentialité, où l'analyse contractuelle et la recherche jurisprudentielle sont chronophages et à fort enjeu.",
+    "bullets": [
+      "Analyse et revue de contrats à grande échelle",
+      "Recherche juridique et synthèse de jurisprudence",
+      "Automatisation de la rédaction d'actes et de clauses",
+      "Due diligence et revue documentaire en M&A"
+    ],
+    "stat": "Jusqu'à 80% de temps gagné sur la revue de contrats lors d'une due diligence."
+  },
+  {
+    "slug": "conseil-audit",
+    "title": "Conseil & audit",
+    "name": "le secteur du conseil et de l'audit",
+    "angle": "Les cabinets de conseil et d'audit doivent gagner en productivité sur la collecte et l'analyse d'informations et la production de livrables, tout en garantissant la qualité, la traçabilité et la confidentialité des données clients.",
+    "bullets": [
+      "Synthèse et analyse documentaire pour les missions",
+      "Production assistée de livrables et de présentations",
+      "Analyse des données et tests d'audit automatisés",
+      "Recherche de marché et benchmark accélérés"
+    ],
+    "stat": "Jusqu'à 40% de temps gagné sur la recherche et la production des livrables de mission."
+  },
+  {
+    "slug": "expertise-comptable",
+    "title": "Expertise comptable",
+    "name": "le secteur de l'expertise comptable",
+    "angle": "Les cabinets d'expertise comptable subissent une pression sur les honoraires et une pénurie de talents, alors que la saisie et le contrôle des pièces comptables restent très chronophages malgré la dématérialisation.",
+    "bullets": [
+      "Automatisation de la saisie et du rapprochement comptable",
+      "Contrôle de cohérence et détection des anomalies",
+      "Production assistée des liasses et déclarations fiscales",
+      "Conseil augmenté et analyse de la performance client"
+    ],
+    "stat": "Jusqu'à 70% de temps gagné sur la saisie et le contrôle des pièces comptables."
+  },
+  {
+    "slug": "ressources-humaines-recrutement",
+    "title": "Ressources humaines & recrutement",
+    "name": "le secteur des ressources humaines et du recrutement",
+    "angle": "Les fonctions RH et le recrutement doivent traiter de gros volumes de candidatures et de demandes collaborateurs, tout en garantissant l'équité des décisions et la conformité (RGPD, non-discrimination) des outils utilisés.",
+    "bullets": [
+      "Présélection et matching des candidatures aux postes",
+      "Assistants RH pour les questions des collaborateurs",
+      "Analyse des compétences et plans de mobilité interne",
+      "Rédaction d'offres et de comptes rendus d'entretien"
+    ],
+    "stat": "Jusqu'à 50% de temps gagné sur le tri des candidatures et la présélection."
+  },
+  {
+    "slug": "tourisme-hotellerie",
+    "title": "Tourisme & hôtellerie",
+    "name": "le secteur du tourisme et de l'hôtellerie",
+    "angle": "Le tourisme et l'hôtellerie évoluent dans un marché saisonnier et très concurrentiel où l'optimisation du taux d'occupation, la personnalisation du séjour et la qualité du service client font la différence.",
+    "bullets": [
+      "Tarification dynamique et optimisation du taux d'occupation",
+      "Personnalisation des séjours et des offres",
+      "Conciergerie et service client conversationnel multilingue",
+      "Analyse des avis clients et de la e-réputation"
+    ],
+    "stat": "Jusqu'à 10% d'augmentation du revenu par chambre disponible grâce au yield management."
+  },
+  {
+    "slug": "restauration",
+    "title": "Restauration",
+    "name": "le secteur de la restauration",
+    "angle": "La restauration affronte des marges réduites, une forte tension sur le recrutement et un gaspillage alimentaire structurel, où l'optimisation des achats, des stocks et de la prévision d'affluence est décisive.",
+    "bullets": [
+      "Prévision de l'affluence et optimisation des achats",
+      "Réduction du gaspillage et gestion des stocks",
+      "Optimisation des menus et de l'ingénierie des prix",
+      "Prise de commande et service client automatisés"
+    ],
+    "stat": "Jusqu'à 25% de réduction du gaspillage alimentaire grâce à une prévision d'affluence affinée."
+  },
+  {
+    "slug": "sport",
+    "title": "Sport",
+    "name": "le secteur du sport",
+    "angle": "Le secteur du sport exploite une donnée de performance et d'audience de plus en plus riche, où l'optimisation de la préparation des athlètes, la prévention des blessures et l'engagement des fans sont devenus des enjeux clés.",
+    "bullets": [
+      "Analyse de la performance et de la donnée de match",
+      "Prévention des blessures et suivi de la charge",
+      "Engagement des fans et personnalisation des contenus",
+      "Détection et recrutement de talents assistés par IA"
+    ],
+    "stat": "Jusqu'à 30% de réduction des blessures grâce au pilotage de la charge d'entraînement."
+  },
+  {
+    "slug": "culture",
+    "title": "Culture",
+    "name": "le secteur de la culture",
+    "angle": "Les institutions culturelles (musées, spectacle vivant, patrimoine) cherchent à élargir et fidéliser leurs publics à moyens limités, tout en valorisant et préservant des collections et des archives souvent peu numérisées.",
+    "bullets": [
+      "Médiation culturelle et parcours de visite personnalisés",
+      "Numérisation, indexation et valorisation des collections",
+      "Connaissance des publics et optimisation de la billetterie",
+      "Restauration et analyse assistées des oeuvres et archives"
+    ],
+    "stat": "Jusqu'à 60% de temps gagné sur l'indexation et la documentation des collections."
+  },
+  {
+    "slug": "esn-services-informatiques",
+    "title": "ESN & services informatiques",
+    "name": "le secteur des ESN et services informatiques",
+    "angle": "Les ESN et sociétés de services informatiques doivent accroître la productivité de leurs développeurs et la qualité de leurs livraisons, tout en optimisant le staffing et la maîtrise des marges sur des projets au forfait.",
+    "bullets": [
+      "Génération et revue de code assistées par IA",
+      "Automatisation des tests et de la documentation technique",
+      "Optimisation du staffing et de l'allocation des consultants",
+      "Support et résolution d'incidents augmentés"
+    ],
+    "stat": "Jusqu'à 30% de gain de productivité sur le développement grâce à l'assistance au code."
+  }
+]
