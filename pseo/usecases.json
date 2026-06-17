@@ -1,0 +1,3222 @@
+[
+{
+"slug": "automatiser-traitement-factures-fournisseurs",
+"title": "Automatisation du traitement des factures fournisseurs",
+"h1": "Automatiser le traitement des factures fournisseurs avec l'IA",
+"name": "l'automatisation du traitement des factures fournisseurs",
+"desc": "L'IA extrait les données des factures fournisseurs et les rapproche automatiquement des bons de commande pour fiabiliser la comptabilité fournisseurs. Le service comptable se concentre sur les écarts plutôt que sur la saisie.",
+"bullets": [
+"Extraction des montants, dates, numéros et TVA quel que soit le format",
+"Rapprochement automatique facture / bon de commande / réception",
+"Détection des doublons et des anomalies de montant",
+"Pré-comptabilisation et routage vers le bon valideur"
+],
+"metric": [
+"−70%",
+"de temps de saisie comptable"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les factures au format papier scanné ?",
+"Oui, l'extraction fonctionne aussi bien sur des PDF natifs que sur des documents numérisés, y compris de qualité variable. La reconnaissance est ensuite contrôlée par des règles de cohérence."
+],
+[
+"Faut-il changer d'ERP pour déployer ce cas d'usage ?",
+"Non. En tant que cabinet indépendant, nous connectons la solution à votre ERP existant via API ou connecteur, sans imposer d'éditeur particulier."
+]
+]
+},
+{
+"slug": "automatiser-traitement-notes-de-frais",
+"title": "Automatisation du traitement des notes de frais",
+"h1": "Automatiser le traitement des notes de frais avec l'IA",
+"name": "l'automatisation du traitement des notes de frais",
+"desc": "L'IA lit les justificatifs photographiés, en extrait les montants et catégories, puis vérifie la conformité à la politique de remboursement. Les remboursements sont accélérés et les fraudes limitées.",
+"bullets": [
+"Lecture automatique des reçus photographiés depuis mobile",
+"Catégorisation des dépenses et récupération de la TVA",
+"Contrôle de conformité à la politique de frais",
+"Alerte sur les justificatifs manquants ou en double"
+],
+"metric": [
+"−60%",
+"de délai de remboursement"
+],
+"service": "process-ia",
+"faq": [
+[
+"Comment l'IA gère-t-elle les plafonds par catégorie de dépense ?",
+"Les règles de votre politique interne sont paramétrées en amont : l'IA signale tout dépassement de plafond ou catégorie non autorisée avant validation."
+],
+[
+"Les données des justificatifs restent-elles confidentielles ?",
+"Oui, le traitement peut être hébergé en Europe et restreint à vos collaborateurs habilités. Nous documentons les flux de données dès la phase de cadrage."
+]
+]
+},
+{
+"slug": "automatiser-extraction-contrats",
+"title": "Extraction automatique des données de contrats",
+"h1": "Automatiser l'extraction des données de contrats avec l'IA",
+"name": "l'extraction automatique des données de contrats",
+"desc": "L'IA identifie et extrait les clauses, dates clés et engagements des contrats pour alimenter un référentiel exploitable. Les équipes juridiques et achats gagnent en visibilité sur leurs obligations.",
+"bullets": [
+"Extraction des parties, dates d'effet et d'échéance",
+"Identification des montants, pénalités et conditions de renouvellement",
+"Repérage des clauses de résiliation et de reconduction tacite",
+"Alimentation d'un référentiel de contrats consultable"
+],
+"metric": [
+"−80%",
+"de temps d'analyse contractuelle"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA fonctionne-t-elle sur des contrats anciens et hétérogènes ?",
+"Oui, le modèle est entraîné à reconnaître des structures variées et signale les passages incertains pour relecture humaine."
+],
+[
+"Peut-on être alerté avant l'échéance d'un contrat ?",
+"Oui, les dates extraites alimentent un système d'alertes automatiques pour anticiper renouvellements et renégociations."
+]
+]
+},
+{
+"slug": "automatiser-classement-ged",
+"title": "Classement automatique dans la GED",
+"h1": "Automatiser le classement documentaire dans la GED avec l'IA",
+"name": "le classement automatique dans la GED",
+"desc": "L'IA analyse chaque document entrant pour le classer dans la bonne arborescence de la gestion électronique de documents. La recherche d'information devient immédiate.",
+"bullets": [
+"Reconnaissance du type de document et de son émetteur",
+"Affectation automatique au dossier et au plan de classement",
+"Indexation par métadonnées et mots-clés métier",
+"Détection des documents mal classés ou en doublon"
+],
+"metric": [
+"−75%",
+"de temps de classement"
+],
+"service": "process-ia",
+"faq": [
+[
+"Le classement s'adapte-t-il à notre plan de classement existant ?",
+"Oui, l'IA est paramétrée selon votre arborescence et vos règles documentaires actuelles, sans imposer un modèle générique."
+],
+[
+"Que se passe-t-il si l'IA hésite sur le classement ?",
+"Les documents ambigus sont placés dans une file de revue avec une suggestion de classement, qu'un gestionnaire valide en un clic."
+]
+]
+},
+{
+"slug": "automatiser-comptes-rendus-reunion",
+"title": "Génération automatique des comptes-rendus de réunion",
+"h1": "Automatiser les comptes-rendus de réunion avec l'IA",
+"name": "la génération automatique des comptes-rendus de réunion",
+"desc": "L'IA transcrit les réunions et en produit un compte-rendu structuré avec décisions et actions à suivre. Les participants restent concentrés sur les échanges.",
+"bullets": [
+"Transcription automatique de l'audio en texte",
+"Synthèse structurée par thème et par décision",
+"Extraction des actions, responsables et échéances",
+"Diffusion du compte-rendu aux participants"
+],
+"metric": [
+"−90%",
+"de temps de rédaction"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA distingue-t-elle les différents intervenants ?",
+"Oui, la transcription identifie les locuteurs et attribue les propos, ce qui facilite la relecture et l'attribution des actions."
+],
+[
+"Les enregistrements sont-ils conservés ?",
+"La politique de rétention est définie avec vous : les audios peuvent être supprimés dès le compte-rendu généré pour limiter les données stockées."
+]
+]
+},
+{
+"slug": "automatiser-traitement-courriers-entrants",
+"title": "Traitement automatique des courriers entrants",
+"h1": "Automatiser le traitement des courriers entrants avec l'IA",
+"name": "le traitement automatique des courriers entrants",
+"desc": "L'IA numérise, qualifie et oriente les courriers reçus vers le bon service. Les délais de prise en charge sont fortement réduits.",
+"bullets": [
+"Numérisation et reconnaissance du contenu des courriers",
+"Qualification du motif et du niveau d'urgence",
+"Routage automatique vers le service compétent",
+"Création d'un accusé de réception traçable"
+],
+"metric": [
+"−65%",
+"de délai d'orientation"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA peut-elle traiter à la fois courrier papier et email ?",
+"Oui, le même moteur de qualification s'applique au courrier numérisé comme aux messages électroniques pour un traitement homogène."
+],
+[
+"Comment garantir qu'aucun courrier urgent n'est oublié ?",
+"Les courriers détectés comme urgents sont remontés en priorité avec une alerte, et un tableau de suivi assure la traçabilité de bout en bout."
+]
+]
+},
+{
+"slug": "automatiser-traitement-bons-de-commande",
+"title": "Traitement automatique des bons de commande",
+"h1": "Automatiser le traitement des bons de commande avec l'IA",
+"name": "le traitement automatique des bons de commande",
+"desc": "L'IA extrait les lignes des bons de commande reçus et les intègre dans le système de gestion. Les erreurs de saisie et les délais de traitement diminuent.",
+"bullets": [
+"Extraction des références, quantités et prix unitaires",
+"Contrôle de cohérence avec le catalogue et les tarifs négociés",
+"Intégration automatique dans l'ERP ou l'outil de gestion",
+"Signalement des écarts de prix ou de référence"
+],
+"metric": [
+"−70%",
+"d'erreurs de saisie"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA reconnaît-elle nos références produits spécifiques ?",
+"Oui, le moteur est aligné sur votre catalogue afin de rapprocher les libellés clients de vos références internes."
+],
+[
+"Que deviennent les bons de commande incomplets ?",
+"Ils sont isolés avec la liste des champs manquants pour traitement manuel rapide, sans bloquer le flux global."
+]
+]
+},
+{
+"slug": "automatiser-traitement-bons-de-livraison",
+"title": "Traitement automatique des bons de livraison",
+"h1": "Automatiser le traitement des bons de livraison avec l'IA",
+"name": "le traitement automatique des bons de livraison",
+"desc": "L'IA lit les bons de livraison et les rapproche des commandes pour valider les réceptions. Les litiges fournisseurs sont détectés plus tôt.",
+"bullets": [
+"Lecture des quantités livrées et des références",
+"Rapprochement avec le bon de commande correspondant",
+"Détection des écarts de quantité ou de référence",
+"Validation automatique des réceptions conformes"
+],
+"metric": [
+"−55%",
+"de litiges de réception"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les livraisons partielles ?",
+"Oui, elle suit les quantités cumulées par commande et identifie les reliquats restant à livrer."
+],
+[
+"Comment sont traités les écarts détectés ?",
+"Chaque écart génère une alerte documentée vers le service achats ou logistique, avec le détail du bon concerné pour accélérer la résolution."
+]
+]
+},
+{
+"slug": "automatiser-archivage-intelligent",
+"title": "Archivage intelligent des documents",
+"h1": "Automatiser l'archivage intelligent des documents avec l'IA",
+"name": "l'archivage intelligent des documents",
+"desc": "L'IA détermine la durée de conservation de chaque document et déclenche son archivage ou sa destruction selon les règles légales. La conformité documentaire est tenue dans le temps.",
+"bullets": [
+"Classification des documents par nature et valeur probante",
+"Application automatique des durées légales de conservation",
+"Déclenchement des purges et archivages à échéance",
+"Traçabilité complète du cycle de vie documentaire"
+],
+"metric": [
+"−50%",
+"de volume de stockage actif"
+],
+"service": "process-ia",
+"faq": [
+[
+"Les durées de conservation sont-elles conformes à la réglementation ?",
+"Oui, le paramétrage s'appuie sur vos obligations légales et sectorielles, que nous cadrons avec vos équipes juridiques."
+],
+[
+"Peut-on tracer qui a accédé ou supprimé un document ?",
+"Oui, chaque opération est journalisée pour garantir l'auditabilité et répondre à un contrôle ou une demande RGPD."
+]
+]
+},
+{
+"slug": "automatiser-traitement-formulaires",
+"title": "Traitement automatique des formulaires",
+"h1": "Automatiser le traitement des formulaires avec l'IA",
+"name": "le traitement automatique des formulaires",
+"desc": "L'IA extrait les informations des formulaires papier ou numériques et les structure dans vos systèmes. La ressaisie manuelle disparaît.",
+"bullets": [
+"Reconnaissance des champs sur formulaires structurés ou libres",
+"Extraction et normalisation des données saisies",
+"Contrôle de complétude et de cohérence",
+"Intégration des données dans les outils métier"
+],
+"metric": [
+"−80%",
+"de ressaisie manuelle"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA lit-elle l'écriture manuscrite ?",
+"Oui, la reconnaissance gère l'écriture manuscrite avec un niveau de confiance affiché, et soumet les cas douteux à validation humaine."
+],
+[
+"Peut-on traiter nos formulaires métier spécifiques ?",
+"Oui, le modèle est adapté à vos gabarits, qu'ils soient standardisés ou propres à votre organisation."
+]
+]
+},
+{
+"slug": "automatiser-generation-attestations",
+"title": "Génération automatique d'attestations",
+"h1": "Automatiser la génération d'attestations avec l'IA",
+"name": "la génération automatique d'attestations",
+"desc": "L'IA produit les attestations et certificats à partir des données du dossier et des modèles validés. Les demandes sont traitées en libre-service.",
+"bullets": [
+"Génération à partir de modèles juridiquement validés",
+"Récupération automatique des données du dossier client",
+"Personnalisation et mise en forme conforme",
+"Mise à disposition et traçabilité des envois"
+],
+"metric": [
+"−85%",
+"de délai d'émission"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les attestations restent-elles conformes à nos mentions obligatoires ?",
+"Oui, les modèles intègrent vos mentions légales et ne sont modifiables que via un circuit de validation maîtrisé."
+],
+[
+"Peut-on déclencher la génération depuis un portail client ?",
+"Oui, le cas d'usage s'intègre à un portail self-service pour que la demande génère l'attestation sans intervention manuelle."
+]
+]
+},
+{
+"slug": "automatiser-numerisation-intelligente",
+"title": "Numérisation intelligente des documents",
+"h1": "Automatiser la numérisation intelligente des documents avec l'IA",
+"name": "la numérisation intelligente des documents",
+"desc": "L'IA améliore la qualité des numérisations, sépare les lots et en extrait le contenu exploitable. La dématérialisation devient fiable à grande échelle.",
+"bullets": [
+"Amélioration et redressement automatique des scans",
+"Séparation des lots et détection des pages multiples",
+"Reconnaissance optique du texte sur tous formats",
+"Indexation automatique pour recherche plein texte"
+],
+"metric": [
+"−70%",
+"de temps de dématérialisation"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle des documents de mauvaise qualité ?",
+"Oui, des traitements d'image corrigent contraste, orientation et bruit avant l'extraction pour maximiser la fiabilité."
+],
+[
+"Comment sont gérés les lots de plusieurs documents scannés ensemble ?",
+"L'IA détecte les séparateurs et les ruptures de document pour reconstituer automatiquement chaque pièce."
+]
+]
+},
+{
+"slug": "automatiser-lecture-documents-identite",
+"title": "Lecture automatique des documents d'identité",
+"h1": "Automatiser la lecture des documents d'identité avec l'IA",
+"name": "la lecture automatique des documents d'identité",
+"desc": "L'IA extrait les informations des pièces d'identité et en contrôle la cohérence lors des processus d'onboarding ou KYC. La saisie est fiabilisée et accélérée.",
+"bullets": [
+"Extraction des données des cartes d'identité et passeports",
+"Lecture de la zone de lecture automatique (MRZ)",
+"Contrôles de cohérence et de validité",
+"Alimentation sécurisée du dossier client ou collaborateur"
+],
+"metric": [
+"−75%",
+"de temps d'enrôlement"
+],
+"service": "process-ia",
+"faq": [
+[
+"Ce cas d'usage est-il compatible avec le RGPD ?",
+"Oui, le traitement des pièces d'identité est encadré par des durées de conservation strictes et un accès restreint, que nous documentons dès le cadrage."
+],
+[
+"L'IA détecte-t-elle les documents falsifiés ?",
+"Elle réalise des contrôles de cohérence et de format qui signalent les anomalies, en complément d'éventuels dispositifs de vérification dédiés."
+]
+]
+},
+{
+"slug": "automatiser-extraction-donnees-documentaires",
+"title": "Extraction de données documentaires",
+"h1": "Automatiser l'extraction de données documentaires avec l'IA",
+"name": "l'extraction de données documentaires",
+"desc": "L'IA extrait des informations précises depuis des documents hétérogènes pour alimenter vos bases métier. Vous transformez des documents en données exploitables.",
+"bullets": [
+"Identification des champs cibles sur documents variés",
+"Extraction structurée vers un format exploitable",
+"Normalisation et fiabilisation des données",
+"Export vers vos applications et bases de données"
+],
+"metric": [
+"−80%",
+"de saisie documentaire"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quels types de documents peut-on traiter ?",
+"Factures, contrats, formulaires, courriers ou rapports : le moteur s'adapte à la structure de chaque famille documentaire."
+],
+[
+"Comment mesure-t-on la fiabilité de l'extraction ?",
+"Chaque donnée extraite porte un score de confiance et un taux d'exactitude est suivi, ce qui permet de calibrer le contrôle humain."
+]
+]
+},
+{
+"slug": "deployer-copilote-support-n1",
+"title": "Copilote de support de niveau 1",
+"h1": "Déployer un copilote pour le support de niveau 1 avec l'IA",
+"name": "le copilote de support de niveau 1",
+"desc": "L'IA assiste les agents de support en proposant des réponses pertinentes issues de la base de connaissances. Les agents répondent plus vite et plus juste.",
+"bullets": [
+"Suggestion de réponses contextualisées en temps réel",
+"Recherche instantanée dans la documentation interne",
+"Pré-rédaction de réponses personnalisables",
+"Apprentissage continu à partir des cas résolus"
+],
+"metric": [
+"−40%",
+"de temps de traitement par ticket"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le copilote remplace-t-il les agents de support ?",
+"Non, il assiste l'agent qui garde la décision finale. L'objectif est d'augmenter la qualité et la vitesse, pas de supprimer l'humain."
+],
+[
+"Sur quelles sources le copilote s'appuie-t-il ?",
+"Uniquement sur vos sources validées : base de connaissances, procédures et historiques, afin d'éviter les réponses inventées."
+]
+]
+},
+{
+"slug": "deployer-chatbot-client",
+"title": "Chatbot client conversationnel",
+"h1": "Déployer un chatbot client avec l'IA",
+"name": "le chatbot client conversationnel",
+"desc": "L'IA répond aux questions courantes des clients en langage naturel, 24h/24, et transmet les cas complexes à un conseiller. Le support gagne en disponibilité.",
+"bullets": [
+"Compréhension des demandes en langage naturel",
+"Réponses appuyées sur votre base documentaire",
+"Transfert fluide vers un conseiller si besoin",
+"Disponibilité permanente sur vos canaux digitaux"
+],
+"metric": [
+"+60%",
+"de demandes résolues en autonomie"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Comment éviter que le chatbot donne de fausses informations ?",
+"Il est restreint à vos contenus validés et configuré pour signaler quand il ne sait pas, plutôt que d'inventer une réponse."
+],
+[
+"Le passage à un conseiller humain est-il fluide ?",
+"Oui, le contexte de la conversation est transmis au conseiller pour éviter au client de répéter sa demande."
+]
+]
+},
+{
+"slug": "automatiser-routage-tickets",
+"title": "Routage automatique des tickets",
+"h1": "Automatiser le routage des tickets de support avec l'IA",
+"name": "le routage automatique des tickets",
+"desc": "L'IA analyse chaque ticket entrant et l'oriente vers la bonne équipe avec le bon niveau de priorité. Les délais de prise en charge baissent.",
+"bullets": [
+"Analyse du motif et de la catégorie du ticket",
+"Affectation à l'équipe ou à l'expert compétent",
+"Attribution automatique d'un niveau de priorité",
+"Détection des tickets liés et des doublons"
+],
+"metric": [
+"−50%",
+"de temps de qualification"
+],
+"service": "process-ia",
+"faq": [
+[
+"Le routage s'adapte-t-il à notre organisation support ?",
+"Oui, les règles d'affectation reflètent vos équipes, compétences et niveaux de service réels."
+],
+[
+"Que se passe-t-il en cas d'erreur de routage ?",
+"Les agents peuvent réorienter un ticket en un clic, et ces corrections alimentent l'amélioration continue du modèle."
+]
+]
+},
+{
+"slug": "automatiser-analyse-satisfaction-client",
+"title": "Analyse de la satisfaction client",
+"h1": "Automatiser l'analyse de la satisfaction client avec l'IA",
+"name": "l'analyse de la satisfaction client",
+"desc": "L'IA analyse les retours clients pour identifier les motifs d'insatisfaction et les tendances. Les équipes pilotent l'expérience client sur des signaux concrets.",
+"bullets": [
+"Analyse de sentiment sur verbatims et enquêtes",
+"Détection des irritants et motifs récurrents",
+"Suivi des tendances de satisfaction dans le temps",
+"Restitution sous forme de tableaux de bord lisibles"
+],
+"metric": [
+"+30%",
+"d'irritants détectés"
+],
+"service": "audit-ia",
+"faq": [
+[
+"Quelles sources de feedback peut-on analyser ?",
+"Enquêtes de satisfaction, avis en ligne, emails et verbatims de support peuvent être consolidés dans une même analyse."
+],
+[
+"L'analyse de sentiment est-elle fiable en français ?",
+"Oui, les modèles utilisés sont performants en français, y compris sur les tournures implicites, et leurs résultats sont contrôlés sur vos données."
+]
+]
+},
+{
+"slug": "automatiser-reponse-emails-clients",
+"title": "Réponse automatique aux emails clients",
+"h1": "Automatiser la réponse aux emails clients avec l'IA",
+"name": "la réponse automatique aux emails clients",
+"desc": "L'IA rédige des projets de réponse aux emails clients à partir de votre base de connaissances et de l'historique. Le traitement des demandes est accéléré.",
+"bullets": [
+"Compréhension du motif de chaque email entrant",
+"Génération d'un projet de réponse personnalisé",
+"Appui sur les procédures et réponses types validées",
+"Validation par un conseiller avant envoi si besoin"
+],
+"metric": [
+"−55%",
+"de temps de réponse"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les réponses sont-elles envoyées automatiquement ?",
+"Selon votre choix : envoi direct pour les cas simples et à faible risque, ou validation humaine systématique pour les sujets sensibles."
+],
+[
+"Le ton des réponses respecte-t-il notre image de marque ?",
+"Oui, le style est calibré sur vos messages existants et vos consignes éditoriales pour rester cohérent avec votre marque."
+]
+]
+},
+{
+"slug": "automatiser-resume-conversations",
+"title": "Résumé automatique des conversations",
+"h1": "Automatiser le résumé des conversations clients avec l'IA",
+"name": "le résumé automatique des conversations",
+"desc": "L'IA synthétise les échanges clients longs en un résumé clair des points clés et des actions. Les agents et superviseurs gagnent en lisibilité.",
+"bullets": [
+"Synthèse des échanges multicanaux par dossier",
+"Extraction des demandes, décisions et engagements",
+"Mise en évidence des points en suspens",
+"Historique consultable pour chaque client"
+],
+"metric": [
+"−70%",
+"de temps de relecture des historiques"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Le résumé fonctionne-t-il sur plusieurs canaux à la fois ?",
+"Oui, il consolide chat, email et appels d'un même dossier en une synthèse unique pour une vision complète."
+],
+[
+"Les résumés sont-ils fidèles aux échanges réels ?",
+"Les synthèses s'appuient strictement sur le contenu des conversations, et un contrôle qualité vérifie l'absence d'invention."
+]
+]
+},
+{
+"slug": "construire-base-connaissances-support",
+"title": "Base de connaissances support augmentée",
+"h1": "Construire une base de connaissances support augmentée par l'IA",
+"name": "la base de connaissances support augmentée",
+"desc": "L'IA structure, met à jour et rend interrogeable votre base de connaissances support. Les agents trouvent la bonne procédure instantanément.",
+"bullets": [
+"Structuration des contenus support existants",
+"Recherche en langage naturel dans la base",
+"Détection des contenus obsolètes ou manquants",
+"Suggestions d'articles à partir des tickets récurrents"
+],
+"metric": [
+"+45%",
+"de réponses trouvées du premier coup"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Faut-il tout réécrire pour démarrer ?",
+"Non, l'IA s'appuie sur vos contenus existants et identifie progressivement les manques à combler."
+],
+[
+"Comment la base reste-t-elle à jour ?",
+"Les contenus obsolètes sont signalés et les questions sans réponse remontées, ce qui alimente un cycle d'enrichissement continu."
+]
+]
+},
+{
+"slug": "deployer-callbot-vocal",
+"title": "Callbot vocal pour le standard téléphonique",
+"h1": "Déployer un callbot vocal avec l'IA",
+"name": "le callbot vocal",
+"desc": "L'IA répond aux appels entrants en langage naturel, traite les demandes simples et oriente les autres vers le bon conseiller. Le standard absorbe les pics d'appels.",
+"bullets": [
+"Compréhension vocale des demandes en langage naturel",
+"Traitement autonome des requêtes courantes",
+"Qualification et transfert vers le bon service",
+"Disponibilité continue, y compris en heures creuses"
+],
+"metric": [
+"+50%",
+"d'appels traités sans agent"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le callbot comprend-il bien les accents et le langage naturel ?",
+"Oui, les modèles vocaux gèrent une grande diversité d'expressions, et nous les calibrons sur vos cas d'appels réels."
+],
+[
+"Que se passe-t-il si l'appelant préfère un humain ?",
+"Le callbot transfère immédiatement vers un conseiller en transmettant le contexte déjà collecté."
+]
+]
+},
+{
+"slug": "automatiser-analyse-appels",
+"title": "Analyse automatique des appels",
+"h1": "Automatiser l'analyse des appels clients avec l'IA",
+"name": "l'analyse automatique des appels",
+"desc": "L'IA transcrit et analyse les appels du centre de contact pour mesurer la qualité et détecter les sujets émergents. Le pilotage repose sur 100% des appels, pas un échantillon.",
+"bullets": [
+"Transcription automatique des appels enregistrés",
+"Analyse du sentiment et des motifs d'appel",
+"Suivi du respect des trames et obligations",
+"Détection des sujets émergents et signaux faibles"
+],
+"metric": [
+"100%",
+"des appels analysés"
+],
+"service": "audit-ia",
+"faq": [
+[
+"L'analyse des appels respecte-t-elle la vie privée ?",
+"Oui, l'usage des enregistrements est encadré par l'information des personnes et des règles de conservation, conformément au RGPD."
+],
+[
+"Peut-on suivre des critères de qualité spécifiques ?",
+"Oui, vos grilles d'évaluation sont paramétrées pour mesurer automatiquement le respect des étapes et des obligations sur chaque appel."
+]
+]
+},
+{
+"slug": "automatiser-deflection-tickets",
+"title": "Déflection des tickets de support",
+"h1": "Automatiser la déflection des tickets de support avec l'IA",
+"name": "la déflection des tickets de support",
+"desc": "L'IA propose des réponses en self-service avant la création d'un ticket, réduisant le volume entrant. Les équipes se concentrent sur les cas à valeur ajoutée.",
+"bullets": [
+"Suggestion d'articles pertinents avant ouverture de ticket",
+"Réponses contextualisées dans le parcours client",
+"Mesure du taux de résolution en autonomie",
+"Identification des sujets générant le plus de contacts"
+],
+"metric": [
+"−35%",
+"de tickets entrants"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"La déflection dégrade-t-elle l'expérience client ?",
+"Non, l'objectif est d'apporter une réponse immédiate quand elle existe, tout en laissant un accès simple à un conseiller si besoin."
+],
+[
+"Comment savoir si la déflection est efficace ?",
+"Le taux de résolution en self-service et la baisse des tickets sur les sujets ciblés sont suivis dans des tableaux de bord dédiés."
+]
+]
+},
+{
+"slug": "automatiser-priorisation-demandes",
+"title": "Priorisation automatique des demandes",
+"h1": "Automatiser la priorisation des demandes clients avec l'IA",
+"name": "la priorisation automatique des demandes",
+"desc": "L'IA évalue l'urgence et l'impact de chaque demande pour ordonner la file de traitement. Les sujets critiques ne passent plus inaperçus.",
+"bullets": [
+"Évaluation de l'urgence et de la criticité",
+"Prise en compte de l'enjeu client et contractuel",
+"Réordonnancement dynamique de la file",
+"Alerte sur les demandes à risque de non-respect du SLA"
+],
+"metric": [
+"−45%",
+"de retards sur les demandes critiques"
+],
+"service": "process-ia",
+"faq": [
+[
+"Sur quels critères repose la priorisation ?",
+"Sur des critères que vous définissez : urgence, impact business, engagement de service ou profil client, combinés par l'IA."
+],
+[
+"Un agent peut-il modifier la priorité proposée ?",
+"Oui, la priorité reste ajustable manuellement, l'IA fournissant une recommandation et non une décision figée."
+]
+]
+},
+{
+"slug": "deployer-assistant-conseillers",
+"title": "Assistant pour conseillers clientèle",
+"h1": "Déployer un assistant pour les conseillers clientèle avec l'IA",
+"name": "l'assistant pour conseillers clientèle",
+"desc": "L'IA fournit aux conseillers le bon contexte et les bonnes informations pendant l'échange client. Les conseillers répondent avec assurance et précision.",
+"bullets": [
+"Accès instantané au contexte et à l'historique client",
+"Recherche dans les procédures pendant l'échange",
+"Suggestions d'actions et de prochaines étapes",
+"Aide à la rédaction des réponses et synthèses"
+],
+"metric": [
+"−30%",
+"de temps de recherche d'information"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"L'assistant s'intègre-t-il à nos outils existants ?",
+"Oui, il se connecte à votre CRM et à vos bases pour fournir le bon contexte sans changer d'outil."
+],
+[
+"Les conseillers gardent-ils la main sur les réponses ?",
+"Oui, l'assistant propose, le conseiller décide. Il s'agit d'un appui à la décision, pas d'une automatisation forcée."
+]
+]
+},
+{
+"slug": "deployer-faq-dynamique",
+"title": "FAQ dynamique alimentée par l'IA",
+"h1": "Déployer une FAQ dynamique avec l'IA",
+"name": "la FAQ dynamique",
+"desc": "L'IA génère et met à jour une FAQ à partir des questions réellement posées par vos clients. Le contenu d'aide reste toujours pertinent.",
+"bullets": [
+"Détection des questions fréquentes à partir des contacts",
+"Génération de réponses claires et à jour",
+"Recherche en langage naturel dans la FAQ",
+"Mise à jour continue selon les nouveaux sujets"
+],
+"metric": [
+"+40%",
+"de questions couvertes en self-service"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"En quoi une FAQ dynamique diffère-t-elle d'une FAQ classique ?",
+"Elle évolue automatiquement selon les questions réellement posées, au lieu de rester figée et de se périmer."
+],
+[
+"Qui valide les réponses publiées ?",
+"Vos équipes gardent la main : l'IA propose les contenus et un valideur les approuve avant publication."
+]
+]
+},
+{
+"slug": "automatiser-escalade-intelligente",
+"title": "Escalade intelligente des demandes",
+"h1": "Automatiser l'escalade intelligente des demandes avec l'IA",
+"name": "l'escalade intelligente des demandes",
+"desc": "L'IA détecte les situations à risque et déclenche automatiquement l'escalade vers le bon niveau d'expertise. Les insatisfactions sont traitées avant qu'elles ne dégénèrent.",
+"bullets": [
+"Détection des signaux d'insatisfaction et de risque",
+"Déclenchement de l'escalade selon des règles métier",
+"Orientation vers le bon niveau d'expertise",
+"Notification et suivi jusqu'à résolution"
+],
+"metric": [
+"−40%",
+"de réclamations aggravées"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quels signaux déclenchent une escalade ?",
+"Sentiment négatif marqué, mots-clés sensibles, dépassement de délai ou client stratégique : les critères sont définis avec vous."
+],
+[
+"L'escalade reste-t-elle traçable ?",
+"Oui, chaque escalade est journalisée avec son motif et son suivi, ce qui facilite l'analyse et l'amélioration des processus."
+]
+]
+},
+{
+"slug": "automatiser-rapprochement-bancaire",
+"title": "Rapprochement bancaire automatisé",
+"h1": "Automatiser le rapprochement bancaire avec l'IA",
+"name": "le rapprochement bancaire automatisé",
+"desc": "L'IA rapproche automatiquement les écritures comptables des mouvements bancaires, même en cas de libellés imparfaits. La comptabilité gagne un temps considérable en clôture.",
+"bullets": [
+"Rapprochement automatique des écritures et relevés",
+"Gestion des libellés approximatifs et partiels",
+"Détection et explication des écarts",
+"Proposition d'affectation pour les opérations isolées"
+],
+"metric": [
+"−75%",
+"de temps de rapprochement"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les paiements groupés ou partiels ?",
+"Oui, elle reconstitue les correspondances un-à-plusieurs et signale les soldes résiduels à traiter."
+],
+[
+"Que deviennent les opérations non rapprochées ?",
+"Elles sont isolées avec une suggestion d'affectation, pour un traitement manuel rapide par la comptabilité."
+]
+]
+},
+{
+"slug": "automatiser-detection-fraude",
+"title": "Détection de fraude financière",
+"h1": "Automatiser la détection de fraude avec l'IA",
+"name": "la détection de fraude financière",
+"desc": "L'IA analyse les transactions et processus pour repérer les comportements anormaux évocateurs de fraude. Les risques sont détectés tôt, avant impact financier.",
+"bullets": [
+"Détection des anomalies sur transactions et paiements",
+"Repérage des schémas frauduleux connus et émergents",
+"Scoring de risque pour priorisation des contrôles",
+"Alertes documentées vers les équipes de contrôle"
+],
+"metric": [
+"+50%",
+"de fraudes détectées"
+],
+"service": "audit-ia",
+"faq": [
+[
+"L'IA génère-t-elle beaucoup de fausses alertes ?",
+"Le modèle est calibré sur vos données pour maximiser la détection tout en limitant les faux positifs, et s'affine avec les retours des analystes."
+],
+[
+"Comment les décisions de l'IA sont-elles justifiées ?",
+"Chaque alerte est accompagnée des facteurs ayant motivé le score, pour une analyse explicable et auditable."
+]
+]
+},
+{
+"slug": "automatiser-prevision-tresorerie",
+"title": "Prévision de trésorerie",
+"h1": "Automatiser la prévision de trésorerie avec l'IA",
+"name": "la prévision de trésorerie",
+"desc": "L'IA projette les encaissements et décaissements futurs à partir des historiques et des engagements connus. La direction financière anticipe ses besoins de financement.",
+"bullets": [
+"Projection des flux entrants et sortants",
+"Prise en compte des échéances et saisonnalités",
+"Scénarios de trésorerie et tests de sensibilité",
+"Alertes sur les tensions de liquidité anticipées"
+],
+"metric": [
+"+25%",
+"de précision des prévisions"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"Sur quelles données repose la prévision ?",
+"Sur vos historiques de flux, vos échéanciers clients et fournisseurs et vos engagements connus, consolidés par l'IA."
+],
+[
+"Peut-on simuler plusieurs scénarios ?",
+"Oui, l'outil permet de tester des hypothèses (retards de paiement, investissements) pour évaluer leur impact sur la trésorerie."
+]
+]
+},
+{
+"slug": "automatiser-cloture-comptable",
+"title": "Accélération de la clôture comptable",
+"h1": "Automatiser la clôture comptable avec l'IA",
+"name": "l'accélération de la clôture comptable",
+"desc": "L'IA automatise les contrôles et rapprochements de fin de période pour fiabiliser et accélérer la clôture. Les équipes comptables réduisent les heures supplémentaires.",
+"bullets": [
+"Automatisation des contrôles de cohérence de clôture",
+"Détection des écritures manquantes ou anormales",
+"Suivi de l'avancement des tâches de clôture",
+"Préparation des justificatifs et des annexes"
+],
+"metric": [
+"−40%",
+"de durée de clôture"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quelles étapes de la clôture peut-on automatiser ?",
+"Les contrôles répétitifs, les rapprochements et la détection d'anomalies, tandis que les arbitrages restent du ressort des comptables."
+],
+[
+"Comment garantir la fiabilité des contrôles automatisés ?",
+"Les règles sont définies avec vos équipes et testées sur des périodes passées avant mise en production."
+]
+]
+},
+{
+"slug": "automatiser-reporting-financier",
+"title": "Génération du reporting financier",
+"h1": "Automatiser la génération du reporting financier avec l'IA",
+"name": "la génération du reporting financier",
+"desc": "L'IA consolide les données et rédige les commentaires des reportings financiers récurrents. La direction financière diffuse des analyses plus rapidement.",
+"bullets": [
+"Consolidation automatique des données financières",
+"Génération des tableaux et indicateurs clés",
+"Rédaction de commentaires d'analyse des variations",
+"Mise en forme conforme aux modèles de l'entreprise"
+],
+"metric": [
+"−60%",
+"de temps de production des reportings"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les commentaires générés sont-ils fiables ?",
+"Ils s'appuient sur les chiffres consolidés et sont relus par le contrôle de gestion, qui garde la main sur l'analyse finale."
+],
+[
+"Le reporting s'adapte-t-il à nos formats internes ?",
+"Oui, les modèles, indicateurs et présentations reprennent vos standards existants."
+]
+]
+},
+{
+"slug": "automatiser-scoring-credit",
+"title": "Scoring de crédit",
+"h1": "Automatiser le scoring de crédit avec l'IA",
+"name": "le scoring de crédit",
+"desc": "L'IA évalue le risque de défaut d'un client ou prospect à partir de données financières et comportementales. Les décisions d'octroi sont plus rapides et mieux étayées.",
+"bullets": [
+"Agrégation des données financières disponibles",
+"Calcul d'un score de risque de défaut",
+"Explication des facteurs de risque retenus",
+"Recommandation de limite et de conditions"
+],
+"metric": [
+"−50%",
+"de délai de décision d'octroi"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"Le scoring est-il explicable et non discriminatoire ?",
+"Oui, les facteurs de décision sont explicités et les variables sensibles écartées, dans le respect du cadre légal et de l'AI Act."
+],
+[
+"La décision finale reste-t-elle humaine ?",
+"Oui, le score est une aide à la décision : l'octroi reste validé par un analyste, surtout pour les cas à enjeu."
+]
+]
+},
+{
+"slug": "automatiser-recouvrement-creances",
+"title": "Automatisation du recouvrement de créances",
+"h1": "Automatiser le recouvrement de créances avec l'IA",
+"name": "l'automatisation du recouvrement de créances",
+"desc": "L'IA priorise les créances à relancer et personnalise les actions de recouvrement selon le profil débiteur. Les délais de paiement et le DSO s'améliorent.",
+"bullets": [
+"Priorisation des créances par risque et montant",
+"Personnalisation du scénario de relance",
+"Génération automatique des relances multicanales",
+"Suivi des promesses de paiement et des litiges"
+],
+"metric": [
+"−20%",
+"de DSO"
+],
+"service": "process-ia",
+"faq": [
+[
+"Le recouvrement automatisé reste-t-il respectueux des clients ?",
+"Oui, les scénarios sont gradués et personnalisés pour préserver la relation, en réservant la pression aux situations qui le justifient."
+],
+[
+"Comment sont gérés les litiges en cours ?",
+"Les créances litigieuses sont automatiquement écartées des relances et orientées vers le traitement adapté."
+]
+]
+},
+{
+"slug": "automatiser-controle-notes-de-frais",
+"title": "Contrôle automatique des notes de frais",
+"h1": "Automatiser le contrôle des notes de frais avec l'IA",
+"name": "le contrôle automatique des notes de frais",
+"desc": "L'IA contrôle l'ensemble des notes de frais pour détecter les non-conformités et les anomalies, et non plus un simple échantillon. Les abus sont identifiés systématiquement.",
+"bullets": [
+"Contrôle exhaustif de la conformité à la politique",
+"Détection des doublons et justificatifs réutilisés",
+"Repérage des montants ou fréquences anormaux",
+"Priorisation des dossiers à contrôler en détail"
+],
+"metric": [
+"100%",
+"des notes contrôlées"
+],
+"service": "audit-ia",
+"faq": [
+[
+"En quoi est-ce différent d'un contrôle manuel par sondage ?",
+"L'IA examine la totalité des notes au lieu d'un échantillon, ce qui augmente la détection sans alourdir la charge des équipes."
+],
+[
+"Les contrôles s'adaptent-ils à notre politique de frais ?",
+"Oui, vos règles, plafonds et catégories sont intégrés afin que les anomalies signalées soient pertinentes pour votre contexte."
+]
+]
+},
+{
+"slug": "automatiser-lettrage-automatique",
+"title": "Lettrage automatique des comptes",
+"h1": "Automatiser le lettrage des comptes avec l'IA",
+"name": "le lettrage automatique des comptes",
+"desc": "L'IA rapproche les factures et les règlements pour lettrer automatiquement les comptes clients et fournisseurs. Les comptes restent à jour sans saisie fastidieuse.",
+"bullets": [
+"Rapprochement automatique factures / règlements",
+"Gestion des paiements partiels et groupés",
+"Détection des écarts et des comptes à apurer",
+"Proposition de lettrage pour validation"
+],
+"metric": [
+"−70%",
+"de temps de lettrage"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les écarts de règlement ?",
+"Oui, elle identifie les petits écarts et propose un traitement, tout en isolant les cas nécessitant un arbitrage humain."
+],
+[
+"Le lettrage automatique est-il fiable ?",
+"Les correspondances proposées affichent un niveau de confiance, et les cas incertains restent soumis à validation."
+]
+]
+},
+{
+"slug": "automatiser-previsions-budgetaires",
+"title": "Prévisions budgétaires assistées",
+"h1": "Automatiser les prévisions budgétaires avec l'IA",
+"name": "les prévisions budgétaires assistées",
+"desc": "L'IA construit des prévisions budgétaires à partir des historiques, des tendances et des hypothèses métier. Le processus budgétaire devient plus rapide et mieux argumenté.",
+"bullets": [
+"Élaboration de prévisions à partir des historiques",
+"Intégration des hypothèses et tendances métier",
+"Comparaison de scénarios budgétaires",
+"Suivi des écarts entre prévu et réalisé"
+],
+"metric": [
+"−50%",
+"de temps de cycle budgétaire"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"L'IA remplace-t-elle le jugement des responsables budgétaires ?",
+"Non, elle fournit une base chiffrée et des scénarios, mais les arbitrages budgétaires restent une décision humaine."
+],
+[
+"Peut-on intégrer nos propres hypothèses ?",
+"Oui, vos hypothèses commerciales et opérationnelles sont intégrées aux modèles pour des prévisions alignées sur votre stratégie."
+]
+]
+},
+{
+"slug": "automatiser-analyse-ecarts",
+"title": "Analyse des écarts budgétaires",
+"h1": "Automatiser l'analyse des écarts avec l'IA",
+"name": "l'analyse des écarts budgétaires",
+"desc": "L'IA détecte les écarts entre prévu et réalisé et en propose une explication argumentée. Le contrôle de gestion se concentre sur l'interprétation plutôt que sur la recherche.",
+"bullets": [
+"Calcul automatique des écarts budget / réalisé",
+"Identification des principaux contributeurs",
+"Proposition d'explications des variations",
+"Mise en évidence des dérives à surveiller"
+],
+"metric": [
+"−55%",
+"de temps d'analyse des écarts"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA explique-t-elle réellement les causes des écarts ?",
+"Elle isole les facteurs les plus contributeurs et propose des pistes d'explication, que le contrôle de gestion valide ou complète."
+],
+[
+"À quelle fréquence l'analyse peut-elle tourner ?",
+"Aussi souvent que vos données sont disponibles : mensuelle, hebdomadaire ou à la demande selon vos besoins de pilotage."
+]
+]
+},
+{
+"slug": "automatiser-conformite-fiscale",
+"title": "Contrôle de la conformité fiscale",
+"h1": "Automatiser le contrôle de la conformité fiscale avec l'IA",
+"name": "le contrôle de la conformité fiscale",
+"desc": "L'IA vérifie la cohérence des données fiscales et signale les anomalies avant déclaration. Le risque de redressement est réduit.",
+"bullets": [
+"Contrôle de cohérence des données déclaratives",
+"Vérification des taux et règles de TVA",
+"Détection des anomalies avant transmission",
+"Préparation des justificatifs en cas de contrôle"
+],
+"metric": [
+"−45%",
+"d'anomalies fiscales résiduelles"
+],
+"service": "audit-ia",
+"faq": [
+[
+"L'IA se substitue-t-elle à notre expert-comptable ou fiscaliste ?",
+"Non, elle fiabilise les contrôles en amont. La validation et le conseil fiscal restent du ressort de vos experts."
+],
+[
+"Les règles fiscales sont-elles tenues à jour ?",
+"Le paramétrage est revu en fonction des évolutions réglementaires, en lien avec vos référents fiscaux."
+]
+]
+},
+{
+"slug": "automatiser-tri-cv",
+"title": "Tri automatique des CV",
+"h1": "Automatiser le tri des CV avec l'IA",
+"name": "le tri automatique des CV",
+"desc": "L'IA analyse les CV reçus et les rapproche des exigences du poste pour faire ressortir les profils pertinents. Les recruteurs gagnent du temps sur le premier filtre.",
+"bullets": [
+"Extraction des compétences et expériences des CV",
+"Rapprochement avec les critères du poste",
+"Mise en avant des profils les plus pertinents",
+"Synthèse comparative des candidatures"
+],
+"metric": [
+"−60%",
+"de temps de présélection"
+],
+"service": "process-ia",
+"faq": [
+[
+"Le tri des CV par IA est-il conforme à la réglementation ?",
+"Oui, nous écartons les critères discriminatoires et conservons une décision humaine, conformément au droit du travail et à l'AI Act."
+],
+[
+"L'IA risque-t-elle d'écarter de bons profils atypiques ?",
+"Le modèle propose un classement indicatif et non une exclusion : les recruteurs gardent accès à l'ensemble des candidatures."
+]
+]
+},
+{
+"slug": "automatiser-preselection-candidats",
+"title": "Présélection des candidats",
+"h1": "Automatiser la présélection des candidats avec l'IA",
+"name": "la présélection des candidats",
+"desc": "L'IA structure la présélection en évaluant les candidatures sur des critères objectifs et homogènes. Le processus de recrutement gagne en équité et en rapidité.",
+"bullets": [
+"Évaluation des candidatures sur critères objectifs",
+"Questionnaires de présélection automatisés",
+"Classement homogène et explicable des profils",
+"Planification facilitée des entretiens"
+],
+"metric": [
+"−40%",
+"de délai de recrutement"
+],
+"service": "process-ia",
+"faq": [
+[
+"Comment garantir l'équité de la présélection ?",
+"Les critères sont objectivés et appliqués de façon homogène, ce qui limite les biais par rapport à une présélection manuelle."
+],
+[
+"Les candidats sont-ils informés de l'usage de l'IA ?",
+"Oui, la transparence vis-à-vis des candidats fait partie des bonnes pratiques que nous recommandons et cadrons avec vous."
+]
+]
+},
+{
+"slug": "automatiser-onboarding-collaborateurs",
+"title": "Onboarding des nouveaux collaborateurs",
+"h1": "Automatiser l'onboarding des collaborateurs avec l'IA",
+"name": "l'onboarding des nouveaux collaborateurs",
+"desc": "L'IA orchestre les étapes d'intégration et répond aux questions des nouveaux arrivants. L'expérience d'arrivée est fluide et les RH déchargés des tâches répétitives.",
+"bullets": [
+"Séquencement automatique des étapes d'intégration",
+"Assistant de réponse aux questions des arrivants",
+"Suivi de la complétion des formalités",
+"Personnalisation du parcours selon le poste"
+],
+"metric": [
+"−50%",
+"de temps administratif d'intégration"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA gère-t-elle aussi les questions RH des nouveaux arrivants ?",
+"Oui, un assistant répond aux questions courantes sur les congés, les outils ou les process, en s'appuyant sur vos documents internes."
+],
+[
+"L'onboarding s'adapte-t-il aux différents métiers ?",
+"Oui, les parcours sont personnalisés selon le poste, l'équipe et la localisation du nouveau collaborateur."
+]
+]
+},
+{
+"slug": "deployer-assistant-rh",
+"title": "Assistant RH conversationnel",
+"h1": "Déployer un assistant RH avec l'IA",
+"name": "l'assistant RH conversationnel",
+"desc": "L'IA répond aux questions RH des collaborateurs sur les congés, la paie ou les procédures internes. L'équipe RH se libère des sollicitations répétitives.",
+"bullets": [
+"Réponses aux questions RH en langage naturel",
+"Appui sur vos accords, règlements et procédures",
+"Orientation vers le bon interlocuteur si besoin",
+"Disponibilité permanente pour les collaborateurs"
+],
+"metric": [
+"−45%",
+"de sollicitations RH répétitives"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"L'assistant RH a-t-il accès aux données personnelles des salariés ?",
+"Son périmètre est strictement encadré : il répond sur les règles générales et n'accède aux données individuelles que dans un cadre sécurisé et justifié."
+],
+[
+"Les réponses sont-elles fiables et à jour ?",
+"Oui, elles s'appuient sur vos documents RH validés, mis à jour pour refléter vos accords et procédures en vigueur."
+]
+]
+},
+{
+"slug": "automatiser-analyse-entretiens",
+"title": "Analyse des entretiens de recrutement",
+"h1": "Automatiser l'analyse des entretiens avec l'IA",
+"name": "l'analyse des entretiens de recrutement",
+"desc": "L'IA synthétise les entretiens de recrutement et structure les éléments d'évaluation. Les décisions de recrutement reposent sur des comptes-rendus homogènes.",
+"bullets": [
+"Synthèse structurée des échanges d'entretien",
+"Mise en regard avec les critères du poste",
+"Comptes-rendus homogènes entre recruteurs",
+"Aide à la comparaison objective des candidats"
+],
+"metric": [
+"−50%",
+"de temps de débrief"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA décide-t-elle du recrutement à la place des managers ?",
+"Non, elle structure et synthétise les éléments d'évaluation. La décision finale appartient aux recruteurs et managers."
+],
+[
+"Le consentement des candidats est-il requis ?",
+"Oui, l'analyse d'entretiens nécessite information et consentement des candidats, que nous intégrons au cadrage du projet."
+]
+]
+},
+{
+"slug": "automatiser-plan-formation-personnalise",
+"title": "Plan de formation personnalisé",
+"h1": "Automatiser la création de plans de formation personnalisés avec l'IA",
+"name": "le plan de formation personnalisé",
+"desc": "L'IA recommande des parcours de formation adaptés aux compétences et objectifs de chaque collaborateur. Le développement des compétences devient ciblé et efficient.",
+"bullets": [
+"Analyse des compétences actuelles et des objectifs",
+"Recommandation de parcours de formation adaptés",
+"Priorisation selon les besoins de l'organisation",
+"Suivi de la progression et des acquis"
+],
+"metric": [
+"+35%",
+"d'adéquation des formations aux besoins"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"Sur quoi se base l'IA pour recommander une formation ?",
+"Sur l'écart entre les compétences détenues et celles attendues, croisé avec les objectifs du collaborateur et de l'entreprise."
+],
+[
+"Le collaborateur garde-t-il le choix de son parcours ?",
+"Oui, les recommandations servent d'appui au dialogue managérial, le collaborateur restant acteur de son développement."
+]
+]
+},
+{
+"slug": "automatiser-gestion-competences",
+"title": "Gestion des compétences",
+"h1": "Automatiser la gestion des compétences avec l'IA",
+"name": "la gestion des compétences",
+"desc": "L'IA cartographie les compétences disponibles dans l'organisation et identifie les écarts à combler. La GPEC s'appuie sur une vision actualisée et exploitable.",
+"bullets": [
+"Cartographie automatique des compétences internes",
+"Détection des écarts par rapport aux besoins futurs",
+"Identification des compétences rares ou critiques",
+"Aide à la mobilité interne et au staffing"
+],
+"metric": [
+"+40%",
+"de visibilité sur les compétences"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"D'où proviennent les données de compétences ?",
+"De vos référentiels, CV internes, fiches de poste et évaluations, que l'IA consolide en une cartographie unifiée."
+],
+[
+"Cet outil favorise-t-il la mobilité interne ?",
+"Oui, en rapprochant compétences disponibles et besoins, il facilite l'identification de candidats internes pour les postes à pourvoir."
+]
+]
+},
+{
+"slug": "automatiser-redaction-offres-emploi",
+"title": "Rédaction des offres d'emploi",
+"h1": "Automatiser la rédaction des offres d'emploi avec l'IA",
+"name": "la rédaction des offres d'emploi",
+"desc": "L'IA rédige des offres d'emploi attractives, inclusives et conformes à partir d'une trame de poste. Les recruteurs publient plus vite des annonces de qualité.",
+"bullets": [
+"Génération d'offres à partir des éléments du poste",
+"Optimisation de l'attractivité et de la clarté",
+"Vérification du caractère inclusif et non discriminant",
+"Adaptation au ton et aux valeurs de l'employeur"
+],
+"metric": [
+"−65%",
+"de temps de rédaction d'annonce"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les offres générées sont-elles conformes au droit du travail ?",
+"L'IA évite les formulations discriminatoires et vous gardez une validation finale pour assurer la conformité juridique."
+],
+[
+"Peut-on conserver notre marque employeur ?",
+"Oui, le style est calibré sur vos annonces existantes et vos valeurs pour rester fidèle à votre identité employeur."
+]
+]
+},
+{
+"slug": "automatiser-analyse-climat-social",
+"title": "Analyse du climat social",
+"h1": "Automatiser l'analyse du climat social avec l'IA",
+"name": "l'analyse du climat social",
+"desc": "L'IA analyse les enquêtes internes et verbatims pour mesurer le climat social et détecter les signaux faibles. Les RH agissent sur des constats objectivés.",
+"bullets": [
+"Analyse des enquêtes internes et verbatims",
+"Détection des thématiques et tensions émergentes",
+"Suivi de l'évolution du climat dans le temps",
+"Restitution agrégée et anonymisée"
+],
+"metric": [
+"+30%",
+"de signaux faibles identifiés"
+],
+"service": "audit-ia",
+"faq": [
+[
+"L'anonymat des collaborateurs est-il préservé ?",
+"Oui, l'analyse est agrégée et anonymisée, sans réidentification individuelle, dans le respect du RGPD et du dialogue social."
+],
+[
+"L'IA peut-elle analyser des réponses ouvertes en français ?",
+"Oui, elle traite les verbatims libres en français pour en extraire thèmes et sentiments, là où l'analyse manuelle atteint vite ses limites."
+]
+]
+},
+{
+"slug": "automatiser-prevision-turnover",
+"title": "Prévision du turnover",
+"h1": "Automatiser la prévision du turnover avec l'IA",
+"name": "la prévision du turnover",
+"desc": "L'IA identifie les facteurs de risque de départ et anticipe les zones de turnover élevé. Les RH peuvent agir en prévention sur la rétention.",
+"bullets": [
+"Identification des facteurs de risque de départ",
+"Estimation des zones de turnover à venir",
+"Mise en évidence des leviers de rétention",
+"Restitution agrégée pour l'action RH"
+],
+"metric": [
+"−15%",
+"de turnover sur les populations à risque"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"La prévision du turnover cible-t-elle des individus ?",
+"L'analyse vise prioritairement des populations et des facteurs collectifs, afin d'orienter des actions de rétention sans stigmatiser les personnes."
+],
+[
+"Comment garantir un usage éthique de ces prévisions ?",
+"Nous cadrons l'usage avec vous pour qu'il serve la prévention et l'amélioration des conditions de travail, dans le respect du cadre légal."
+]
+]
+},
+{
+"slug": "automatiser-revue-contrats",
+"title": "Revue automatique des contrats",
+"h1": "Automatiser la revue des contrats avec l'IA",
+"name": "la revue automatique des contrats",
+"desc": "L'IA analyse les contrats pour vérifier leur conformité aux standards de l'entreprise et signaler les points d'attention. Les juristes se concentrent sur les négociations à enjeu.",
+"bullets": [
+"Comparaison aux clauses standards de l'entreprise",
+"Repérage des écarts par rapport à la position de référence",
+"Mise en évidence des points à négocier",
+"Synthèse des risques par contrat"
+],
+"metric": [
+"−70%",
+"de temps de revue contractuelle"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA remplace-t-elle l'avis d'un juriste ?",
+"Non, elle accélère la première analyse et fiabilise la détection des écarts. La validation juridique reste humaine."
+],
+[
+"Peut-on intégrer notre bibliothèque de clauses ?",
+"Oui, vos clauses types et positions de repli sont intégrées pour que la revue reflète vos standards contractuels."
+]
+]
+},
+{
+"slug": "automatiser-veille-reglementaire",
+"title": "Veille réglementaire automatisée",
+"h1": "Automatiser la veille réglementaire avec l'IA",
+"name": "la veille réglementaire automatisée",
+"desc": "L'IA surveille les évolutions réglementaires pertinentes et en résume les impacts pour votre activité. Les équipes conformité ne passent plus à côté d'un texte clé.",
+"bullets": [
+"Surveillance continue des sources réglementaires",
+"Filtrage selon votre secteur et vos activités",
+"Synthèse des évolutions et de leurs impacts",
+"Alertes ciblées vers les équipes concernées"
+],
+"metric": [
+"−70%",
+"de temps de veille"
+],
+"service": "audit-ia",
+"faq": [
+[
+"Les synthèses réglementaires sont-elles fiables ?",
+"Elles renvoient aux textes sources et sont conçues pour appuyer l'analyse de vos juristes, qui restent décisionnaires sur l'interprétation."
+],
+[
+"Peut-on cibler des domaines réglementaires précis ?",
+"Oui, la veille est paramétrée sur vos thématiques (RGPD, droit social, normes sectorielles) pour éviter le bruit inutile."
+]
+]
+},
+{
+"slug": "automatiser-conformite-ai-act",
+"title": "Mise en conformité avec l'AI Act",
+"h1": "Automatiser la conformité à l'AI Act avec l'IA",
+"name": "la mise en conformité avec l'AI Act",
+"desc": "L'IA aide à inventorier vos systèmes d'IA, à les classer par niveau de risque et à suivre les obligations de l'AI Act. Vous sécurisez vos usages d'IA face à la réglementation européenne.",
+"bullets": [
+"Inventaire des systèmes d'IA en usage",
+"Classification par niveau de risque selon l'AI Act",
+"Suivi des obligations de documentation et de transparence",
+"Identification des écarts et plan de mise en conformité"
+],
+"metric": [
+"100%",
+"des systèmes d'IA cartographiés"
+],
+"service": "audit-ia",
+"faq": [
+[
+"Sommes-nous concernés par l'AI Act ?",
+"La plupart des organisations utilisant des systèmes d'IA le sont, à des degrés divers. Notre audit indépendant détermine votre exposition réelle."
+],
+[
+"En quoi votre indépendance est-elle utile ici ?",
+"N'étant lié à aucun éditeur, nous évaluons objectivement vos systèmes et obligations, sans intérêt à minimiser les écarts de conformité."
+]
+]
+},
+{
+"slug": "automatiser-conformite-rgpd",
+"title": "Conformité RGPD assistée",
+"h1": "Automatiser la conformité RGPD avec l'IA",
+"name": "la conformité RGPD assistée",
+"desc": "L'IA aide à cartographier les traitements de données, à détecter les risques et à traiter les demandes des personnes. La fonction DPO gagne en réactivité et en couverture.",
+"bullets": [
+"Aide à la cartographie des traitements de données",
+"Détection des données personnelles dans les documents",
+"Traitement des demandes d'exercice des droits",
+"Suivi des durées de conservation et des risques"
+],
+"metric": [
+"−60%",
+"de temps de traitement des demandes RGPD"
+],
+"service": "audit-ia",
+"faq": [
+[
+"L'IA peut-elle traiter les demandes d'accès aux données ?",
+"Elle accélère la recherche et la préparation des réponses, tandis que le DPO valide chaque réponse aux personnes concernées."
+],
+[
+"Comment garantir que l'outil lui-même est conforme ?",
+"Nous cadrons l'hébergement, les accès et la minimisation des données dès le départ, pour que le dispositif soit conforme par conception."
+]
+]
+},
+{
+"slug": "automatiser-detection-clauses-risque",
+"title": "Détection des clauses à risque",
+"h1": "Automatiser la détection des clauses à risque avec l'IA",
+"name": "la détection des clauses à risque",
+"desc": "L'IA repère dans les contrats les clauses sensibles ou défavorables nécessitant une attention particulière. Les juristes priorisent les risques réels.",
+"bullets": [
+"Repérage des clauses à risque ou inhabituelles",
+"Évaluation du niveau de risque par clause",
+"Comparaison avec vos positions de référence",
+"Synthèse priorisée des points d'attention"
+],
+"metric": [
+"+50%",
+"de clauses à risque détectées"
+],
+"service": "audit-ia",
+"faq": [
+[
+"Quels types de clauses l'IA détecte-t-elle ?",
+"Responsabilité, résiliation, pénalités, propriété intellectuelle ou exclusivité, selon les risques que vous souhaitez surveiller."
+],
+[
+"Le niveau de risque est-il personnalisable ?",
+"Oui, la grille de risque est calibrée sur votre appétit au risque et vos standards juridiques pour des alertes pertinentes."
+]
+]
+},
+{
+"slug": "automatiser-generation-documents-juridiques",
+"title": "Génération de documents juridiques",
+"h1": "Automatiser la génération de documents juridiques avec l'IA",
+"name": "la génération de documents juridiques",
+"desc": "L'IA produit des projets de documents juridiques à partir de modèles validés et des données du dossier. Les juristes se consacrent à la relecture et aux cas complexes.",
+"bullets": [
+"Génération de projets à partir de modèles validés",
+"Récupération des données du dossier concerné",
+"Adaptation des clauses au cas d'espèce",
+"Préparation pour relecture et validation juridique"
+],
+"metric": [
+"−65%",
+"de temps de rédaction"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les documents générés sont-ils juridiquement fiables ?",
+"Ils s'appuient sur vos modèles validés et restent soumis à la relecture de vos juristes avant tout usage."
+],
+[
+"Quels documents peut-on générer ?",
+"Contrats standards, avenants, courriers juridiques ou attestations, dès lors qu'un modèle de référence existe."
+]
+]
+},
+{
+"slug": "automatiser-gestion-litiges",
+"title": "Gestion des litiges",
+"h1": "Automatiser la gestion des litiges avec l'IA",
+"name": "la gestion des litiges",
+"desc": "L'IA aide à qualifier les litiges, à rassembler les pièces et à évaluer les enjeux pour structurer leur traitement. Les équipes juridiques pilotent un portefeuille de litiges sous contrôle.",
+"bullets": [
+"Qualification automatique des litiges entrants",
+"Consolidation des pièces et de l'historique",
+"Évaluation des enjeux et de la priorité",
+"Suivi des échéances et des actions à mener"
+],
+"metric": [
+"−40%",
+"de temps de constitution des dossiers"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA évalue-t-elle l'issue d'un litige ?",
+"Elle aide à estimer les enjeux et à prioriser, mais l'appréciation juridique et la stratégie restent du ressort des juristes et avocats."
+],
+[
+"Comment sont sécurisées les données sensibles des litiges ?",
+"Les accès sont restreints aux personnes habilitées et l'hébergement est cadré dès le départ pour protéger la confidentialité."
+]
+]
+},
+{
+"slug": "automatiser-due-diligence",
+"title": "Due diligence assistée par l'IA",
+"h1": "Automatiser la due diligence avec l'IA",
+"name": "la due diligence assistée par l'IA",
+"desc": "L'IA accélère l'analyse documentaire des opérations de due diligence en extrayant les informations clés et les risques. Les équipes couvrent davantage de documents en moins de temps.",
+"bullets": [
+"Analyse massive des documents de la data room",
+"Extraction des engagements, risques et anomalies",
+"Repérage des clauses sensibles et points de blocage",
+"Synthèse structurée pour les décideurs"
+],
+"metric": [
+"−60%",
+"de temps d'analyse documentaire"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA garantit-elle l'exhaustivité de la due diligence ?",
+"Elle élargit fortement la couverture documentaire et signale les points clés, mais l'analyse critique finale reste menée par vos experts."
+],
+[
+"Les documents confidentiels sont-ils protégés ?",
+"Oui, le traitement se fait dans un environnement sécurisé et cloisonné, avec des accès strictement limités à l'équipe projet."
+]
+]
+},
+{
+"slug": "generation-de-leads",
+"title": "Génération de leads",
+"h1": "Générez davantage de leads qualifiés grâce à l'IA",
+"name": "la génération de leads par l'IA",
+"desc": "L'IA identifie et qualifie automatiquement les prospects les plus prometteurs à partir de signaux comportementaux et de données firmographiques. Vos équipes commerciales se concentrent sur les opportunités à fort potentiel.",
+"bullets": [
+"Détection automatique des visiteurs à fort intérêt sur votre site",
+"Enrichissement des données prospects via sources externes",
+"Identification des comptes cibles correspondant à votre ICP",
+"Priorisation des leads selon leur probabilité de conversion"
+],
+"metric": [
+"+35%",
+"de leads qualifiés générés"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Quelles données sont nécessaires pour démarrer ?",
+"Votre CRM, vos données web et idéalement des sources d'enrichissement firmographiques suffisent pour entraîner un premier modèle pertinent."
+],
+[
+"Combien de temps avant les premiers résultats ?",
+"Un premier pilote opérationnel se met en place en six à huit semaines, avec affinage continu des modèles ensuite."
+]
+]
+},
+{
+"slug": "scoring-de-leads",
+"title": "Scoring de leads",
+"h1": "Priorisez vos prospects avec un scoring prédictif",
+"name": "le scoring de leads par l'IA",
+"desc": "L'IA attribue un score de conversion à chaque prospect en analysant son comportement et son profil. Les commerciaux savent immédiatement quels leads traiter en priorité.",
+"bullets": [
+"Score prédictif mis à jour en temps réel",
+"Analyse combinée des signaux comportementaux et déclaratifs",
+"Alertes automatiques sur les leads chauds",
+"Intégration native dans votre CRM existant"
+],
+"metric": [
+"x2",
+"de taux de conversion sur les leads prioritaires"
+],
+"service": "process-ia",
+"faq": [
+[
+"Le scoring remplace-t-il le jugement commercial ?",
+"Non, il l'assiste en hiérarchisant les opportunités, le commercial gardant la décision finale sur le traitement."
+],
+[
+"Le modèle s'adapte-t-il à notre cycle de vente ?",
+"Oui, il est entraîné sur votre historique propre afin de refléter les spécificités de votre cycle et de votre marché."
+]
+]
+},
+{
+"slug": "generation-de-contenu-marketing",
+"title": "Génération de contenu marketing",
+"h1": "Produisez du contenu marketing à grande échelle avec l'IA",
+"name": "la génération de contenu marketing par l'IA",
+"desc": "L'IA générative rédige articles, posts et fiches produits cohérents avec votre charte éditoriale. Vos équipes marketing multiplient leur production tout en gardant le contrôle qualité.",
+"bullets": [
+"Rédaction d'articles de blog et de pages SEO en quelques minutes",
+"Adaptation automatique au ton et à la charte de la marque",
+"Déclinaison multicanale d'un même message",
+"Validation humaine intégrée avant publication"
+],
+"metric": [
+"-60%",
+"de temps de production de contenu"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Le contenu généré est-il unique ?",
+"Oui, les textes sont produits à partir de vos briefs et de votre documentation, puis vérifiés pour éviter toute duplication."
+],
+[
+"Comment garantir le respect de la marque ?",
+"Un guide de style et des exemples valident le ton, et chaque contenu reste relu par vos équipes avant diffusion."
+]
+]
+},
+{
+"slug": "personnalisation",
+"title": "Personnalisation",
+"h1": "Personnalisez l'expérience client en temps réel",
+"name": "la personnalisation par l'IA",
+"desc": "L'IA adapte le contenu, les offres et les parcours à chaque visiteur selon son profil et son comportement. L'expérience devient pertinente et engageante pour chaque client.",
+"bullets": [
+"Recommandations de contenu adaptées à chaque visiteur",
+"Offres personnalisées selon l'historique d'achat",
+"Adaptation dynamique des pages web en temps réel",
+"Optimisation continue par tests automatisés"
+],
+"metric": [
+"+25%",
+"de taux d'engagement"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"La personnalisation respecte-t-elle le RGPD ?",
+"Oui, elle s'appuie sur des données collectées avec consentement et anonymisées lorsque c'est nécessaire."
+],
+[
+"Faut-il un gros volume de trafic ?",
+"Un trafic modéré suffit pour démarrer, les modèles gagnant en précision à mesure que les données s'accumulent."
+]
+]
+},
+{
+"slug": "segmentation-client",
+"title": "Segmentation client",
+"h1": "Segmentez vos clients avec précision grâce à l'IA",
+"name": "la segmentation client par l'IA",
+"desc": "L'IA regroupe automatiquement vos clients en segments homogènes à partir de leurs comportements et caractéristiques. Vos campagnes gagnent en pertinence et en efficacité.",
+"bullets": [
+"Segmentation automatique basée sur les comportements réels",
+"Détection de segments invisibles aux méthodes classiques",
+"Mise à jour dynamique des segments dans le temps",
+"Activation directe des segments dans vos outils marketing"
+],
+"metric": [
+"+30%",
+"de ROI sur les campagnes ciblées"
+],
+"service": "process-ia",
+"faq": [
+[
+"En quoi est-ce mieux qu'une segmentation manuelle ?",
+"L'IA détecte des regroupements complexes et les actualise automatiquement, là où la segmentation manuelle reste figée et approximative."
+],
+[
+"Peut-on combiner avec nos segments métier ?",
+"Oui, les segments issus de l'IA peuvent enrichir ou affiner vos segmentations métier existantes."
+]
+]
+},
+{
+"slug": "prevision-des-ventes",
+"title": "Prévision des ventes",
+"h1": "Anticipez vos ventes avec des prévisions fiables",
+"name": "la prévision des ventes par l'IA",
+"desc": "L'IA projette vos ventes futures en intégrant historique, saisonnalité et facteurs externes. Vos décisions de planification et d'allocation gagnent en fiabilité.",
+"bullets": [
+"Prévisions par produit, région et canal",
+"Prise en compte de la saisonnalité et des tendances",
+"Intégration de facteurs externes comme la météo ou l'économie",
+"Estimation de l'incertitude pour mieux décider"
+],
+"metric": [
+"-40%",
+"d'erreur de prévision"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quel historique faut-il fournir ?",
+"Idéalement deux à trois ans de données de ventes pour capter correctement la saisonnalité."
+],
+[
+"Les prévisions sont-elles explicables ?",
+"Oui, les modèles indiquent les principaux facteurs qui influencent chaque prévision pour faciliter la confiance des équipes."
+]
+]
+},
+{
+"slug": "propositions-commerciales",
+"title": "Propositions commerciales",
+"h1": "Rédigez des propositions commerciales en un temps record",
+"name": "la génération de propositions commerciales par l'IA",
+"desc": "L'IA assemble des propositions commerciales personnalisées à partir de vos modèles et de votre catalogue. Les commerciaux répondent plus vite et avec plus de pertinence.",
+"bullets": [
+"Génération automatique à partir du brief client",
+"Sélection des offres et références les plus adaptées",
+"Personnalisation du discours selon le secteur du prospect",
+"Cohérence garantie avec votre catalogue et vos tarifs"
+],
+"metric": [
+"-50%",
+"de temps de rédaction des propositions"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les tarifs sont-ils toujours à jour ?",
+"Oui, l'IA s'appuie sur votre catalogue connecté pour garantir des prix et des références exacts."
+],
+[
+"Le commercial peut-il modifier la proposition ?",
+"Absolument, le document généré est entièrement éditable avant envoi au client."
+]
+]
+},
+{
+"slug": "optimisation-seo",
+"title": "Optimisation SEO",
+"h1": "Optimisez votre référencement naturel avec l'IA",
+"name": "l'optimisation SEO par l'IA",
+"desc": "L'IA analyse les intentions de recherche et optimise vos contenus pour le référencement. Votre visibilité organique progresse durablement.",
+"bullets": [
+"Identification des mots-clés à fort potentiel",
+"Analyse des intentions de recherche par requête",
+"Recommandations d'optimisation on-page automatisées",
+"Suivi des positions et détection des opportunités"
+],
+"metric": [
+"+45%",
+"de trafic organique"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"L'IA respecte-t-elle les consignes des moteurs ?",
+"Oui, l'approche privilégie un contenu utile et de qualité, conforme aux recommandations des moteurs de recherche."
+],
+[
+"Combien de temps pour voir des résultats ?",
+"Les premières améliorations apparaissent en général sous trois à six mois, le SEO étant un travail de fond."
+]
+]
+},
+{
+"slug": "emailing-intelligent",
+"title": "Emailing intelligent",
+"h1": "Optimisez vos campagnes email avec l'IA",
+"name": "l'emailing intelligent par l'IA",
+"desc": "L'IA optimise objets, contenus et horaires d'envoi pour maximiser l'engagement de vos campagnes email. Vos taux d'ouverture et de clic progressent automatiquement.",
+"bullets": [
+"Génération et test automatique des objets d'email",
+"Optimisation de l'horaire d'envoi par destinataire",
+"Personnalisation du contenu selon le profil",
+"Réduction du taux de désabonnement par meilleur ciblage"
+],
+"metric": [
+"+28%",
+"de taux d'ouverture"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Faut-il changer d'outil d'emailing ?",
+"Non, l'IA s'intègre généralement à votre solution d'emailing existante via API."
+],
+[
+"Comment sont choisis les horaires d'envoi ?",
+"Le modèle apprend les habitudes d'ouverture de chaque destinataire pour proposer le moment le plus favorable."
+]
+]
+},
+{
+"slug": "analyse-concurrentielle",
+"title": "Analyse concurrentielle",
+"h1": "Surveillez vos concurrents automatiquement avec l'IA",
+"name": "l'analyse concurrentielle par l'IA",
+"desc": "L'IA collecte et synthétise en continu les actions de vos concurrents sur le web et les réseaux. Vous gardez une longueur d'avance sur votre marché.",
+"bullets": [
+"Veille automatisée sur les prix et les offres concurrentes",
+"Synthèse des nouveautés produits et communications",
+"Détection des changements de positionnement",
+"Alertes sur les mouvements stratégiques importants"
+],
+"metric": [
+"-70%",
+"de temps de veille"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Quelles sources sont surveillées ?",
+"Sites concurrents, réseaux sociaux, sites d'avis et presse spécialisée, selon votre périmètre défini."
+],
+[
+"La veille est-elle conforme au droit ?",
+"Oui, elle se limite à des données publiquement accessibles et respecte les conditions d'utilisation des sources."
+]
+]
+},
+{
+"slug": "recommandation-de-produits",
+"title": "Recommandation de produits",
+"h1": "Augmentez le panier moyen avec des recommandations IA",
+"name": "la recommandation de produits par l'IA",
+"desc": "L'IA suggère les produits les plus pertinents à chaque client selon son profil et son historique. Le panier moyen et les ventes croisées augmentent.",
+"bullets": [
+"Recommandations personnalisées en temps réel",
+"Ventes croisées et montées en gamme automatisées",
+"Adaptation aux stocks disponibles",
+"Apprentissage continu à partir des achats réels"
+],
+"metric": [
+"+20%",
+"de panier moyen"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Cela fonctionne-t-il avec un petit catalogue ?",
+"Oui, même un catalogue restreint bénéficie de recommandations pertinentes basées sur les comportements d'achat."
+],
+[
+"Les recommandations tiennent-elles compte du stock ?",
+"Oui, l'IA privilégie les produits disponibles pour éviter de recommander des articles en rupture."
+]
+]
+},
+{
+"slug": "next-best-action",
+"title": "Next best action",
+"h1": "Guidez chaque interaction client avec la next best action",
+"name": "la next best action par l'IA",
+"desc": "L'IA recommande la meilleure action à proposer à chaque client à chaque point de contact. Vos équipes maximisent la valeur de chaque interaction.",
+"bullets": [
+"Recommandation de l'action optimale en temps réel",
+"Prise en compte du contexte et de l'historique client",
+"Suggestions adaptées à chaque canal de contact",
+"Mesure continue de l'impact des actions recommandées"
+],
+"metric": [
+"+18%",
+"de valeur client générée"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quelle différence avec la recommandation de produits ?",
+"La next best action couvre toutes les interactions possibles, pas seulement les produits, comme une relance ou une offre de service."
+],
+[
+"Les conseillers gardent-ils la main ?",
+"Oui, la suggestion est une aide à la décision que le conseiller peut suivre ou écarter selon le contexte."
+]
+]
+},
+{
+"slug": "social-listening",
+"title": "Social listening",
+"h1": "Écoutez votre marché sur les réseaux avec l'IA",
+"name": "le social listening par l'IA",
+"desc": "L'IA analyse les conversations sur les réseaux sociaux pour mesurer le sentiment et détecter les tendances autour de votre marque. Vous réagissez plus vite et plus juste.",
+"bullets": [
+"Analyse de sentiment des mentions de votre marque",
+"Détection des tendances et sujets émergents",
+"Identification des influenceurs pertinents",
+"Alertes en cas de signaux de crise"
+],
+"metric": [
+"temps réel",
+"de détection des signaux faibles"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Quelles langues sont prises en charge ?",
+"Les principales langues européennes sont couvertes, avec une analyse de sentiment fiable en français."
+],
+[
+"Peut-on être alerté en cas de bad buzz ?",
+"Oui, des alertes se déclenchent automatiquement lorsqu'un pic de mentions négatives est détecté."
+]
+]
+},
+{
+"slug": "prevision-de-la-demande",
+"title": "Prévision de la demande",
+"h1": "Anticipez la demande avec des prévisions IA fiables",
+"name": "la prévision de la demande par l'IA",
+"desc": "L'IA prévoit la demande future par produit et par point de vente en intégrant de multiples facteurs. Vous ajustez production et stocks au plus juste.",
+"bullets": [
+"Prévisions granulaires par référence et par site",
+"Intégration de la saisonnalité et des promotions",
+"Prise en compte d'événements externes",
+"Réduction simultanée des ruptures et des surstocks"
+],
+"metric": [
+"-35%",
+"d'erreur de prévision"
+],
+"service": "process-ia",
+"faq": [
+[
+"Comment sont gérées les promotions ?",
+"L'IA apprend l'effet des promotions passées pour intégrer leur impact dans les prévisions futures."
+],
+[
+"Le modèle gère-t-il les nouveaux produits ?",
+"Oui, par analogie avec des produits similaires en attendant d'accumuler un historique propre."
+]
+]
+},
+{
+"slug": "optimisation-des-stocks",
+"title": "Optimisation des stocks",
+"h1": "Optimisez vos niveaux de stock avec l'IA",
+"name": "l'optimisation des stocks par l'IA",
+"desc": "L'IA calcule les niveaux de stock optimaux pour chaque référence en équilibrant disponibilité et coûts. Vous libérez de la trésorerie sans dégrader le service.",
+"bullets": [
+"Calcul des stocks de sécurité optimaux par référence",
+"Réduction du capital immobilisé en stock",
+"Maintien du taux de service client",
+"Recommandations de réapprovisionnement automatisées"
+],
+"metric": [
+"-25%",
+"de capital immobilisé"
+],
+"service": "process-ia",
+"faq": [
+[
+"Faut-il un WMS pour démarrer ?",
+"Un système de gestion des stocks aide, mais des données fiables de mouvements suffisent pour commencer."
+],
+[
+"Comment l'équilibre coût-service est-il fixé ?",
+"Vous définissez vos objectifs de taux de service, et l'IA optimise les stocks pour les atteindre au moindre coût."
+]
+]
+},
+{
+"slug": "sourcing-fournisseurs",
+"title": "Sourcing fournisseurs",
+"h1": "Identifiez les meilleurs fournisseurs grâce à l'IA",
+"name": "le sourcing fournisseurs par l'IA",
+"desc": "L'IA explore les marchés et qualifie automatiquement les fournisseurs potentiels selon vos critères. Vos acheteurs gagnent du temps et élargissent leur panel.",
+"bullets": [
+"Recherche automatisée de fournisseurs potentiels",
+"Qualification selon vos critères financiers et RSE",
+"Comparaison structurée des candidats",
+"Détection de nouveaux fournisseurs sur le marché"
+],
+"metric": [
+"-60%",
+"de temps de sourcing"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les critères RSE sont-ils pris en compte ?",
+"Oui, vous pouvez intégrer des critères environnementaux et sociaux dans la qualification des fournisseurs."
+],
+[
+"L'IA décide-t-elle du fournisseur retenu ?",
+"Non, elle présente une présélection argumentée, la décision finale restant aux acheteurs."
+]
+]
+},
+{
+"slug": "analyse-d-appels-d-offres",
+"title": "Analyse d'appels d'offres",
+"h1": "Analysez les appels d'offres plus vite avec l'IA",
+"name": "l'analyse d'appels d'offres par l'IA",
+"desc": "L'IA extrait et synthétise les exigences clés des appels d'offres volumineux. Vos équipes répondent plus vite et ne manquent aucune obligation.",
+"bullets": [
+"Extraction automatique des exigences et critères",
+"Synthèse des points d'attention et risques",
+"Vérification de la couverture des réponses",
+"Comparaison structurée des offres reçues"
+],
+"metric": [
+"-65%",
+"de temps d'analyse"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA traite-t-elle les documents PDF complexes ?",
+"Oui, elle extrait l'information même de documents longs et structurés au format PDF."
+],
+[
+"Peut-on l'utiliser côté acheteur et côté vendeur ?",
+"Oui, elle aide aussi bien à analyser les offres reçues qu'à vérifier la conformité d'une réponse."
+]
+]
+},
+{
+"slug": "optimisation-des-tournees",
+"title": "Optimisation des tournées",
+"h1": "Optimisez vos tournées de livraison avec l'IA",
+"name": "l'optimisation des tournées par l'IA",
+"desc": "L'IA calcule les itinéraires de livraison les plus efficaces en intégrant contraintes et trafic. Vous réduisez les kilomètres parcourus et les coûts de transport.",
+"bullets": [
+"Calcul d'itinéraires optimisés en temps réel",
+"Prise en compte des fenêtres de livraison",
+"Intégration du trafic et des contraintes véhicules",
+"Réduction des émissions de CO2 et des coûts"
+],
+"metric": [
+"-20%",
+"de kilomètres parcourus"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les contraintes de créneaux ?",
+"Oui, elle respecte les fenêtres horaires de livraison imposées par les clients."
+],
+[
+"Le recalcul est-il possible en cours de journée ?",
+"Oui, les tournées peuvent être réoptimisées dynamiquement en cas d'aléa ou de nouvelle commande."
+]
+]
+},
+{
+"slug": "gestion-des-approvisionnements",
+"title": "Gestion des approvisionnements",
+"h1": "Automatisez vos approvisionnements avec l'IA",
+"name": "la gestion des approvisionnements par l'IA",
+"desc": "L'IA déclenche et dimensionne automatiquement les réapprovisionnements selon la demande et les délais fournisseurs. Vous fiabilisez vos flux sans surcharge administrative.",
+"bullets": [
+"Génération automatique des propositions de commande",
+"Prise en compte des délais et minima fournisseurs",
+"Anticipation des pics de demande",
+"Réduction des tâches manuelles répétitives"
+],
+"metric": [
+"-50%",
+"de tâches manuelles"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les commandes sont-elles passées automatiquement ?",
+"Selon votre choix, l'IA peut proposer les commandes pour validation ou les déclencher automatiquement sous seuils définis."
+],
+[
+"Comment sont gérés les délais fournisseurs ?",
+"Les délais réels observés sont intégrés pour déclencher les commandes au bon moment."
+]
+]
+},
+{
+"slug": "detection-des-ruptures",
+"title": "Détection des ruptures",
+"h1": "Anticipez les ruptures de stock avec l'IA",
+"name": "la détection des ruptures par l'IA",
+"desc": "L'IA détecte en amont les risques de rupture sur vos références critiques. Vous agissez avant l'incident pour préserver le service client.",
+"bullets": [
+"Prédiction des risques de rupture par référence",
+"Alertes anticipées avant l'incident",
+"Identification des causes probables",
+"Recommandations d'actions correctives"
+],
+"metric": [
+"-45%",
+"de ruptures de stock"
+],
+"service": "process-ia",
+"faq": [
+[
+"Combien de temps à l'avance les ruptures sont-elles détectées ?",
+"Le délai dépend de vos données, mais l'objectif est d'alerter suffisamment tôt pour réagir, souvent plusieurs jours en amont."
+],
+[
+"L'outil propose-t-il des solutions ?",
+"Oui, il suggère des actions comme un réapprovisionnement urgent ou une réallocation entre sites."
+]
+]
+},
+{
+"slug": "aide-a-la-negociation-achats",
+"title": "Aide à la négociation achats",
+"h1": "Renforcez vos négociations achats avec l'IA",
+"name": "l'aide à la négociation achats par l'IA",
+"desc": "L'IA prépare vos négociations en analysant marchés, historiques et leviers disponibles. Vos acheteurs abordent chaque négociation avec un avantage informationnel.",
+"bullets": [
+"Analyse des prix de marché et des tendances",
+"Identification des leviers de négociation",
+"Simulation de scénarios de négociation",
+"Préparation d'argumentaires factuels"
+],
+"metric": [
+"-8%",
+"sur les coûts d'achat négociés"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Sur quelles données s'appuie l'analyse ?",
+"Sur vos historiques d'achats, les indices de marché disponibles et les conditions des fournisseurs."
+],
+[
+"Cela remplace-t-il l'acheteur ?",
+"Non, l'IA fournit des arguments et des scénarios, mais la conduite de la négociation reste humaine."
+]
+]
+},
+{
+"slug": "classification-des-achats",
+"title": "Classification des achats",
+"h1": "Classifiez automatiquement vos dépenses achats avec l'IA",
+"name": "la classification des achats par l'IA",
+"desc": "L'IA catégorise automatiquement vos dépenses selon votre nomenclature achats. Vous obtenez une vision fiable de vos dépenses pour piloter vos économies.",
+"bullets": [
+"Catégorisation automatique des lignes de dépense",
+"Harmonisation des données multi-sources",
+"Détection des dépenses hors contrat",
+"Vision consolidée pour le pilotage des achats"
+],
+"metric": [
+"95%",
+"de précision de classification"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA s'adapte-t-elle à notre nomenclature ?",
+"Oui, le modèle est entraîné sur votre référentiel achats spécifique."
+],
+[
+"Comment sont traitées les nouvelles catégories ?",
+"Le modèle peut être réentraîné régulièrement pour intégrer l'évolution de votre nomenclature."
+]
+]
+},
+{
+"slug": "suivi-des-livraisons",
+"title": "Suivi des livraisons",
+"h1": "Fiabilisez le suivi de vos livraisons avec l'IA",
+"name": "le suivi des livraisons par l'IA",
+"desc": "L'IA consolide les informations de transport et prédit les délais de livraison réels. Vous informez vos clients de façon proactive et fiable.",
+"bullets": [
+"Estimation fiable des délais de livraison",
+"Détection précoce des retards probables",
+"Notifications proactives aux clients",
+"Consolidation multi-transporteurs"
+],
+"metric": [
+"+30%",
+"de fiabilité des délais annoncés"
+],
+"service": "process-ia",
+"faq": [
+[
+"Les transporteurs doivent-ils être connectés ?",
+"Idéalement oui, mais l'IA peut aussi estimer les délais à partir de l'historique en l'absence de suivi en temps réel."
+],
+[
+"Les clients sont-ils prévenus en cas de retard ?",
+"Oui, des notifications automatiques peuvent être envoyées dès qu'un retard est anticipé."
+]
+]
+},
+{
+"slug": "optimisation-d-entrepot",
+"title": "Optimisation d'entrepôt",
+"h1": "Optimisez l'organisation de votre entrepôt avec l'IA",
+"name": "l'optimisation d'entrepôt par l'IA",
+"desc": "L'IA optimise l'implantation des produits et les parcours de préparation dans votre entrepôt. Vous augmentez la productivité logistique et réduisez les déplacements.",
+"bullets": [
+"Optimisation de l'emplacement des références",
+"Réduction des distances de picking",
+"Équilibrage de la charge entre zones",
+"Adaptation dynamique selon la saisonnalité"
+],
+"metric": [
+"-25%",
+"de temps de préparation"
+],
+"service": "process-ia",
+"faq": [
+[
+"Faut-il réaménager tout l'entrepôt ?",
+"Non, l'optimisation peut être progressive en commençant par les références à plus forte rotation."
+],
+[
+"L'outil tient-il compte de la saisonnalité ?",
+"Oui, l'implantation peut être ajustée selon les variations saisonnières de la demande."
+]
+]
+},
+{
+"slug": "maintenance-predictive",
+"title": "Maintenance prédictive",
+"h1": "Anticipez les pannes avec la maintenance prédictive IA",
+"name": "la maintenance prédictive par l'IA",
+"desc": "L'IA analyse les données capteurs pour prédire les défaillances avant qu'elles ne surviennent. Vous réduisez les arrêts non planifiés et optimisez vos interventions.",
+"bullets": [
+"Détection précoce des signes de défaillance",
+"Planification optimisée des interventions",
+"Réduction des arrêts machines imprévus",
+"Prolongation de la durée de vie des équipements"
+],
+"metric": [
+"-40%",
+"d'arrêts non planifiés"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Faut-il équiper les machines de capteurs ?",
+"Des capteurs facilitent la prédiction, mais on peut démarrer avec les données déjà disponibles sur les équipements."
+],
+[
+"Quel retour sur investissement attendre ?",
+"Le gain provient surtout de la réduction des arrêts subis et des interventions mieux planifiées."
+]
+]
+},
+{
+"slug": "controle-qualite-visuel",
+"title": "Contrôle qualité visuel",
+"h1": "Automatisez le contrôle qualité avec la vision IA",
+"name": "le contrôle qualité visuel par l'IA",
+"desc": "L'IA de vision détecte automatiquement les défauts sur vos produits en ligne de production. Vous améliorez la qualité tout en accélérant les contrôles.",
+"bullets": [
+"Détection automatique des défauts visuels",
+"Contrôle à 100% sans ralentir la cadence",
+"Réduction des défauts livrés aux clients",
+"Traçabilité complète des contrôles effectués"
+],
+"metric": [
+"99%",
+"de taux de détection des défauts"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Combien d'images faut-il pour entraîner le modèle ?",
+"Cela dépend des défauts, mais quelques centaines d'exemples par type de défaut constituent souvent une bonne base."
+],
+[
+"L'IA gère-t-elle de nouveaux types de défauts ?",
+"Oui, le modèle peut être réentraîné pour reconnaître de nouveaux défauts au fil du temps."
+]
+]
+},
+{
+"slug": "optimisation-de-l-oee",
+"title": "Optimisation de l'OEE",
+"h1": "Améliorez votre taux de rendement synthétique avec l'IA",
+"name": "l'optimisation de l'OEE par l'IA",
+"desc": "L'IA analyse les causes de pertes de performance pour améliorer votre taux de rendement synthétique. Vous augmentez la productivité de vos lignes existantes.",
+"bullets": [
+"Analyse des causes de pertes de rendement",
+"Identification des goulots d'étranglement",
+"Recommandations d'amélioration priorisées",
+"Suivi de l'OEE en temps réel"
+],
+"metric": [
+"+12 points",
+"d'OEE"
+],
+"service": "process-ia",
+"faq": [
+[
+"Qu'est-ce que l'OEE ?",
+"L'OEE, ou taux de rendement synthétique, mesure la performance globale d'un équipement en combinant disponibilité, performance et qualité."
+],
+[
+"Faut-il une supervision connectée ?",
+"Une remontée de données machine facilite l'analyse, mais on peut démarrer avec un suivi partiel des arrêts."
+]
+]
+},
+{
+"slug": "jumeau-numerique",
+"title": "Jumeau numérique",
+"h1": "Simulez vos process avec un jumeau numérique IA",
+"name": "le jumeau numérique par l'IA",
+"desc": "L'IA construit une réplique virtuelle de vos installations pour simuler et optimiser leur fonctionnement. Vous testez des scénarios sans risque pour la production.",
+"bullets": [
+"Réplique virtuelle de vos process industriels",
+"Simulation de scénarios sans interrompre la production",
+"Optimisation des paramètres de fonctionnement",
+"Anticipation de l'impact des changements"
+],
+"metric": [
+"-30%",
+"de temps d'optimisation des process"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Un jumeau numérique est-il long à construire ?",
+"La construction est progressive, en commençant par un périmètre ciblé avant de l'étendre."
+],
+[
+"Quelles décisions peut-on tester ?",
+"Changements de cadence, réorganisation de lignes ou nouveaux réglages peuvent être évalués virtuellement."
+]
+]
+},
+{
+"slug": "planification-de-production",
+"title": "Planification de production",
+"h1": "Optimisez votre planification de production avec l'IA",
+"name": "la planification de production par l'IA",
+"desc": "L'IA construit des plannings de production optimisés en tenant compte des contraintes et de la demande. Vous améliorez le respect des délais et l'utilisation des ressources.",
+"bullets": [
+"Ordonnancement optimisé des ordres de fabrication",
+"Prise en compte des contraintes machines et personnel",
+"Réduction des temps de changement de série",
+"Replanification rapide en cas d'aléa"
+],
+"metric": [
+"+15%",
+"de respect des délais"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle les aléas en cours de journée ?",
+"Oui, le planning peut être recalculé rapidement en cas de panne ou de commande urgente."
+],
+[
+"Faut-il un ERP pour démarrer ?",
+"Un ERP aide à alimenter les données, mais l'essentiel est de disposer des contraintes et des ordres de fabrication."
+]
+]
+},
+{
+"slug": "detection-d-anomalies-machines",
+"title": "Détection d'anomalies machines",
+"h1": "Détectez les anomalies de vos machines avec l'IA",
+"name": "la détection d'anomalies machines par l'IA",
+"desc": "L'IA surveille en continu le comportement de vos équipements pour repérer les anomalies. Vous intervenez avant qu'un dysfonctionnement n'affecte la production.",
+"bullets": [
+"Surveillance continue des signaux machines",
+"Détection des comportements anormaux",
+"Alertes en temps réel sur les dérives",
+"Réduction des incidents qualité et de production"
+],
+"metric": [
+"temps réel",
+"de détection des dérives"
+],
+"service": "process-ia",
+"faq": [
+[
+"Quelle différence avec la maintenance prédictive ?",
+"La détection d'anomalies repère tout comportement inhabituel, tandis que la maintenance prédictive estime spécifiquement le moment d'une panne."
+],
+[
+"Faut-il définir les anomalies à l'avance ?",
+"Non, l'IA apprend le fonctionnement normal et signale les écarts, même inédits."
+]
+]
+},
+{
+"slug": "optimisation-energetique",
+"title": "Optimisation énergétique",
+"h1": "Réduisez votre consommation d'énergie avec l'IA",
+"name": "l'optimisation énergétique par l'IA",
+"desc": "L'IA analyse vos consommations et pilote vos équipements pour réduire la facture énergétique. Vous diminuez vos coûts et votre empreinte carbone.",
+"bullets": [
+"Analyse fine des consommations par poste",
+"Détection des gaspillages et dérives",
+"Pilotage optimisé des équipements énergivores",
+"Réduction des coûts et des émissions de CO2"
+],
+"metric": [
+"-18%",
+"de consommation énergétique"
+],
+"service": "process-ia",
+"faq": [
+[
+"Faut-il installer des compteurs supplémentaires ?",
+"Un sous-comptage améliore la précision, mais on peut commencer avec les données de facturation et de supervision existantes."
+],
+[
+"Les gains sont-ils durables ?",
+"Oui, l'IA assure un pilotage continu qui maintient les économies dans le temps."
+]
+]
+},
+{
+"slug": "securite-au-travail-par-vision",
+"title": "Sécurité au travail par vision",
+"h1": "Renforcez la sécurité au travail avec la vision IA",
+"name": "la sécurité au travail par vision IA",
+"desc": "L'IA de vision détecte les situations à risque sur vos sites pour prévenir les accidents. Vous renforcez la sécurité de vos équipes en temps réel.",
+"bullets": [
+"Détection du port des équipements de protection",
+"Repérage des intrusions en zones dangereuses",
+"Alertes en temps réel sur les comportements à risque",
+"Analyse des situations pour la prévention"
+],
+"metric": [
+"-30%",
+"d'incidents de sécurité"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le dispositif respecte-t-il la vie privée des salariés ?",
+"Oui, l'analyse se concentre sur les situations de sécurité, avec anonymisation et information préalable des équipes conformément à la réglementation."
+],
+[
+"Faut-il de nouvelles caméras ?",
+"Les caméras existantes peuvent souvent être utilisées, sous réserve d'une qualité d'image suffisante."
+]
+]
+},
+{
+"slug": "qualite-des-donnees",
+"title": "Qualité des données",
+"h1": "Fiabilisez la qualité de vos données avec l'IA",
+"name": "la qualité des données par l'IA",
+"desc": "L'IA détecte et corrige automatiquement les anomalies et incohérences dans vos données. Vous prenez vos décisions sur des données fiables.",
+"bullets": [
+"Détection automatique des données incohérentes",
+"Identification des doublons et valeurs manquantes",
+"Suggestions de correction automatisées",
+"Suivi continu d'indicateurs de qualité"
+],
+"metric": [
+"+40%",
+"de fiabilité des données"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA corrige-t-elle automatiquement les erreurs ?",
+"Elle propose des corrections, qui peuvent être appliquées automatiquement ou validées selon votre niveau d'exigence."
+],
+[
+"Sur quelles données peut-on l'appliquer ?",
+"Sur tout type de données structurées, des référentiels clients aux données produits ou transactionnelles."
+]
+]
+},
+{
+"slug": "catalogue-de-donnees",
+"title": "Catalogue de données",
+"h1": "Cartographiez votre patrimoine de données avec l'IA",
+"name": "le catalogue de données par l'IA",
+"desc": "L'IA cartographie et documente automatiquement vos données dispersées dans l'entreprise. Vos équipes trouvent et comprennent rapidement les données disponibles.",
+"bullets": [
+"Recensement automatique des sources de données",
+"Documentation enrichie par l'IA",
+"Recherche en langage naturel des jeux de données",
+"Identification des données sensibles"
+],
+"metric": [
+"-70%",
+"de temps de recherche de données"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le catalogue se met-il à jour automatiquement ?",
+"Oui, le recensement et la documentation peuvent être actualisés régulièrement de façon automatisée."
+],
+[
+"Cela aide-t-il à la conformité ?",
+"Oui, l'identification des données sensibles facilite la gouvernance et le respect du RGPD."
+]
+]
+},
+{
+"slug": "requetes-en-langage-naturel",
+"title": "Requêtes en langage naturel",
+"h1": "Interrogez vos données en langage naturel avec l'IA",
+"name": "les requêtes en langage naturel par l'IA",
+"desc": "L'IA permet d'interroger vos bases de données avec des questions en français courant. Vos équipes accèdent aux données sans compétence technique.",
+"bullets": [
+"Interrogation des données en langage courant",
+"Traduction automatique en requêtes techniques",
+"Restitution sous forme de tableaux ou graphiques",
+"Accès aux données sans expertise SQL"
+],
+"metric": [
+"x5",
+"d'autonomie des métiers sur la donnée"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Faut-il connaître le SQL ?",
+"Non, l'IA traduit vos questions en français en requêtes techniques exécutées sur vos bases."
+],
+[
+"Les réponses sont-elles fiables ?",
+"L'IA s'appuie sur vos données réelles et peut afficher la requête générée pour permettre une vérification."
+]
+]
+},
+{
+"slug": "analyse-exploratoire",
+"title": "Analyse exploratoire",
+"h1": "Explorez vos données automatiquement avec l'IA",
+"name": "l'analyse exploratoire par l'IA",
+"desc": "L'IA explore automatiquement vos jeux de données pour révéler tendances et corrélations cachées. Vos analystes gagnent du temps sur les premières étapes d'analyse.",
+"bullets": [
+"Détection automatique des tendances et corrélations",
+"Génération d'hypothèses à explorer",
+"Visualisations pertinentes proposées automatiquement",
+"Accélération des phases d'analyse initiale"
+],
+"metric": [
+"-60%",
+"de temps d'exploration des données"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA remplace-t-elle l'analyste ?",
+"Non, elle accélère l'exploration initiale et met en évidence des pistes que l'analyste approfondit ensuite."
+],
+[
+"Quels formats de données sont acceptés ?",
+"Les jeux de données structurés issus de fichiers, bases ou entrepôts de données peuvent être analysés."
+]
+]
+},
+{
+"slug": "tableaux-de-bord-automatises",
+"title": "Tableaux de bord automatisés",
+"h1": "Générez vos tableaux de bord automatiquement avec l'IA",
+"name": "les tableaux de bord automatisés par l'IA",
+"desc": "L'IA construit et met à jour automatiquement vos tableaux de bord à partir de vos données. Vos équipes disposent d'un pilotage toujours à jour sans effort manuel.",
+"bullets": [
+"Génération automatique des indicateurs clés",
+"Mise à jour continue des données",
+"Commentaires automatiques des variations",
+"Adaptation aux besoins de chaque métier"
+],
+"metric": [
+"-80%",
+"de temps de production des reportings"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les tableaux de bord sont-ils personnalisables ?",
+"Oui, ils s'adaptent aux indicateurs et aux besoins propres de chaque métier."
+],
+[
+"L'IA explique-t-elle les variations ?",
+"Oui, elle peut générer des commentaires automatiques expliquant les évolutions des indicateurs."
+]
+]
+},
+{
+"slug": "data-lineage",
+"title": "Data lineage",
+"h1": "Tracez le cycle de vie de vos données avec l'IA",
+"name": "le data lineage par l'IA",
+"desc": "L'IA reconstitue automatiquement le parcours de vos données entre les systèmes. Vous comprenez l'origine et les transformations de chaque donnée.",
+"bullets": [
+"Traçabilité automatique du flux des données",
+"Visualisation des dépendances entre systèmes",
+"Analyse d'impact en cas de changement",
+"Renforcement de la conformité et de l'auditabilité"
+],
+"metric": [
+"100%",
+"de traçabilité des flux critiques"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"À quoi sert le data lineage ?",
+"Il permet de savoir d'où vient une donnée et comment elle a été transformée, ce qui est essentiel pour la confiance et la conformité."
+],
+[
+"Cela facilite-t-il les changements de systèmes ?",
+"Oui, l'analyse d'impact aide à anticiper les conséquences d'une modification sur les données en aval."
+]
+]
+},
+{
+"slug": "detection-d-anomalies-dans-les-donnees",
+"title": "Détection d'anomalies dans les données",
+"h1": "Détectez les anomalies dans vos données avec l'IA",
+"name": "la détection d'anomalies dans les données par l'IA",
+"desc": "L'IA surveille vos flux de données pour repérer les valeurs aberrantes et incohérences. Vous fiabilisez vos analyses et détectez les problèmes en amont.",
+"bullets": [
+"Surveillance continue des flux de données",
+"Détection des valeurs aberrantes et ruptures",
+"Alertes automatiques sur les anomalies critiques",
+"Identification des causes probables"
+],
+"metric": [
+"temps réel",
+"de détection des anomalies"
+],
+"service": "process-ia",
+"faq": [
+[
+"Faut-il définir les anomalies à l'avance ?",
+"Non, l'IA apprend les comportements normaux des données et signale automatiquement les écarts."
+],
+[
+"Cela concerne-t-il les données métier ou techniques ?",
+"Les deux, qu'il s'agisse de pipelines de données techniques ou d'indicateurs métier."
+]
+]
+},
+{
+"slug": "documentation-des-donnees",
+"title": "Documentation des données",
+"h1": "Documentez vos données automatiquement avec l'IA",
+"name": "la documentation des données par l'IA",
+"desc": "L'IA génère automatiquement la documentation de vos tables, champs et indicateurs. Vos équipes comprennent et utilisent les données plus facilement.",
+"bullets": [
+"Génération automatique des descriptions de champs",
+"Documentation des règles de gestion",
+"Mise à jour continue de la documentation",
+"Harmonisation du vocabulaire métier"
+],
+"metric": [
+"-75%",
+"de temps de documentation"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"La documentation générée est-elle fiable ?",
+"Elle est produite à partir des données et de leur contexte, puis peut être relue et complétée par les équipes."
+],
+[
+"Reste-t-elle à jour dans le temps ?",
+"Oui, la documentation peut être régénérée automatiquement à chaque évolution des données."
+]
+]
+},
+{
+"slug": "copilote-developpeur",
+"title": "Copilote développeur",
+"h1": "Accélérez vos développements avec un copilote IA",
+"name": "le copilote développeur par l'IA",
+"desc": "L'IA assiste vos développeurs en suggérant du code et en automatisant les tâches répétitives. Vos équipes livrent plus vite avec une meilleure qualité.",
+"bullets": [
+"Suggestions de code contextuelles en temps réel",
+"Génération de fonctions à partir de descriptions",
+"Réduction des tâches de codage répétitives",
+"Accélération de la montée en compétence"
+],
+"metric": [
+"+30%",
+"de productivité des développeurs"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le code généré est-il sécurisé ?",
+"Le code reste relu par les développeurs, et des outils d'analyse complètent le copilote pour la sécurité."
+],
+[
+"Quels langages sont pris en charge ?",
+"La plupart des langages courants sont supportés, avec une qualité optimale sur les langages les plus répandus."
+]
+]
+},
+{
+"slug": "generation-de-tests",
+"title": "Génération de tests",
+"h1": "Générez vos tests automatiquement avec l'IA",
+"name": "la génération de tests par l'IA",
+"desc": "L'IA génère automatiquement des tests unitaires et d'intégration pour votre code. Vous augmentez votre couverture de tests sans effort supplémentaire.",
+"bullets": [
+"Génération automatique de tests unitaires",
+"Couverture des cas limites souvent oubliés",
+"Augmentation rapide du taux de couverture",
+"Détection précoce des régressions"
+],
+"metric": [
+"+50%",
+"de couverture de tests"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"Les tests générés sont-ils pertinents ?",
+"Oui, ils couvrent les cas nominaux et limites, et restent vérifiables par les développeurs avant intégration."
+],
+[
+"Cela fonctionne-t-il sur du code existant ?",
+"Oui, l'IA peut générer des tests pour du code déjà en production afin de le sécuriser."
+]
+]
+},
+{
+"slug": "documentation-de-code",
+"title": "Documentation de code",
+"h1": "Documentez votre code automatiquement avec l'IA",
+"name": "la documentation de code par l'IA",
+"desc": "L'IA génère et maintient automatiquement la documentation technique de votre code. Vos équipes gagnent en maintenabilité et en partage de connaissances.",
+"bullets": [
+"Génération de commentaires et de docstrings",
+"Documentation des API et des modules",
+"Mise à jour à chaque modification du code",
+"Facilitation de l'onboarding des développeurs"
+],
+"metric": [
+"-70%",
+"de temps de documentation technique"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"La documentation suit-elle l'évolution du code ?",
+"Oui, elle peut être régénérée automatiquement à chaque modification pour rester à jour."
+],
+[
+"Quel format de documentation est produit ?",
+"Commentaires en ligne, documentation d'API ou pages dédiées selon vos standards."
+]
+]
+},
+{
+"slug": "analyse-de-logs",
+"title": "Analyse de logs",
+"h1": "Analysez vos logs intelligemment avec l'IA",
+"name": "l'analyse de logs par l'IA",
+"desc": "L'IA analyse vos volumes de logs pour identifier rapidement les causes d'incidents. Vos équipes IT résolvent les problèmes plus vite.",
+"bullets": [
+"Détection automatique des anomalies dans les logs",
+"Corrélation des événements entre systèmes",
+"Identification des causes racines",
+"Réduction du temps de diagnostic"
+],
+"metric": [
+"-55%",
+"de temps de diagnostic"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA gère-t-elle de gros volumes de logs ?",
+"Oui, elle est conçue pour traiter de grands volumes et en extraire les signaux pertinents."
+],
+[
+"S'intègre-t-elle à nos outils existants ?",
+"Oui, elle se connecte généralement aux solutions de centralisation de logs déjà en place."
+]
+]
+},
+{
+"slug": "gestion-d-incidents",
+"title": "Gestion d'incidents",
+"h1": "Accélérez la résolution d'incidents avec l'IA",
+"name": "la gestion d'incidents par l'IA",
+"desc": "L'IA accélère la qualification et la résolution des incidents IT en suggérant diagnostics et solutions. Vos équipes réduisent le temps de rétablissement.",
+"bullets": [
+"Qualification automatique des incidents",
+"Suggestions de solutions basées sur l'historique",
+"Priorisation selon l'impact",
+"Réduction du temps moyen de résolution"
+],
+"metric": [
+"-40%",
+"de temps de résolution"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA résout-elle les incidents seule ?",
+"Pour les cas simples elle peut proposer une résolution automatisée, les cas complexes restant traités par les équipes."
+],
+[
+"Sur quoi se base la suggestion de solution ?",
+"Sur l'historique des incidents résolus et la base de connaissances de votre organisation."
+]
+]
+},
+{
+"slug": "revue-de-code",
+"title": "Revue de code",
+"h1": "Fiabilisez vos revues de code avec l'IA",
+"name": "la revue de code par l'IA",
+"desc": "L'IA analyse automatiquement les modifications de code pour repérer bugs et mauvaises pratiques. Vos revues gagnent en rapidité et en qualité.",
+"bullets": [
+"Détection automatique des bugs potentiels",
+"Repérage des écarts aux bonnes pratiques",
+"Suggestions d'amélioration du code",
+"Allègement de la charge de revue manuelle"
+],
+"metric": [
+"-45%",
+"de temps de revue"
+],
+"service": "process-ia",
+"faq": [
+[
+"L'IA remplace-t-elle la revue humaine ?",
+"Non, elle effectue un premier filtrage qui permet aux relecteurs de se concentrer sur les points importants."
+],
+[
+"Détecte-t-elle les failles de sécurité ?",
+"Oui, elle repère les vulnérabilités courantes, en complément d'outils de sécurité dédiés."
+]
+]
+},
+{
+"slug": "migration-de-code",
+"title": "Migration de code",
+"h1": "Accélérez vos migrations de code avec l'IA",
+"name": "la migration de code par l'IA",
+"desc": "L'IA assiste la migration de votre code entre langages, frameworks ou versions. Vous réduisez le coût et le risque de vos projets de modernisation.",
+"bullets": [
+"Conversion assistée entre langages et frameworks",
+"Identification des points de vigilance",
+"Réduction des efforts de réécriture manuelle",
+"Préservation de la logique métier"
+],
+"metric": [
+"-50%",
+"d'effort de migration"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Le code migré est-il directement opérationnel ?",
+"Il constitue une base avancée qui doit être vérifiée et testée par les équipes avant mise en production."
+],
+[
+"Quels types de migrations sont couverts ?",
+"Changements de version, de framework ou de langage sur des applications existantes."
+]
+]
+},
+{
+"slug": "assistant-devops",
+"title": "Assistant DevOps",
+"h1": "Fluidifiez vos opérations avec un assistant DevOps IA",
+"name": "l'assistant DevOps par l'IA",
+"desc": "L'IA assiste vos équipes DevOps dans la gestion des pipelines, des configurations et des déploiements. Vous gagnez en fiabilité et en vélocité.",
+"bullets": [
+"Aide à la configuration des pipelines CI/CD",
+"Détection des erreurs de configuration",
+"Suggestions d'optimisation des déploiements",
+"Diagnostic accéléré des échecs de build"
+],
+"metric": [
+"+25%",
+"de vélocité des déploiements"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"S'intègre-t-il à nos outils CI/CD ?",
+"Oui, l'assistant se connecte aux principaux outils d'intégration et de déploiement continus."
+],
+[
+"Aide-t-il en cas d'échec de déploiement ?",
+"Oui, il analyse les logs de build pour proposer un diagnostic et des pistes de correction."
+]
+]
+},
+{
+"slug": "assistant-interne",
+"title": "Assistant interne",
+"h1": "Déployez un assistant IA interne pour vos équipes",
+"name": "l'assistant interne par l'IA",
+"desc": "L'IA répond aux questions de vos collaborateurs en s'appuyant sur vos ressources internes. Vos équipes trouvent l'information utile en quelques secondes.",
+"bullets": [
+"Réponses instantanées aux questions courantes",
+"Accès unifié à vos ressources internes",
+"Disponibilité permanente pour les collaborateurs",
+"Réduction des sollicitations répétitives"
+],
+"metric": [
+"-50%",
+"de questions répétitives"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"L'assistant a-t-il accès à toutes nos données ?",
+"Il accède uniquement aux ressources que vous autorisez, en respectant les droits d'accès de chaque collaborateur."
+],
+[
+"Comment garantir des réponses fiables ?",
+"L'assistant s'appuie sur vos contenus validés et peut citer ses sources pour vérification."
+]
+]
+},
+{
+"slug": "recherche-documentaire-rag",
+"title": "Recherche documentaire RAG",
+"h1": "Retrouvez l'information dans vos documents avec le RAG",
+"name": "la recherche documentaire RAG par l'IA",
+"desc": "L'IA recherche et synthétise l'information pertinente dans vos documents grâce à la génération augmentée par récupération. Vous obtenez des réponses sourcées à partir de votre base documentaire.",
+"bullets": [
+"Recherche sémantique dans l'ensemble de vos documents",
+"Réponses synthétiques avec citation des sources",
+"Prise en compte de documents volumineux",
+"Mise à jour automatique de la base de connaissances"
+],
+"metric": [
+"-65%",
+"de temps de recherche documentaire"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Qu'est-ce que le RAG ?",
+"Le RAG combine la recherche dans vos documents et la génération de réponses, afin de fournir des réponses fondées sur vos sources réelles."
+],
+[
+"Les réponses sont-elles vérifiables ?",
+"Oui, chaque réponse cite les documents sources pour permettre une vérification immédiate."
+]
+]
+},
+{
+"slug": "synthese-de-reunions",
+"title": "Synthèse de réunions",
+"h1": "Générez automatiquement les comptes rendus de réunion",
+"name": "la synthèse de réunions par l'IA",
+"desc": "L'IA transcrit et synthétise automatiquement vos réunions en comptes rendus structurés. Vos équipes gagnent du temps et ne perdent aucune décision.",
+"bullets": [
+"Transcription automatique des échanges",
+"Synthèse structurée des points clés",
+"Extraction des décisions et actions à suivre",
+"Partage facilité des comptes rendus"
+],
+"metric": [
+"-80%",
+"de temps de rédaction des comptes rendus"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"L'IA fonctionne-t-elle en français ?",
+"Oui, la transcription et la synthèse sont optimisées pour le français."
+],
+[
+"Les données de réunion sont-elles confidentielles ?",
+"Oui, les traitements respectent la confidentialité et peuvent être hébergés selon vos exigences de sécurité."
+]
+]
+},
+{
+"slug": "traduction-automatique",
+"title": "Traduction automatique",
+"h1": "Traduisez vos contenus instantanément avec l'IA",
+"name": "la traduction automatique par l'IA",
+"desc": "L'IA traduit vos documents et communications en préservant le sens et le ton. Vous communiquez à l'international sans barrière de langue.",
+"bullets": [
+"Traduction de documents dans de nombreuses langues",
+"Respect du vocabulaire métier de l'entreprise",
+"Préservation de la mise en forme",
+"Traduction à la volée des échanges"
+],
+"metric": [
+"-90%",
+"de coûts de traduction"
+],
+"service": "automatisation-agentique",
+"faq": [
+[
+"La traduction respecte-t-elle notre terminologie ?",
+"Oui, un glossaire métier peut être intégré pour garantir la cohérence des termes spécifiques."
+],
+[
+"Quel niveau de qualité atteint la traduction ?",
+"La qualité est élevée pour la plupart des usages professionnels, une relecture restant conseillée pour les documents sensibles."
+]
+]
+},
+{
+"slug": "redaction-assistee",
+"title": "Rédaction assistée",
+"h1": "Rédigez plus vite et mieux avec l'IA",
+"name": "la rédaction assistée par l'IA",
+"desc": "L'IA aide vos collaborateurs à rédiger documents, courriers et synthèses de qualité. Vos équipes produisent des écrits clairs en moins de temps.",
+"bullets": [
+"Aide à la rédaction de documents professionnels",
+"Reformulation et amélioration des textes",
+"Adaptation du ton selon le destinataire",
+"Correction orthographique et stylistique"
+],
+"metric": [
+"-40%",
+"de temps de rédaction"
+],
+"service": "transformation-ia",
+"faq": [
+[
+"Les textes générés sont-ils personnalisables ?",
+"Oui, ils constituent une base que chaque collaborateur ajuste selon son besoin et son style."
+],
+[
+"L'IA respecte-t-elle la confidentialité ?",
+"Oui, selon le déploiement choisi, les contenus restent dans votre environnement sécurisé."
+]
+]
+},
+{
+"slug": "cadrage-de-cas-d-usage-ia",
+"title": "Cadrage de cas d'usage IA",
+"h1": "Cadrez vos cas d'usage IA pour maximiser leur valeur",
+"name": "le cadrage de cas d'usage IA",
+"desc": "Atlas vous aide à identifier, qualifier et prioriser les cas d'usage IA les plus créateurs de valeur. Vous investissez sur les projets au meilleur potentiel.",
+"bullets": [
+"Identification des cas d'usage pertinents par métier",
+"Évaluation de la valeur et de la faisabilité",
+"Priorisation selon le retour sur investissement",
+"Définition des conditions de réussite"
+],
+"metric": [
+"x3",
+"de taux de réussite des projets IA"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"Pourquoi cadrer avant de se lancer ?",
+"Le cadrage évite d'investir dans des projets peu faisables ou à faible valeur et concentre les efforts là où l'impact est réel."
+],
+[
+"Combien de temps dure un cadrage ?",
+"Un cadrage de cas d'usage se mène généralement en quelques semaines selon le périmètre étudié."
+]
+]
+},
+{
+"slug": "audit-de-maturite-ia",
+"title": "Audit de maturité IA",
+"h1": "Évaluez votre maturité IA pour mieux progresser",
+"name": "l'audit de maturité IA",
+"desc": "Atlas évalue la maturité de votre organisation face à l'IA sur les plans technique, data et humain. Vous obtenez une vision claire de vos forces et de vos axes de progrès.",
+"bullets": [
+"Diagnostic des données, outils et compétences",
+"Évaluation de la gouvernance et des process",
+"Identification des écarts et des leviers",
+"Recommandations priorisées et concrètes"
+],
+"metric": [
+"360°",
+"de vision de votre maturité IA"
+],
+"service": "audit-ia",
+"faq": [
+[
+"Que couvre l'audit de maturité ?",
+"Il couvre les dimensions data, technologie, compétences, gouvernance et culture afin de donner une vision complète."
+],
+[
+"À qui s'adresse cet audit ?",
+"À toute organisation qui souhaite structurer sa démarche IA, qu'elle débute ou soit déjà avancée."
+]
+]
+},
+{
+"slug": "feuille-de-route-ia",
+"title": "Feuille de route IA",
+"h1": "Construisez votre feuille de route IA avec Atlas",
+"name": "la feuille de route IA",
+"desc": "Atlas définit avec vous une trajectoire IA claire alignée sur vos objectifs stratégiques. Vous déployez l'IA de façon progressive et maîtrisée.",
+"bullets": [
+"Vision cible alignée sur la stratégie d'entreprise",
+"Séquencement des initiatives par vagues",
+"Estimation des ressources et investissements",
+"Indicateurs de suivi de la transformation"
+],
+"metric": [
+"3 ans",
+"de trajectoire IA structurée"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"En quoi consiste une feuille de route IA ?",
+"C'est un plan structuré qui séquence vos initiatives IA dans le temps en fonction de leur valeur et de votre maturité."
+],
+[
+"La feuille de route est-elle figée ?",
+"Non, elle est révisée régulièrement pour s'adapter aux résultats obtenus et aux évolutions de votre contexte."
+]
+]
+},
+{
+"slug": "acculturation-et-formation-a-l-ia",
+"title": "Acculturation et formation à l'IA",
+"h1": "Acculturez et formez vos équipes à l'IA",
+"name": "l'acculturation et la formation à l'IA",
+"desc": "Atlas accompagne la montée en compétence de vos collaborateurs sur l'IA, des dirigeants aux opérationnels. Vous ancrez durablement l'usage de l'IA dans votre organisation.",
+"bullets": [
+"Sensibilisation des dirigeants aux enjeux de l'IA",
+"Formations pratiques adaptées aux métiers",
+"Diffusion des bons usages et de l'esprit critique",
+"Ancrage d'une culture de l'IA responsable"
+],
+"metric": [
+"+80%",
+"de collaborateurs autonomes sur l'IA"
+],
+"service": "strategie-ia",
+"faq": [
+[
+"Les formations sont-elles adaptées aux non-techniciens ?",
+"Oui, les parcours sont conçus pour chaque public, des dirigeants aux équipes opérationnelles, sans prérequis technique."
+],
+[
+"Pourquoi acculturer avant de déployer l'IA ?",
+"L'adhésion et la compréhension des équipes conditionnent l'adoption réelle et le succès des projets IA."
+]
+]
+}
+]

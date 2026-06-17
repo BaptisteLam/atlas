@@ -1,0 +1,392 @@
+[
+  {
+    "slug": "direction-generale",
+    "title": "Direction générale",
+    "name": "la direction générale",
+    "angle": "La direction générale doit arbitrer les investissements IA, fixer le niveau d'ambition et incarner la gouvernance sans se laisser submerger par le bruit technologique. L'enjeu est de transformer l'IA en avantage compétitif durable plutôt qu'en collection de pilotes sans suite.",
+    "bullets": [
+      "Tableaux de bord exécutifs synthétisant en temps réel performance, risques et avancement du portefeuille IA",
+      "Aide à la décision stratégique par simulation de scénarios et analyse prédictive de marché",
+      "Briefings et notes de synthèse générés automatiquement à partir des reportings internes",
+      "Comité IA et instances de gouvernance pour arbitrer priorités, budgets et niveau de risque acceptable"
+    ],
+    "stat": "Les entreprises dont le comité exécutif pilote activement l'IA capturent jusqu'à 3 fois plus de valeur de leurs initiatives."
+  },
+  {
+    "slug": "strategie-transformation",
+    "title": "Stratégie & transformation",
+    "name": "la stratégie et la transformation",
+    "angle": "La fonction stratégie doit intégrer l'IA dans la feuille de route de l'entreprise, prioriser les cas d'usage à fort impact et orchestrer la conduite du changement. Le défi est de passer de l'expérimentation à un déploiement industrialisé et mesurable.",
+    "bullets": [
+      "Cartographie et priorisation des cas d'usage IA selon valeur, faisabilité et niveau de risque",
+      "Veille concurrentielle et technologique automatisée pour anticiper les ruptures de marché",
+      "Modélisation des business cases et calcul du ROI des programmes de transformation",
+      "Suivi des indicateurs d'adoption et de création de valeur tout au long du déploiement"
+    ],
+    "stat": "Seuls 26% des projets IA dépassent le stade du pilote, un cadrage stratégique rigoureux double ce taux de passage à l'échelle."
+  },
+  {
+    "slug": "finance",
+    "title": "Finance",
+    "name": "la finance",
+    "angle": "La direction financière fait face à des clôtures lourdes, des prévisions incertaines et une pression croissante sur la qualité du reporting. L'IA permet de fiabiliser les projections et de libérer les équipes des tâches de réconciliation à faible valeur.",
+    "bullets": [
+      "Prévisions de chiffre d'affaires et de cash-flow affinées par modèles prédictifs",
+      "Automatisation du rapprochement comptable et de la clôture mensuelle",
+      "Détection d'anomalies et de fraudes dans les flux de transactions",
+      "Analyse en langage naturel des écarts budgétaires et des variances de marge"
+    ],
+    "stat": "L'automatisation des processus financiers réduit le temps de clôture mensuelle de 30 à 50%."
+  },
+  {
+    "slug": "comptabilite",
+    "title": "Comptabilité",
+    "name": "la comptabilité",
+    "angle": "La comptabilité traite des volumes considérables de factures, de pièces et d'écritures avec une exigence absolue de conformité. L'IA accélère la saisie, sécurise l'imputation et fiabilise les déclarations sans renoncer à la traçabilité.",
+    "bullets": [
+      "Reconnaissance et extraction automatique des données de factures fournisseurs (OCR intelligent)",
+      "Imputation comptable assistée et lettrage automatique des écritures",
+      "Contrôle de cohérence des déclarations de TVA et liasses fiscales",
+      "Assistant documentaire pour interroger plan comptable et normes en langage naturel"
+    ],
+    "stat": "Le traitement automatisé d'une facture fournisseur passe de plusieurs minutes à quelques secondes, avec un taux d'erreur divisé par cinq."
+  },
+  {
+    "slug": "controle-de-gestion",
+    "title": "Contrôle de gestion",
+    "name": "le contrôle de gestion",
+    "angle": "Le contrôle de gestion consacre encore trop de temps à collecter et fiabiliser la donnée avant de pouvoir l'analyser. L'IA inverse cette répartition en automatisant la production des reportings pour recentrer les équipes sur l'aide à la décision.",
+    "bullets": [
+      "Reportings et tableaux de bord générés et commentés automatiquement",
+      "Analyse des écarts entre réel, budget et atterrissage avec explication des causes",
+      "Modélisation budgétaire et rolling forecast assistés par apprentissage automatique",
+      "Allocation analytique des coûts et calcul de rentabilité par produit, client ou canal"
+    ],
+    "stat": "Les contrôleurs de gestion équipés d'IA réallouent jusqu'à 40% de leur temps de la production vers l'analyse à valeur ajoutée."
+  },
+  {
+    "slug": "tresorerie",
+    "title": "Trésorerie",
+    "name": "la trésorerie",
+    "angle": "La trésorerie doit anticiper les positions de cash, sécuriser la liquidité et optimiser le placement dans un environnement de taux volatil. L'IA améliore la précision des prévisions et la réactivité face aux tensions de financement.",
+    "bullets": [
+      "Prévisions de trésorerie court et moyen terme par modèles de flux prédictifs",
+      "Optimisation du placement et du financement selon scénarios de taux",
+      "Détection des fraudes au virement et contrôle des paiements en temps réel",
+      "Gestion automatisée du risque de change et des couvertures"
+    ],
+    "stat": "Une prévision de trésorerie pilotée par IA améliore la fiabilité des projections à 13 semaines de l'ordre de 20 points."
+  },
+  {
+    "slug": "ressources-humaines",
+    "title": "Ressources humaines",
+    "name": "les ressources humaines",
+    "angle": "La fonction RH jongle entre attractivité, rétention des talents et automatisation des processus administratifs. L'IA aide à personnaliser l'expérience collaborateur tout en allégeant la charge opérationnelle des équipes.",
+    "bullets": [
+      "Analyse prédictive du risque de départ et des facteurs d'engagement",
+      "Cartographie des compétences et identification des besoins de montée en compétence",
+      "Assistants conversationnels RH pour répondre aux questions courantes des salariés",
+      "Aide à la planification des effectifs et au pilotage de la masse salariale"
+    ],
+    "stat": "Les modèles prédictifs d'engagement permettent de réduire le turnover non désiré de 15 à 25% sur les populations clés."
+  },
+  {
+    "slug": "paie-administration-personnel",
+    "title": "Paie & administration du personnel",
+    "name": "la paie et l'administration du personnel",
+    "angle": "La paie exige une exactitude sans faille et une conformité permanente face à une réglementation mouvante. L'IA réduit les anomalies, fiabilise les bulletins et fluidifie le traitement des dossiers administratifs.",
+    "bullets": [
+      "Détection automatique des anomalies de paie avant validation des bulletins",
+      "Traitement et classement intelligent des justificatifs et arrêts de travail",
+      "Veille réglementaire et mise à jour des règles de calcul conventionnelles",
+      "Assistant pour répondre aux questions des salariés sur bulletins et soldes de congés"
+    ],
+    "stat": "La fiabilisation automatisée des bulletins réduit le taux d'anomalies de paie de plus de 30%."
+  },
+  {
+    "slug": "recrutement",
+    "title": "Recrutement",
+    "name": "le recrutement",
+    "angle": "Le recrutement subit des délais d'embauche longs et un tri manuel chronophage de candidatures. L'IA accélère la présélection et améliore l'expérience candidat, à condition de maîtriser les biais et le cadre légal.",
+    "bullets": [
+      "Présélection et matching des candidatures sur compétences plutôt que sur mots-clés",
+      "Rédaction assistée d'offres d'emploi inclusives et optimisées",
+      "Planification automatique des entretiens et relances candidats",
+      "Analyse des canaux de sourcing pour optimiser le coût et la qualité des recrutements"
+    ],
+    "stat": "L'automatisation de la présélection réduit le délai moyen d'embauche de l'ordre de 25 à 40%."
+  },
+  {
+    "slug": "formation-developpement",
+    "title": "Formation & développement",
+    "name": "la formation et le développement",
+    "angle": "La formation doit suivre le rythme d'obsolescence accéléré des compétences, notamment face à l'IA elle-même. L'enjeu est de personnaliser les parcours à grande échelle et de mesurer réellement la montée en compétence.",
+    "bullets": [
+      "Parcours d'apprentissage personnalisés et adaptatifs selon le niveau de chacun",
+      "Génération de contenus pédagogiques et de quiz à partir de la documentation interne",
+      "Recommandation de formations alignées sur les besoins métier et les écarts de compétence",
+      "Tuteurs conversationnels disponibles en continu pour accompagner les apprenants"
+    ],
+    "stat": "Les parcours adaptatifs pilotés par IA augmentent les taux de complétion des formations de 20 à 60%."
+  },
+  {
+    "slug": "juridique",
+    "title": "Juridique",
+    "name": "la fonction juridique",
+    "angle": "La direction juridique traite un volume croissant de contrats et de demandes internes avec des ressources contraintes. L'IA accélère la revue documentaire et sécurise la rédaction, sous supervision systématique d'un juriste.",
+    "bullets": [
+      "Revue et analyse de contrats avec extraction des clauses sensibles et échéances",
+      "Rédaction assistée d'actes et de clauses à partir de modèles validés",
+      "Recherche juridique et jurisprudentielle en langage naturel",
+      "Pilotage du portefeuille contractuel et alertes sur renouvellements et risques"
+    ],
+    "stat": "L'analyse contractuelle assistée par IA réduit le temps de revue d'un contrat standard de 60 à 80%."
+  },
+  {
+    "slug": "conformite-risques",
+    "title": "Conformité & risques",
+    "name": "la conformité et la gestion des risques",
+    "angle": "La conformité doit absorber une réglementation foisonnante (RGPD, AI Act, sanctions, LCB-FT) tout en surveillant des risques opérationnels diffus. L'IA renforce la détection et la traçabilité, mais devient elle-même un objet de contrôle.",
+    "bullets": [
+      "Surveillance continue des transactions et alertes sur opérations suspectes (LCB-FT)",
+      "Veille réglementaire automatisée et cartographie des obligations applicables",
+      "Évaluation et scoring des risques fournisseurs, clients et tiers",
+      "Documentation et traçabilité automatisées des contrôles pour les audits"
+    ],
+    "stat": "Les dispositifs de surveillance par IA réduisent les faux positifs en conformité de 30 à 50%, libérant les analystes pour les vrais cas."
+  },
+  {
+    "slug": "achats",
+    "title": "Achats",
+    "name": "la fonction achats",
+    "angle": "La fonction achats doit dégager des économies tout en sécurisant les approvisionnements dans un contexte de tensions sur les chaînes. L'IA éclaire les décisions de sourcing et automatise le traitement des demandes et appels d'offres.",
+    "bullets": [
+      "Analyse des dépenses (spend analysis) pour identifier les leviers d'économies",
+      "Aide à la négociation par benchmark de prix et analyse de marché",
+      "Automatisation du traitement des demandes d'achat et des appels d'offres",
+      "Évaluation et notation des fournisseurs sur performance, risque et conformité"
+    ],
+    "stat": "Une analyse des dépenses augmentée par IA permet d'identifier 5 à 10% d'économies adressables sur les achats indirects."
+  },
+  {
+    "slug": "supply-chain",
+    "title": "Supply chain",
+    "name": "la supply chain",
+    "angle": "La supply chain doit concilier niveau de service, coûts de stock et résilience face à des aléas multiples. L'IA améliore la précision de la demande et la réactivité du réseau pour limiter ruptures et surstocks.",
+    "bullets": [
+      "Prévision de la demande affinée par apprentissage automatique multi-facteurs",
+      "Optimisation des niveaux de stock et des points de réapprovisionnement",
+      "Détection précoce des risques de rupture et d'aléas fournisseurs",
+      "Planification S&OP assistée et simulation de scénarios d'approvisionnement"
+    ],
+    "stat": "Les prévisions de demande par IA réduisent les erreurs de l'ordre de 20 à 50% et les ruptures de 20 à 30%."
+  },
+  {
+    "slug": "logistique-entreposage",
+    "title": "Logistique & entreposage",
+    "name": "la logistique et l'entreposage",
+    "angle": "La logistique cherche à réduire les coûts de transport et à fluidifier les opérations d'entrepôt sous contrainte de délais. L'IA optimise tournées, implantation et préparation pour augmenter la productivité physique.",
+    "bullets": [
+      "Optimisation des tournées de livraison et du chargement des véhicules",
+      "Prévision des volumes et pilotage dynamique des ressources d'entrepôt",
+      "Optimisation du slotting et des trajets de préparation de commandes",
+      "Suivi prédictif des délais de livraison et anticipation des retards"
+    ],
+    "stat": "L'optimisation des tournées par IA réduit les kilomètres parcourus et les coûts de transport de 10 à 20%."
+  },
+  {
+    "slug": "production-operations",
+    "title": "Production & opérations",
+    "name": "la production et les opérations",
+    "angle": "La production doit maximiser le rendement des lignes tout en maîtrisant les rebuts et la consommation d'énergie. L'IA exploite les données capteurs pour optimiser les réglages et stabiliser les processus en temps réel.",
+    "bullets": [
+      "Optimisation des paramètres de fabrication pour maximiser le rendement (TRS)",
+      "Détection en temps réel des dérives de process à partir des données capteurs",
+      "Planification fine et ordonnancement de la production",
+      "Réduction des consommations d'énergie et de matières par pilotage prédictif"
+    ],
+    "stat": "L'optimisation des processus par IA améliore le taux de rendement synthétique (TRS) de 5 à 15 points."
+  },
+  {
+    "slug": "maintenance",
+    "title": "Maintenance",
+    "name": "la maintenance",
+    "angle": "La maintenance arbitre en permanence entre disponibilité des équipements et coûts d'intervention. L'IA fait passer d'une logique corrective ou calendaire à une maintenance prédictive fondée sur l'état réel des machines.",
+    "bullets": [
+      "Maintenance prédictive par détection des signaux faibles de défaillance",
+      "Estimation de la durée de vie résiduelle des équipements critiques",
+      "Optimisation des plans de maintenance et des stocks de pièces détachées",
+      "Assistant technique pour le diagnostic et les procédures d'intervention"
+    ],
+    "stat": "La maintenance prédictive réduit les arrêts non planifiés de 30 à 50% et allonge la durée de vie des équipements."
+  },
+  {
+    "slug": "qualite-hse",
+    "title": "Qualité & HSE",
+    "name": "la qualité et la fonction HSE",
+    "angle": "La qualité et l'HSE doivent garantir conformité, sécurité et zéro défaut tout en documentant chaque écart. L'IA renforce le contrôle visuel et l'analyse des causes pour prévenir incidents et non-conformités.",
+    "bullets": [
+      "Contrôle qualité automatisé par vision industrielle et détection de défauts",
+      "Analyse des causes racines des non-conformités et des incidents",
+      "Détection des situations à risque sécurité par analyse d'images et de capteurs",
+      "Automatisation de la gestion documentaire qualité et des plans d'action correctifs"
+    ],
+    "stat": "Le contrôle qualité par vision atteint des taux de détection des défauts supérieurs à 99%, bien au-delà de l'inspection manuelle."
+  },
+  {
+    "slug": "rd-innovation",
+    "title": "R&D & innovation",
+    "name": "la R&D et l'innovation",
+    "angle": "La R&D cherche à raccourcir les cycles de conception et à explorer un espace de solutions toujours plus vaste. L'IA accélère la recherche, la simulation et la génération de concepts pour réduire le temps de mise sur le marché.",
+    "bullets": [
+      "Exploration de l'état de l'art et analyse de portefeuilles de brevets",
+      "Conception générative et optimisation de matériaux ou de formulations",
+      "Simulation accélérée remplaçant une partie des essais physiques coûteux",
+      "Synthèse automatique de la littérature scientifique et des données d'essais"
+    ],
+    "stat": "La conception et la simulation assistées par IA peuvent réduire les cycles de développement produit de 20 à 50%."
+  },
+  {
+    "slug": "marketing",
+    "title": "Marketing",
+    "name": "le marketing",
+    "angle": "Le marketing doit produire toujours plus de contenu personnalisé tout en démontrant son ROI. L'IA générative démultiplie la capacité de production créative et affine le ciblage, au prix d'une vigilance accrue sur la marque et la donnée.",
+    "bullets": [
+      "Génération et déclinaison de contenus créatifs multicanaux à grande échelle",
+      "Personnalisation des messages et des parcours selon les segments",
+      "Optimisation des campagnes et de l'allocation budgétaire par canal",
+      "Analyse prédictive de la valeur client et du churn pour cibler les actions"
+    ],
+    "stat": "La personnalisation pilotée par IA peut augmenter le retour sur investissement marketing de 10 à 30%."
+  },
+  {
+    "slug": "communication",
+    "title": "Communication",
+    "name": "la communication",
+    "angle": "La communication doit gérer la réputation en temps réel et alimenter de multiples canaux avec un message cohérent. L'IA accélère la production éditoriale et le monitoring, tout en exigeant un contrôle strict du ton et des faits.",
+    "bullets": [
+      "Rédaction assistée de communiqués, articles et posts adaptés à chaque canal",
+      "Veille médias et réseaux sociaux avec analyse de sentiment en temps réel",
+      "Détection précoce des signaux de crise et aide à la gestion de réputation",
+      "Adaptation et traduction multilingue des messages institutionnels"
+    ],
+    "stat": "L'analyse de sentiment automatisée permet de détecter un signal de crise plusieurs heures avant les dispositifs traditionnels."
+  },
+  {
+    "slug": "commercial-ventes",
+    "title": "Commercial & ventes",
+    "name": "la fonction commerciale",
+    "angle": "Les équipes commerciales perdent un temps précieux en tâches administratives au détriment de la relation client. L'IA priorise les opportunités, prépare les rendez-vous et automatise le suivi pour concentrer l'effort sur la vente.",
+    "bullets": [
+      "Scoring et priorisation des leads selon la probabilité de conversion",
+      "Prévision des ventes et analyse de la santé du pipeline commercial",
+      "Génération automatique de propositions, devis et comptes-rendus",
+      "Recommandation d'actions et de next best offer par compte client"
+    ],
+    "stat": "Le scoring prédictif des leads augmente les taux de conversion de 10 à 20% et réduit le temps administratif des commerciaux."
+  },
+  {
+    "slug": "service-client",
+    "title": "Service client & relation client",
+    "name": "le service client et la relation client",
+    "angle": "Le service client doit absorber des volumes croissants de sollicitations tout en élevant la qualité de réponse. L'IA automatise les demandes simples et assiste les conseillers sur les cas complexes, sans dégrader l'expérience.",
+    "bullets": [
+      "Agents conversationnels traitant les demandes courantes en libre-service",
+      "Assistance en temps réel aux conseillers avec suggestions de réponses",
+      "Routage intelligent des demandes vers le bon interlocuteur",
+      "Analyse des verbatims et de la satisfaction pour détecter les irritants"
+    ],
+    "stat": "L'automatisation du support permet de traiter jusqu'à 50% des demandes de niveau 1 sans intervention humaine."
+  },
+  {
+    "slug": "dsi-it",
+    "title": "DSI & IT",
+    "name": "la DSI et la fonction IT",
+    "angle": "La DSI doit livrer plus vite, maintenir un patrimoine applicatif vieillissant et soutenir le support utilisateur. L'IA accélère le développement logiciel et l'exploitation, tout en posant de nouveaux enjeux de gouvernance technique.",
+    "bullets": [
+      "Assistance au développement et à la génération de code et de tests",
+      "Détection et résolution proactive des incidents (AIOps)",
+      "Support IT de niveau 1 automatisé pour les demandes récurrentes",
+      "Aide à la modernisation et à la documentation du legacy applicatif"
+    ],
+    "stat": "L'assistance au développement par IA accélère la productivité des développeurs de 20 à 55% sur les tâches éligibles."
+  },
+  {
+    "slug": "cybersecurite",
+    "title": "Cybersécurité",
+    "name": "la cybersécurité",
+    "angle": "La cybersécurité fait face à des menaces plus rapides et plus volumineuses que les équipes ne peuvent traiter manuellement. L'IA accélère la détection et la réponse, mais arme aussi les attaquants, ce qui impose une course permanente.",
+    "bullets": [
+      "Détection des comportements anormaux et des menaces en temps réel",
+      "Priorisation des alertes et automatisation de la réponse aux incidents (SOAR)",
+      "Analyse et corrélation des logs à grande échelle pour la chasse aux menaces",
+      "Évaluation continue des vulnérabilités et priorisation des correctifs"
+    ],
+    "stat": "Les organisations s'appuyant sur l'IA en sécurité réduisent le délai d'identification et de confinement d'une brèche de près de 100 jours."
+  },
+  {
+    "slug": "data-analytics",
+    "title": "Data & analytics",
+    "name": "la fonction data et analytics",
+    "angle": "La fonction data porte la responsabilité de transformer des données brutes en valeur, tout en garantissant leur qualité et leur gouvernance. L'IA fluidifie la préparation et démocratise l'accès à l'analyse pour les métiers.",
+    "bullets": [
+      "Préparation et nettoyage automatisés des données pour fiabiliser les analyses",
+      "Analyse en langage naturel permettant aux métiers d'interroger la donnée",
+      "Détection automatique de tendances, corrélations et anomalies",
+      "Documentation et gouvernance du patrimoine de données (data catalog)"
+    ],
+    "stat": "Les data scientists consacrent jusqu'à 80% de leur temps à préparer la donnée, un travail que l'automatisation réduit drastiquement."
+  },
+  {
+    "slug": "audit-interne",
+    "title": "Audit interne",
+    "name": "l'audit interne",
+    "angle": "L'audit interne ne peut plus se contenter d'échantillons quand les données permettent un contrôle exhaustif. L'IA fait évoluer la fonction vers un audit en continu, plus prédictif et davantage centré sur les risques émergents.",
+    "bullets": [
+      "Analyse exhaustive des transactions plutôt que par échantillonnage",
+      "Détection d'anomalies et de schémas de fraude sur l'ensemble des données",
+      "Priorisation des missions d'audit selon une cartographie dynamique des risques",
+      "Automatisation de la collecte des preuves et de la rédaction des constats"
+    ],
+    "stat": "L'analyse exhaustive par IA fait passer la couverture d'audit de quelques pourcents à la quasi-totalité des transactions."
+  },
+  {
+    "slug": "rse-developpement-durable",
+    "title": "RSE & développement durable",
+    "name": "la RSE et le développement durable",
+    "angle": "La RSE doit collecter et fiabiliser des données extra-financières dispersées pour répondre à des exigences réglementaires renforcées (CSRD). L'IA structure ce reporting et éclaire les leviers de réduction d'empreinte les plus efficaces.",
+    "bullets": [
+      "Collecte et consolidation automatisées des données extra-financières (CSRD)",
+      "Calcul et suivi du bilan carbone sur les scopes 1, 2 et 3",
+      "Analyse des risques ESG dans la chaîne de valeur et chez les fournisseurs",
+      "Identification et simulation des leviers de réduction d'empreinte environnementale"
+    ],
+    "stat": "L'automatisation du reporting extra-financier réduit l'effort de collecte CSRD de 30 à 50% tout en améliorant la traçabilité."
+  },
+  {
+    "slug": "services-generaux",
+    "title": "Services généraux",
+    "name": "les services généraux",
+    "angle": "Les services généraux gèrent un parc immobilier et des prestations dont les coûts énergétiques pèsent lourd. L'IA optimise l'occupation des espaces et la consommation des bâtiments tout en fluidifiant la gestion des demandes internes.",
+    "bullets": [
+      "Pilotage énergétique prédictif des bâtiments et réduction des consommations",
+      "Optimisation de l'occupation des espaces et de la réservation des salles",
+      "Maintenance prédictive des équipements techniques et CVC",
+      "Automatisation du traitement des demandes et tickets des occupants"
+    ],
+    "stat": "Le pilotage énergétique intelligent des bâtiments permet de réduire la facture énergétique de 10 à 25%."
+  },
+  {
+    "slug": "relation-fournisseurs",
+    "title": "Relation fournisseurs",
+    "name": "la relation fournisseurs",
+    "angle": "La relation fournisseurs conditionne la résilience et la performance de toute la chaîne de valeur. L'IA permet d'évaluer en continu la santé et les risques des partenaires pour anticiper les défaillances plutôt que les subir.",
+    "bullets": [
+      "Évaluation continue de la performance et de la santé financière des fournisseurs",
+      "Détection précoce des risques de défaillance et de dépendance critique",
+      "Automatisation de l'onboarding et de la qualification des nouveaux fournisseurs",
+      "Analyse des contrats cadres et suivi des engagements de service (SLA)"
+    ],
+    "stat": "Le suivi prédictif des risques fournisseurs permet d'anticiper jusqu'à 70% des défaillances plusieurs mois à l'avance."
+  }
+]
