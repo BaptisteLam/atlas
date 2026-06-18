@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "paris",
+    "title": "Paris",
+    "region": "Île-de-France",
+    "name": "Paris",
+    "economy": "Paris concentre les sièges sociaux du CAC 40, la finance (place de marché, banques, assurances) et un écosystème dense de services aux entreprises, médias et luxe (LVMH, Kering). La capitale abrite aussi une scène tech foisonnante autour de Station F et de nombreuses licornes.",
+    "local_sectors": ["Finance & assurance", "Luxe & mode", "Services aux entreprises", "Tech & startups"],
+    "angle": "Entre conformité réglementaire et productivité des fonctions support, les sièges parisiens cherchent à industrialiser l'IA générative à grande échelle."
+  },
+  {
+    "slug": "lyon",
+    "title": "Lyon",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Lyon",
+    "economy": "Lyon est un pôle majeur de la santé et des biotechnologies (Sanofi, bioMérieux, Boehringer, vaccins) ainsi que de la chimie le long de la Vallée de la Chimie. La métropole rayonne aussi par la banque, le négoce et un tissu industriel diversifié.",
+    "local_sectors": ["Santé & biotechnologies", "Chimie & pharmacie", "Banque & services", "Industrie"],
+    "angle": "Les acteurs lyonnais de la santé et de la chimie mobilisent l'IA pour accélérer la R&D, la pharmacovigilance et l'optimisation des procédés industriels."
+  },
+  {
+    "slug": "marseille",
+    "title": "Marseille",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Marseille",
+    "economy": "Premier port de France, Marseille s'appuie sur la logistique maritime, le transport et le négoce méditerranéen ainsi que sur un hub numérique singulier porté par les câbles sous-marins et les datacenters. La cité phocéenne développe aussi la santé et le tourisme de croisière.",
+    "local_sectors": ["Logistique & portuaire", "Numérique & datacenters", "Santé", "Tourisme"],
+    "angle": "Le port et les opérateurs numériques marseillais s'appuient sur l'IA pour fluidifier les flux logistiques et exploiter la donnée des infrastructures connectées."
+  },
+  {
+    "slug": "toulouse",
+    "title": "Toulouse",
+    "region": "Occitanie",
+    "name": "Toulouse",
+    "economy": "Toulouse est la capitale européenne de l'aéronautique et du spatial avec Airbus, Thales Alenia Space et le CNES, qui structurent un vaste réseau de sous-traitants. La ville rose s'appuie aussi sur la santé et une filière numérique en forte croissance.",
+    "local_sectors": ["Aéronautique & spatial", "Numérique", "Santé", "Électronique embarquée"],
+    "angle": "Les industriels aéronautiques toulousains exploitent l'IA pour la maintenance prédictive, le jumeau numérique et le traitement des données de vol."
+  },
+  {
+    "slug": "nice",
+    "title": "Nice",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Nice",
+    "economy": "Nice vit du tourisme, de l'hôtellerie et de l'événementiel de la Côte d'Azur, soutenus par un aéroport international parmi les plus fréquentés de France. La technopole de Sophia-Antipolis toute proche y adosse une filière numérique et de recherche dynamique.",
+    "local_sectors": ["Tourisme & hôtellerie", "Numérique", "Santé", "Événementiel"],
+    "angle": "Hôteliers et acteurs touristiques niçois misent sur l'IA pour la personnalisation de l'expérience client et la gestion intelligente des flux de visiteurs."
+  },
+  {
+    "slug": "nantes",
+    "title": "Nantes",
+    "region": "Pays de la Loire",
+    "name": "Nantes",
+    "economy": "Nantes combine un solide tissu numérique et créatif (jeu vidéo, agences, French Tech) avec l'industrie aéronautique (Airbus Bouguenais) et navale du grand ouest. La métropole s'illustre aussi par l'agroalimentaire et les industries culturelles.",
+    "local_sectors": ["Numérique & jeu vidéo", "Aéronautique", "Agroalimentaire", "Industries culturelles"],
+    "angle": "L'écosystème numérique nantais et ses industriels adoptent l'IA pour la conception assistée, la production de contenus et l'optimisation des chaînes de fabrication."
+  },
+  {
+    "slug": "montpellier",
+    "title": "Montpellier",
+    "region": "Occitanie",
+    "name": "Montpellier",
+    "economy": "Montpellier est un pôle reconnu de santé et de recherche médicale (CHU, cancérologie, génopole) adossé à une université et un IRD de premier plan. La ville accueille une filière numérique en plein essor et de nombreuses startups e-santé.",
+    "local_sectors": ["Santé & e-santé", "Recherche & biotechnologies", "Numérique", "Agronomie"],
+    "angle": "Les acteurs montpelliérains de la santé exploitent l'IA pour l'imagerie médicale, le diagnostic et l'analyse de données cliniques."
+  },
+  {
+    "slug": "strasbourg",
+    "title": "Strasbourg",
+    "region": "Grand Est",
+    "name": "Strasbourg",
+    "economy": "Capitale européenne, Strasbourg s'appuie sur les institutions communautaires, le secteur public et un tissu de services juridiques et de traduction. La ville cultive aussi la pharmacie, la santé et une logistique rhénane transfrontalière.",
+    "local_sectors": ["Institutions & secteur public", "Pharmacie & santé", "Logistique transfrontalière", "Services juridiques"],
+    "angle": "Institutions et acteurs de santé strasbourgeois s'intéressent à l'IA pour le traitement multilingue des documents et l'aide à la décision réglementaire."
+  },
+  {
+    "slug": "bordeaux",
+    "title": "Bordeaux",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Bordeaux",
+    "economy": "Bordeaux est mondialement associée à la filière vin et au négoce, qui irriguent l'agroalimentaire et l'œnotourisme régional. La métropole s'appuie aussi sur l'aéronautique-défense (Dassault, Thales) et un secteur numérique en croissance.",
+    "local_sectors": ["Vin & négoce", "Aéronautique & défense", "Numérique", "Agroalimentaire"],
+    "angle": "Négociants et industriels bordelais mobilisent l'IA pour la traçabilité, la prévision des récoltes et l'optimisation de la production aéronautique."
+  },
+  {
+    "slug": "lille",
+    "title": "Lille",
+    "region": "Hauts-de-France",
+    "name": "Lille",
+    "economy": "Lille est la capitale française de la vente à distance et du e-commerce, berceau de grands groupes de distribution (Auchan, Decathlon, Leroy Merlin issus de l'AFM). La métropole s'appuie aussi sur le textile, la santé et un pôle tertiaire à Euralille.",
+    "local_sectors": ["Distribution & e-commerce", "Textile & mode", "Santé", "Services tertiaires"],
+    "angle": "Les enseignes de distribution lilloises déploient l'IA pour la prévision de la demande, la recommandation produit et l'optimisation de la supply chain."
+  },
+  {
+    "slug": "rennes",
+    "title": "Rennes",
+    "region": "Bretagne",
+    "name": "Rennes",
+    "economy": "Rennes est un haut lieu des télécoms, du numérique et de la cybersécurité, avec un pôle d'excellence cyber et de grands centres de R&D (Orange, b<>com, Inria). L'agroalimentaire et l'automobile (PSA La Janais) complètent ce tissu.",
+    "local_sectors": ["Télécoms & numérique", "Cybersécurité", "Agroalimentaire", "Automobile"],
+    "angle": "Les spécialistes rennais des télécoms et de la cyber exploitent l'IA pour la détection de menaces et l'optimisation des réseaux."
+  },
+  {
+    "slug": "reims",
+    "title": "Reims",
+    "region": "Grand Est",
+    "name": "Reims",
+    "economy": "Reims est la capitale du champagne, où les grandes maisons et le négoce structurent toute la chaîne viticole et l'œnotourisme. La ville s'appuie aussi sur l'agroalimentaire, la logistique et la bioéconomie autour de la bioraffinerie de Pomacle-Bazancourt.",
+    "local_sectors": ["Champagne & viticulture", "Agroalimentaire", "Bioéconomie", "Logistique"],
+    "angle": "Maisons de champagne et acteurs agro-industriels rémois s'appuient sur l'IA pour la qualité, la prévision des vendanges et la valorisation de la biomasse."
+  },
+  {
+    "slug": "le-havre",
+    "title": "Le Havre",
+    "region": "Normandie",
+    "name": "Le Havre",
+    "economy": "Premier port de conteneurs français, Le Havre concentre la logistique maritime, le transport et l'industrie lourde (raffinage, pétrochimie, énergie). La ville est un maillon clé du commerce extérieur et du complexe industrialo-portuaire de l'estuaire de la Seine.",
+    "local_sectors": ["Portuaire & logistique", "Pétrochimie & raffinage", "Énergie", "Commerce international"],
+    "angle": "Le port et les industriels havrais déploient l'IA pour optimiser les flux de conteneurs, la maintenance des installations et la sécurité des sites."
+  },
+  {
+    "slug": "saint-etienne",
+    "title": "Saint-Étienne",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Saint-Étienne",
+    "economy": "Berceau industriel, Saint-Étienne s'est réinventée autour du design (Cité du design, label UNESCO), de la mécanique et des dispositifs médicaux. La ville conserve un savoir-faire fort en optique, plasturgie et industrie manufacturière.",
+    "local_sectors": ["Design", "Dispositifs médicaux", "Mécanique & métallurgie", "Optique"],
+    "angle": "Les PME industrielles stéphanoises s'emparent de l'IA pour le contrôle qualité, la conception générative et la modernisation de leurs lignes de production."
+  },
+  {
+    "slug": "toulon",
+    "title": "Toulon",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Toulon",
+    "economy": "Toulon abrite la première base navale de France et la Marine nationale, qui structurent une importante filière de défense et de construction-réparation navale (Naval Group). La rade vit aussi du tourisme et des activités maritimes.",
+    "local_sectors": ["Défense & naval", "Construction navale", "Tourisme", "Maritime"],
+    "angle": "Les acteurs toulonnais de la défense navale explorent l'IA pour la surveillance maritime, la maintenance des bâtiments et l'analyse de données capteurs."
+  },
+  {
+    "slug": "grenoble",
+    "title": "Grenoble",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Grenoble",
+    "economy": "Grenoble est un pôle mondial de la microélectronique et des nanotechnologies, structuré par le CEA-Leti, STMicroelectronics et le campus GIANT. La capitale des Alpes concentre une densité rare de laboratoires de recherche et de startups deep tech.",
+    "local_sectors": ["Microélectronique & semi-conducteurs", "Recherche & deep tech", "Énergie", "Nanotechnologies"],
+    "angle": "Les acteurs grenoblois de la microélectronique et de la recherche intègrent l'IA pour la conception de puces, la simulation et l'accélération scientifique."
+  },
+  {
+    "slug": "dijon",
+    "title": "Dijon",
+    "region": "Bourgogne-Franche-Comté",
+    "name": "Dijon",
+    "economy": "Dijon s'appuie sur l'agroalimentaire et la gastronomie (moutarde, cassis, Cité internationale de la gastronomie) et sur la filière viticole bourguignonne. La ville cultive aussi la santé, la pharmacie et un pôle de recherche agronomique.",
+    "local_sectors": ["Agroalimentaire & gastronomie", "Viticulture", "Pharmacie & santé", "Recherche agronomique"],
+    "angle": "Les industriels agroalimentaires dijonnais mobilisent l'IA pour la qualité produit, la traçabilité et l'optimisation des process de transformation."
+  },
+  {
+    "slug": "angers",
+    "title": "Angers",
+    "region": "Pays de la Loire",
+    "name": "Angers",
+    "economy": "Angers est la capitale française du végétal, avec un pôle horticole et semencier de rang mondial (Végépolys). La ville accueille aussi l'électronique et l'objet connecté (Bodet, Thomson, Cité de l'objet connecté) ainsi que l'assurance et le tourisme.",
+    "local_sectors": ["Végétal & horticulture", "Électronique & IoT", "Assurance", "Tourisme"],
+    "angle": "Les acteurs angevins du végétal et de l'électronique connectée s'appuient sur l'IA pour l'agriculture de précision et l'exploitation des données capteurs."
+  },
+  {
+    "slug": "nimes",
+    "title": "Nîmes",
+    "region": "Occitanie",
+    "name": "Nîmes",
+    "economy": "Nîmes vit du tourisme patrimonial autour de ses monuments romains et d'un tissu de commerce et de services. La ville s'appuie aussi sur l'agroalimentaire, le textile (berceau du denim) et la logistique au carrefour rhodanien.",
+    "local_sectors": ["Tourisme & patrimoine", "Agroalimentaire", "Commerce & services", "Logistique"],
+    "angle": "Les acteurs nîmois du tourisme et du commerce explorent l'IA pour valoriser le patrimoine, gérer les flux et personnaliser la relation client."
+  },
+  {
+    "slug": "clermont-ferrand",
+    "title": "Clermont-Ferrand",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Clermont-Ferrand",
+    "economy": "Clermont-Ferrand est indissociable de Michelin, dont le siège et les centres de R&D structurent toute la filière du pneumatique et des matériaux. La ville s'appuie aussi sur la santé, l'agroalimentaire et un pôle universitaire et de recherche reconnu.",
+    "local_sectors": ["Pneumatique & matériaux", "Santé", "Agroalimentaire", "Recherche"],
+    "angle": "L'écosystème industriel clermontois mobilise l'IA pour la R&D matériaux, le contrôle qualité et la mobilité connectée."
+  },
+  {
+    "slug": "le-mans",
+    "title": "Le Mans",
+    "region": "Pays de la Loire",
+    "name": "Le Mans",
+    "economy": "Le Mans est un pôle de l'assurance et de la mutualité (groupe MMA, Covéa) et un centre industriel automobile renommé, marqué par les 24 Heures et les équipementiers. La ville s'appuie aussi sur l'agroalimentaire et la logistique.",
+    "local_sectors": ["Assurance & mutuelles", "Automobile", "Agroalimentaire", "Logistique"],
+    "angle": "Assureurs et équipementiers manceaux déploient l'IA pour l'évaluation des risques, la gestion des sinistres et l'automatisation industrielle."
+  },
+  {
+    "slug": "aix-en-provence",
+    "title": "Aix-en-Provence",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Aix-en-Provence",
+    "economy": "Aix-en-Provence conjugue un fort secteur de services, de conseil et de droit avec la microélectronique du pôle voisin de Rousset (STMicroelectronics) et le pôle de recherche de l'ITER tout proche. La ville vit aussi du tourisme et de la culture.",
+    "local_sectors": ["Services & conseil", "Microélectronique", "Recherche & énergie", "Tourisme & culture"],
+    "angle": "Cabinets de conseil et industriels aixois s'appuient sur l'IA pour la productivité des fonctions support et l'optimisation des procédés high-tech."
+  },
+  {
+    "slug": "brest",
+    "title": "Brest",
+    "region": "Bretagne",
+    "name": "Brest",
+    "economy": "Brest est un centre majeur des sciences et technologies de la mer, avec l'Ifremer, le pôle Mer Bretagne et une importante base navale. La ville s'appuie aussi sur la réparation navale, les télécoms et l'économie maritime.",
+    "local_sectors": ["Sciences de la mer", "Défense & naval", "Télécoms & numérique", "Économie maritime"],
+    "angle": "Les acteurs brestois de la mer et du naval exploitent l'IA pour l'océanographie, la surveillance maritime et la maintenance des navires."
+  },
+  {
+    "slug": "tours",
+    "title": "Tours",
+    "region": "Centre-Val de Loire",
+    "name": "Tours",
+    "economy": "Tours s'appuie sur la santé et la pharmacie (CHU, pôle vaccinal et cosmétique), ainsi que sur le tourisme des châteaux de la Loire et la viticulture. La ville accueille aussi un tissu tertiaire et logistique au carrefour ligérien.",
+    "local_sectors": ["Santé & pharmacie", "Tourisme & patrimoine", "Viticulture", "Logistique"],
+    "angle": "Les acteurs tourangeaux de la santé et du tourisme mobilisent l'IA pour la recherche clinique et la valorisation de l'offre patrimoniale."
+  },
+  {
+    "slug": "amiens",
+    "title": "Amiens",
+    "region": "Hauts-de-France",
+    "name": "Amiens",
+    "economy": "Amiens dispose d'un solide tissu industriel (chimie, plasturgie, pneumatique, agroalimentaire) hérité de la tradition manufacturière picarde. La ville s'appuie aussi sur la santé, l'université et la logistique.",
+    "local_sectors": ["Industrie & chimie", "Agroalimentaire", "Santé", "Logistique"],
+    "angle": "Les industriels amiénois s'emparent de l'IA pour la maintenance prédictive, le contrôle qualité et l'efficacité énergétique de leurs sites."
+  },
+  {
+    "slug": "limoges",
+    "title": "Limoges",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Limoges",
+    "economy": "Limoges est mondialement connue pour la porcelaine et les arts du feu, qui ont essaimé vers les céramiques techniques et industrielles. La ville s'appuie aussi sur la santé, l'électronique de puissance et la filière luxe (Hermès, émaux).",
+    "local_sectors": ["Céramique & arts du feu", "Luxe & cuir", "Électronique", "Santé"],
+    "angle": "Les acteurs limougeauds de la céramique et du luxe exploitent l'IA pour le contrôle qualité, la personnalisation et l'innovation matériaux."
+  },
+  {
+    "slug": "annecy",
+    "title": "Annecy",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Annecy",
+    "economy": "Annecy s'appuie sur le tourisme alpin et lacustre ainsi que sur une industrie de pointe dans le décolletage, la mécatronique et les sports outdoor (Salomon, mecatronics de la vallée de l'Arve). La ville accueille aussi l'animation et l'image (festival international du film d'animation).",
+    "local_sectors": ["Tourisme & outdoor", "Décolletage & mécatronique", "Animation & image", "Sports d'hiver"],
+    "angle": "Les industriels et acteurs touristiques annéciens mobilisent l'IA pour l'usinage de précision, la création visuelle et la gestion des flux saisonniers."
+  },
+  {
+    "slug": "perpignan",
+    "title": "Perpignan",
+    "region": "Occitanie",
+    "name": "Perpignan",
+    "economy": "Perpignan est une plaque tournante de l'agriculture méditerranéenne et de la logistique fruits et légumes (marché Saint-Charles, premier marché de produits frais d'Europe). La ville s'appuie aussi sur le tourisme transfrontalier et le commerce.",
+    "local_sectors": ["Agriculture & maraîchage", "Logistique agroalimentaire", "Tourisme", "Commerce transfrontalier"],
+    "angle": "Les acteurs perpignanais de l'agro-logistique exploitent l'IA pour la traçabilité, la prévision de la demande et l'optimisation des flux frais."
+  },
+  {
+    "slug": "metz",
+    "title": "Metz",
+    "region": "Grand Est",
+    "name": "Metz",
+    "economy": "Metz conjugue services, secteur public et culture (Centre Pompidou-Metz, technopôle) avec un tissu industriel et logistique hérité du sillon lorrain. La ville s'appuie aussi sur l'automobile et les activités transfrontalières.",
+    "local_sectors": ["Services & secteur public", "Logistique", "Automobile & industrie", "Culture & numérique"],
+    "angle": "Les acteurs messins des services et de la logistique s'appuient sur l'IA pour l'optimisation des flux et l'automatisation des processus administratifs."
+  },
+  {
+    "slug": "besancon",
+    "title": "Besançon",
+    "region": "Bourgogne-Franche-Comté",
+    "name": "Besançon",
+    "economy": "Besançon est la capitale historique de l'horlogerie et des microtechniques, aujourd'hui leader des microtechnologies, du temps-fréquence et des dispositifs médicaux. La ville s'appuie aussi sur la santé et un pôle de recherche reconnu.",
+    "local_sectors": ["Microtechniques", "Horlogerie", "Dispositifs médicaux", "Santé & recherche"],
+    "angle": "Les spécialistes bisontins des microtechniques et du médical exploitent l'IA pour la précision de fabrication et l'analyse de signaux complexes."
+  },
+  {
+    "slug": "orleans",
+    "title": "Orléans",
+    "region": "Centre-Val de Loire",
+    "name": "Orléans",
+    "economy": "Orléans est un pôle majeur de la cosmétique et de la pharmacie (Cosmetic Valley, nombreux sites de production) et un grand carrefour logistique du centre de la France. La ville s'appuie aussi sur l'agroalimentaire et la recherche (BRGM, CNRS).",
+    "local_sectors": ["Cosmétique & pharmacie", "Logistique", "Agroalimentaire", "Recherche"],
+    "angle": "Les industriels orléanais de la cosmétique et de la logistique mobilisent l'IA pour la formulation, le contrôle qualité et l'optimisation des entrepôts."
+  },
+  {
+    "slug": "rouen",
+    "title": "Rouen",
+    "region": "Normandie",
+    "name": "Rouen",
+    "economy": "Rouen s'appuie sur un complexe industrialo-portuaire dédié à la chimie, la pétrochimie et l'agroalimentaire, premier port céréalier d'Europe occidentale. La ville accueille aussi la pharmacie, la santé et un tissu tertiaire régional.",
+    "local_sectors": ["Chimie & pétrochimie", "Portuaire & céréales", "Pharmacie & santé", "Agroalimentaire"],
+    "angle": "Les industriels rouennais de la chimie et du portuaire exploitent l'IA pour la sécurité des sites, la maintenance prédictive et l'optimisation logistique."
+  },
+  {
+    "slug": "mulhouse",
+    "title": "Mulhouse",
+    "region": "Grand Est",
+    "name": "Mulhouse",
+    "economy": "Mulhouse est une cité industrielle marquée par l'automobile (usine PSA/Stellantis), la mécanique et la chimie, héritière d'un riche passé textile. La ville s'appuie aussi sur la logistique transfrontalière au cœur de la région des Trois Frontières.",
+    "local_sectors": ["Automobile", "Mécanique & industrie", "Chimie", "Logistique transfrontalière"],
+    "angle": "Les industriels mulhousiens de l'automobile et de la mécanique adoptent l'IA pour la robotisation, la maintenance prédictive et le contrôle qualité."
+  },
+  {
+    "slug": "caen",
+    "title": "Caen",
+    "region": "Normandie",
+    "name": "Caen",
+    "economy": "Caen s'appuie sur un pôle santé et recherche de premier plan (CHU, cyclotron, GANIL, hadronthérapie) et sur l'électronique et le numérique. La ville cultive aussi l'automobile, l'agroalimentaire et les activités tertiaires.",
+    "local_sectors": ["Santé & recherche", "Électronique & numérique", "Automobile", "Agroalimentaire"],
+    "angle": "Les acteurs caennais de la santé et de la recherche mobilisent l'IA pour l'imagerie, la physique des particules et le diagnostic médical."
+  },
+  {
+    "slug": "nancy",
+    "title": "Nancy",
+    "region": "Grand Est",
+    "name": "Nancy",
+    "economy": "Nancy est un pôle universitaire et de recherche reconnu, notamment en santé, ingénierie et sciences des matériaux (Institut Jean Lamour). La ville s'appuie aussi sur la santé, les services et un patrimoine Art nouveau soutenant le tourisme.",
+    "local_sectors": ["Santé & recherche", "Sciences des matériaux", "Services", "Tourisme & patrimoine"],
+    "angle": "Les laboratoires et acteurs de santé nancéiens exploitent l'IA pour la recherche sur les matériaux et l'aide au diagnostic."
+  },
+  {
+    "slug": "avignon",
+    "title": "Avignon",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Avignon",
+    "economy": "Avignon vit du tourisme culturel et patrimonial, porté par son festival de théâtre de renommée mondiale et le Palais des Papes. La ville est aussi un grand bassin agricole et agroalimentaire (fruits et légumes, INRAE) et un nœud logistique rhodanien.",
+    "local_sectors": ["Tourisme & culture", "Agriculture & agroalimentaire", "Logistique", "Recherche agronomique"],
+    "angle": "Les acteurs avignonnais de la culture et de l'agroalimentaire mobilisent l'IA pour la billetterie intelligente et l'agriculture de précision."
+  },
+  {
+    "slug": "poitiers",
+    "title": "Poitiers",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Poitiers",
+    "economy": "Poitiers conjugue assurance et relation client à distance (groupe MAAF, centres d'appels) avec un pôle universitaire et de loisirs marqué par le Futuroscope. La ville s'appuie aussi sur le numérique et les services.",
+    "local_sectors": ["Assurance & relation client", "Loisirs & tourisme", "Numérique", "Enseignement & recherche"],
+    "angle": "Assureurs et acteurs du tourisme poitevins déploient l'IA conversationnelle pour la relation client et la personnalisation de l'expérience visiteur."
+  },
+  {
+    "slug": "dunkerque",
+    "title": "Dunkerque",
+    "region": "Hauts-de-France",
+    "name": "Dunkerque",
+    "economy": "Dunkerque est un grand port et un pôle d'industrie lourde majeur : sidérurgie (ArcelorMittal), énergie, terminal méthanier et bientôt gigafactories de batteries. La ville incarne la réindustrialisation et la décarbonation du littoral nord.",
+    "local_sectors": ["Sidérurgie & métallurgie", "Énergie", "Portuaire & logistique", "Batteries & industrie verte"],
+    "angle": "Les industriels dunkerquois mobilisent l'IA pour le pilotage énergétique, la maintenance prédictive et l'optimisation des procédés lourds."
+  },
+  {
+    "slug": "versailles",
+    "title": "Versailles",
+    "region": "Île-de-France",
+    "name": "Versailles",
+    "economy": "Versailles vit du tourisme patrimonial international autour de son château et d'un tissu dense de services, de professions libérales et d'enseignement supérieur. La ville accueille aussi des activités de défense, de recherche et un commerce haut de gamme.",
+    "local_sectors": ["Tourisme & patrimoine", "Services & professions libérales", "Enseignement supérieur", "Défense & recherche"],
+    "angle": "Les acteurs versaillais du tourisme et des services s'appuient sur l'IA pour la gestion des flux de visiteurs et la productivité des cabinets."
+  },
+  {
+    "slug": "la-rochelle",
+    "title": "La Rochelle",
+    "region": "Nouvelle-Aquitaine",
+    "name": "La Rochelle",
+    "economy": "La Rochelle est une capitale du nautisme et de la plaisance (premier port de plaisance d'Europe, Grand Pavois) adossée à un port de commerce et de pêche. La ville s'appuie aussi sur le tourisme, l'agroalimentaire et un pôle numérique.",
+    "local_sectors": ["Nautisme & plaisance", "Portuaire & pêche", "Tourisme", "Numérique"],
+    "angle": "Les acteurs rochelais du nautisme et du portuaire exploitent l'IA pour la conception navale, la maintenance et la gestion des escales."
+  },
+  {
+    "slug": "saint-nazaire",
+    "title": "Saint-Nazaire",
+    "region": "Pays de la Loire",
+    "name": "Saint-Nazaire",
+    "economy": "Saint-Nazaire abrite les Chantiers de l'Atlantique, leaders mondiaux des paquebots géants, et un grand site Airbus dédié aux fuselages. La ville est aussi un pôle des énergies marines renouvelables et de l'éolien offshore.",
+    "local_sectors": ["Construction navale", "Aéronautique", "Énergies marines renouvelables", "Industrie lourde"],
+    "angle": "Les industriels nazairiens du naval et de l'aéronautique mobilisent l'IA pour le jumeau numérique, l'assemblage de grandes structures et la maintenance."
+  },
+  {
+    "slug": "pau",
+    "title": "Pau",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Pau",
+    "economy": "Pau est un pôle énergétique historique autour du gaz de Lacq et des géosciences (TotalEnergies, centre scientifique et technique). La ville s'appuie aussi sur l'aéronautique (Safran Turbomeca), la chimie et un tissu de services.",
+    "local_sectors": ["Énergie & géosciences", "Aéronautique", "Chimie & matériaux", "Services"],
+    "angle": "Les acteurs palois de l'énergie et de l'aéronautique exploitent l'IA pour la modélisation des sous-sols, la transition énergétique et la maintenance moteurs."
+  },
+  {
+    "slug": "cannes",
+    "title": "Cannes",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Cannes",
+    "economy": "Cannes vit du tourisme de luxe, de l'événementiel d'affaires et de l'audiovisuel, portée par son Festival du film et un Palais des congrès de rang international. La ville accueille aussi le spatial avec Thales Alenia Space à Cannes-Mandelieu.",
+    "local_sectors": ["Tourisme & luxe", "Événementiel & congrès", "Audiovisuel & cinéma", "Spatial"],
+    "angle": "Les acteurs cannois de l'événementiel et de l'audiovisuel mobilisent l'IA pour la production de contenus, la logistique des congrès et l'expérience visiteur."
+  },
+  {
+    "slug": "antibes",
+    "title": "Antibes",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "name": "Antibes",
+    "economy": "Antibes accueille une partie de la technopole de Sophia-Antipolis, premier technopôle d'Europe dédié aux technologies, à l'informatique et à la recherche. La ville vit aussi du tourisme, de la grande plaisance (Port Vauban) et des sciences de la vie.",
+    "local_sectors": ["Technologies & numérique", "Recherche & sciences de la vie", "Tourisme & plaisance", "Télécoms"],
+    "angle": "Les entreprises de Sophia-Antipolis exploitent l'IA pour la R&D logicielle, les objets connectés et l'innovation en santé numérique."
+  },
+  {
+    "slug": "beziers",
+    "title": "Béziers",
+    "region": "Occitanie",
+    "name": "Béziers",
+    "economy": "Béziers est au cœur d'un vaste vignoble languedocien et d'une filière viticole et agroalimentaire structurante. La ville s'appuie aussi sur le commerce, le tourisme et la logistique au carrefour du grand Sud.",
+    "local_sectors": ["Viticulture", "Agroalimentaire", "Commerce & tourisme", "Logistique"],
+    "angle": "Les viticulteurs et acteurs agroalimentaires biterrois mobilisent l'IA pour la prévision des récoltes, la qualité et la commercialisation."
+  },
+  {
+    "slug": "calais",
+    "title": "Calais",
+    "region": "Hauts-de-France",
+    "name": "Calais",
+    "economy": "Calais est le premier port transmanche de voyageurs et un nœud logistique stratégique vers le Royaume-Uni (port, tunnel sous la Manche). La ville conserve un savoir-faire textile mondialement réputé dans la dentelle.",
+    "local_sectors": ["Portuaire & transmanche", "Logistique", "Dentelle & textile", "Commerce international"],
+    "angle": "Les acteurs calaisiens du portuaire et de la logistique exploitent l'IA pour la fluidification des flux transfrontaliers et la gestion douanière."
+  },
+  {
+    "slug": "bourges",
+    "title": "Bourges",
+    "region": "Centre-Val de Loire",
+    "name": "Bourges",
+    "economy": "Bourges est un pôle majeur de l'industrie de défense et de l'armement terrestre (MBDA, Nexter, Aérospatiale). La ville s'appuie aussi sur l'aéronautique, la pyrotechnie et un patrimoine culturel soutenant le tourisme.",
+    "local_sectors": ["Défense & armement", "Aéronautique", "Pyrotechnie", "Tourisme & culture"],
+    "angle": "Les industriels berruyers de la défense mobilisent l'IA pour la simulation, le contrôle qualité et la maintenance des systèmes complexes."
+  },
+  {
+    "slug": "colmar",
+    "title": "Colmar",
+    "region": "Grand Est",
+    "name": "Colmar",
+    "economy": "Colmar est la capitale des vins d'Alsace, au cœur d'un vignoble et d'un œnotourisme très réputés. La ville s'appuie aussi sur l'agroalimentaire, l'industrie mécanique (Liebherr) et un tourisme patrimonial florissant.",
+    "local_sectors": ["Viticulture & vins d'Alsace", "Agroalimentaire", "Industrie mécanique", "Tourisme & patrimoine"],
+    "angle": "Les acteurs colmariens du vin et du tourisme exploitent l'IA pour la qualité des vendanges, la traçabilité et la promotion œnotouristique."
+  },
+  {
+    "slug": "valence",
+    "title": "Valence",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Valence",
+    "economy": "Valence est un carrefour logistique et agroalimentaire de la vallée du Rhône, marqué par la fruiticulture, la transformation et le négoce. La ville s'appuie aussi sur l'industrie mécanique, l'électronique et un pôle numérique émergent.",
+    "local_sectors": ["Agroalimentaire & fruits", "Logistique", "Mécanique & électronique", "Numérique"],
+    "angle": "Les acteurs valentinois de l'agroalimentaire et de la logistique mobilisent l'IA pour la traçabilité, la prévision et l'optimisation des chaînes de transport."
+  },
+  {
+    "slug": "quimper",
+    "title": "Quimper",
+    "region": "Bretagne",
+    "name": "Quimper",
+    "economy": "Quimper s'appuie sur un fort tissu agroalimentaire breton (transformation, conserverie, plats préparés) et sur l'artisanat d'art (faïence de Quimper). La ville vit aussi du tourisme culturel et d'un commerce de proximité dynamique.",
+    "local_sectors": ["Agroalimentaire", "Artisanat d'art & faïence", "Tourisme & culture", "Commerce"],
+    "angle": "Les industriels agroalimentaires quimpérois exploitent l'IA pour le contrôle qualité, la prévision de la demande et l'optimisation des lignes."
+  },
+  {
+    "slug": "la-roche-sur-yon",
+    "title": "La Roche-sur-Yon",
+    "region": "Pays de la Loire",
+    "name": "La Roche-sur-Yon",
+    "economy": "La Roche-sur-Yon est un pôle industriel vendéen marqué par l'automobile et le machinisme agricole (usine Renault Trucks, Sodebo à proximité). La ville s'appuie aussi sur l'agroalimentaire et un tissu de PME diversifié.",
+    "local_sectors": ["Automobile & machinisme", "Agroalimentaire", "Industrie & PME", "Services"],
+    "angle": "Les industriels yonnais de l'automobile et de l'agroalimentaire adoptent l'IA pour la maintenance prédictive et l'optimisation de la production."
+  },
+  {
+    "slug": "chambery",
+    "title": "Chambéry",
+    "region": "Auvergne-Rhône-Alpes",
+    "name": "Chambéry",
+    "economy": "Chambéry est une porte d'entrée des Alpes, vivant du tourisme de montagne, des sports d'hiver et de la logistique alpine. La ville s'appuie aussi sur l'industrie de pointe, l'énergie solaire (INES) et un tissu tertiaire.",
+    "local_sectors": ["Tourisme & montagne", "Énergie solaire & recherche", "Industrie", "Logistique"],
+    "angle": "Les acteurs chambériens du tourisme et de l'énergie exploitent l'IA pour la gestion des flux saisonniers et l'optimisation des systèmes solaires."
+  },
+  {
+    "slug": "niort",
+    "title": "Niort",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Niort",
+    "economy": "Niort est la capitale française des mutuelles d'assurance, siège de grands groupes (MAIF, MACIF, MAAF, Groupama Centre-Atlantique) qui emploient des milliers de personnes. La ville s'appuie sur la banque, les services financiers et un pôle de la donnée.",
+    "local_sectors": ["Assurance & mutuelles", "Banque", "Services financiers", "Numérique & data"],
+    "angle": "Les mutuelles niortaises déploient l'IA pour l'évaluation des risques, la détection de fraude et l'automatisation de la gestion des contrats."
+  },
+  {
+    "slug": "lorient",
+    "title": "Lorient",
+    "region": "Bretagne",
+    "name": "Lorient",
+    "economy": "Lorient est un grand port de pêche et un pôle de construction et réparation navale, accueillant la course au large (Lorient La Base) et la défense. La ville s'appuie aussi sur l'agroalimentaire de la mer et le nautisme.",
+    "local_sectors": ["Pêche & portuaire", "Construction navale", "Course au large & nautisme", "Agroalimentaire de la mer"],
+    "angle": "Les acteurs lorientais de la pêche et du naval mobilisent l'IA pour la gestion des ressources halieutiques, la performance des bateaux et la maintenance."
+  },
+  {
+    "slug": "montauban",
+    "title": "Montauban",
+    "region": "Occitanie",
+    "name": "Montauban",
+    "economy": "Montauban est un bassin agricole et agroalimentaire majeur (fruits, semences, transformation) au cœur du Tarn-et-Garonne. La ville s'appuie aussi sur la logistique, le commerce et un tissu de PME industrielles.",
+    "local_sectors": ["Agriculture & fruits", "Agroalimentaire", "Logistique", "Industrie & PME"],
+    "angle": "Les acteurs montalbanais de l'agriculture et de l'agroalimentaire exploitent l'IA pour l'agriculture de précision et l'optimisation des récoltes."
+  },
+  {
+    "slug": "troyes",
+    "title": "Troyes",
+    "region": "Grand Est",
+    "name": "Troyes",
+    "economy": "Troyes est la capitale historique de la maille et du textile, devenue un haut lieu des magasins d'usine et de la distribution. La ville s'appuie aussi sur la logistique, l'agroalimentaire et un patrimoine médiéval touristique.",
+    "local_sectors": ["Textile & maille", "Distribution & magasins d'usine", "Logistique", "Tourisme & patrimoine"],
+    "angle": "Les acteurs troyens du textile et de la distribution mobilisent l'IA pour la prévision des ventes, la gestion des stocks et la personnalisation."
+  },
+  {
+    "slug": "angouleme",
+    "title": "Angoulême",
+    "region": "Nouvelle-Aquitaine",
+    "name": "Angoulême",
+    "economy": "Angoulême est la capitale de la bande dessinée et de l'image, avec un pôle reconnu de l'animation, du cinéma et du jeu vidéo (Festival international, Magelis). La ville conserve aussi un savoir-faire industriel dans le papier et l'emballage.",
+    "local_sectors": ["Image & bande dessinée", "Animation & jeu vidéo", "Papier & emballage", "Industrie"],
+    "angle": "Les studios angoumoisins de l'image et de l'animation exploitent l'IA générative pour la création graphique, le storyboard et la production de contenus."
+  },
+  {
+    "slug": "vannes",
+    "title": "Vannes",
+    "region": "Bretagne",
+    "name": "Vannes",
+    "economy": "Vannes conjugue tourisme du golfe du Morbihan, agroalimentaire et un tissu numérique et de cybersécurité en croissance. La ville s'appuie aussi sur les services, la santé et le nautisme.",
+    "local_sectors": ["Numérique & cybersécurité", "Tourisme & nautisme", "Agroalimentaire", "Services & santé"],
+    "angle": "Les acteurs vannetais du numérique et du tourisme mobilisent l'IA pour la cybersécurité, la relation client et la gestion des flux saisonniers."
+  },
+  {
+    "slug": "chartres",
+    "title": "Chartres",
+    "region": "Centre-Val de Loire",
+    "name": "Chartres",
+    "economy": "Chartres est un pôle reconnu de la cosmétique et de la parfumerie (Cosmetic Valley, dont la ville est le berceau) et de la pharmacie. La ville s'appuie aussi sur l'agroalimentaire céréalier et un tourisme patrimonial autour de sa cathédrale.",
+    "local_sectors": ["Cosmétique & parfumerie", "Pharmacie", "Agroalimentaire & céréales", "Tourisme & patrimoine"],
+    "angle": "Les industriels chartrains de la cosmétique et de la pharmacie exploitent l'IA pour la formulation, le contrôle qualité et la traçabilité réglementaire."
+  },
+  {
+    "slug": "beauvais",
+    "title": "Beauvais",
+    "region": "Hauts-de-France",
+    "name": "Beauvais",
+    "economy": "Beauvais s'appuie sur un aéroport low-cost majeur (Paris-Beauvais) qui structure une filière transport et logistique. La ville conserve un tissu industriel diversifié (agroalimentaire, mécanique, assurance avec la MAAF historiquement) et un patrimoine touristique.",
+    "local_sectors": ["Transport aérien & logistique", "Agroalimentaire", "Industrie & mécanique", "Assurance"],
+    "angle": "Les acteurs beauvaisiens du transport et de la logistique mobilisent l'IA pour l'optimisation des flux aéroportuaires et la gestion de la demande."
+  }
+]
