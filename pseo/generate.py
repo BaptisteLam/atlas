@@ -57,6 +57,11 @@ CITIES = [
     ("chartres","Chartres","Centre-Val de Loire"),("beauvais","Beauvais","Hauts-de-France"),
 ]
 CITIES = [{"slug": s, "title": t, "name": t, "region": r} for s, t, r in CITIES]
+import os as _os
+if _os.path.exists(_os.path.join(PSEO, "cities.json")):
+    CITIES = load("cities.json")
+    for _c in CITIES:
+        _c.setdefault("name", _c["title"])
 
 if SAMPLE:
     SECTORS, FUNCTIONS, USECASES, CITIES = SECTORS[:3], FUNCTIONS[:3], USECASES[:5], CITIES[:3]
@@ -79,6 +84,12 @@ def jsonld(obj):
 def pick(variants, *seed):
     h = int(hashlib.md5("|".join(map(str, seed)).encode()).hexdigest(), 16)
     return variants[h % len(variants)]
+
+def pick_n(pool, n, *seed):
+    """Deterministic n distinct items from pool, order varied by seed."""
+    h = int(hashlib.md5(("n|" + "|".join(map(str, seed))).encode()).hexdigest(), 16)
+    order = sorted(range(len(pool)), key=lambda i: hashlib.md5(f"{h}|{i}".encode()).hexdigest())
+    return [pool[i] for i in order[:n]]
 
 _MINIFY = re.compile(r">\n\s*<")
 def write(relpath, content, priority="0.5"):
@@ -298,22 +309,95 @@ def cta(title, lead):
             f'<div data-reveal="up" data-delay="180" style="position:relative;margin-top:30px;"><a class="btn btn-primary" href="/contact.html">Prendre rendez-vous →</a></div></section>')
 
 def approach_section(ctx):
-    steps = [
-        ("01 — Cadrer", f"Qualifier le besoin autour de {ctx}, fixer la cible de valeur et les garde-fous."),
-        ("02 — Prototyper", "Prouver la valeur sur données réelles, évaluation rigoureuse, décision go / no-go factuelle."),
-        ("03 — Industrialiser", "Mise en production : MLOps / LLMOps, sécurité, conformité AI Act, monitoring et qualité."),
-        ("04 — Mettre à l'échelle", "Diffuser les usages, mesurer l'impact, former les équipes et transmettre l'autonomie."),
-    ]
-    cells = "".join(f'<div class="method-cell" data-reveal="up" data-delay="{i*80}"><div class="m-step">{esc(s)}</div><p>{esc(p)}</p></div>'
+    steps = pick(METHOD_VARIANTS, ctx)
+    cells = "".join(f'<div class="method-cell" data-reveal="up" data-delay="{i*80}"><div class="m-step">{esc(s)}</div><p>{esc(p.format(ctx=ctx))}</p></div>'
                     for i, (s, p) in enumerate(steps))
+    h2 = pick(["Du cadrage à la valeur en production.", "Notre méthode, du diagnostic à l'échelle.",
+               "Une trajectoire claire, mesurable à chaque étape."], ctx)
     return (f'<section class="section"><div class="container"><div data-reveal="up" style="margin-bottom:30px;">'
-            f'<div class="kicker">Notre méthode</div><h2 class="h2" style="margin-top:14px;max-width:24ch;">Du cadrage à la valeur en production.</h2></div>'
+            f'<div class="kicker">Notre méthode</div><h2 class="h2" style="margin-top:14px;max-width:24ch;">{esc(h2)}</h2></div>'
             f'<div class="method">{cells}</div></div></section>')
 
 INTRO_VARIANTS = [
-    "{uc_cap} : {sector_low} fait face à des enjeux spécifiques que l'IA permet d'adresser concrètement. Atlas conçoit et industrialise la solution, de la preuve de valeur à la production.",
-    "Pour {sector_low}, {uc_low} n'est utile que si elle passe en production et crée de la valeur mesurable. C'est exactement la promesse d'Atlas : méthode, indépendance et exécution.",
-    "Atlas accompagne {sector_low} sur {uc_low} : cadrage, prototype évaluable en quelques semaines, puis industrialisation conforme et durable — sans dépendance technologique.",
+    "{uc_cap} : {dim_low} fait face à des enjeux spécifiques que l'IA permet d'adresser concrètement. Atlas conçoit et industrialise la solution, de la preuve de valeur à la production.",
+    "Pour {dim_low}, {uc_low} n'a de valeur que si elle passe en production. C'est la promesse d'Atlas : méthode, indépendance et exigence d'exécution.",
+    "Atlas accompagne {dim_low} sur {uc_low} : cadrage, prototype évaluable en quelques semaines, puis industrialisation conforme et durable — sans dépendance technologique.",
+    "Dans {dim_low}, {uc_low} change la donne quand elle est bien cadrée et ancrée dans vos données. Atlas la mène du diagnostic à l'échelle.",
+    "{uc_cap} appliquée à {dim_low} : Atlas part de vos cas réels, prouve la valeur, puis industrialise avec les garde-fous nécessaires.",
+    "Réussir {uc_low} dans {dim_low} suppose plus qu'un modèle performant : des données, une gouvernance et l'adhésion des équipes. Atlas adresse les quatre.",
+    "Atlas aide {dim_low} à transformer {uc_low} en avantage durable — mesuré en production, pas en slide.",
+    "De la vision à l'exécution, Atlas déploie {uc_low} pour {dim_low} avec une exigence simple : une valeur métier prouvée et conforme.",
+    "{uc_cap} : un levier concret pour {dim_low}, à condition de le mener jusqu'à la production. C'est précisément le métier d'Atlas.",
+    "Pour {dim_low}, Atlas conçoit {uc_low} comme une capacité durable — évaluée, sécurisée, et transmise à vos équipes.",
+    "{uc_cap} dans {dim_low} : Atlas relie l'ambition de la direction aux contraintes du terrain, du prototype au passage à l'échelle.",
+    "L'IA ne vaut que par la décision qu'elle sert. Pour {dim_low}, Atlas met {uc_low} au service de résultats clairs et mesurables.",
+    "Atlas industrialise {uc_low} pour {dim_low} : évaluation rigoureuse, conformité AI Act intégrée, et autonomie des équipes en sortie de mission.",
+    "Dans {dim_low}, beaucoup de POC, peu de valeur réelle. Atlas fait de {uc_low} un cas d'usage en production, pas une démonstration.",
+    "{uc_cap} pour {dim_low}, menée par un cabinet indépendant : le bon niveau de technologie pour votre contexte, jamais l'inverse.",
+    "Atlas cadre, prototype et met à l'échelle {uc_low} dans {dim_low} — avec des jalons mesurables à chaque étape.",
+]
+
+CROSS_VARIANTS = [
+    "Concrètement, {uc_low} ne se résume pas à un outil : dans {dim_low}, elle doit s'intégrer à vos processus, vos données et vos contraintes de conformité.",
+    "Ce qui distingue notre approche de {uc_low} dans {dim_low}, c'est l'exigence d'exécution : un prototype évalué sur vos données réelles avant toute industrialisation.",
+    "Dans {dim_low}, la difficulté n'est pas le modèle mais l'intégration : qualité des données, gouvernance et adoption. Atlas traite ces trois fronts pour {uc_low}.",
+    "Nous ancrons {uc_low} dans la réalité de {dim_low} : vos systèmes, vos référentiels et vos obligations réglementaires, sans dépendance à un éditeur.",
+    "Pour {dim_low}, {uc_low} n'est un succès que si les équipes se l'approprient. Atlas conçoit la solution avec elles et leur en transmet la maîtrise.",
+    "Atlas mesure {uc_low} à sa valeur captée en production dans {dim_low} — gain de temps, qualité, coûts — pas au nombre de démonstrateurs.",
+    "Dans {dim_low}, {uc_low} touche des données sensibles : nous intégrons sécurité, traçabilité et conformité AI Act dès le cadrage.",
+    "De la preuve de valeur au passage à l'échelle, nous séquençons {uc_low} pour {dim_low} de façon à financer chaque étape par la précédente.",
+]
+
+SOLUTION_H2 = ["{uc_title} — concrètement", "Notre dispositif pour {uc_low}", "Comment Atlas déploie {uc_low}",
+               "{uc_title} : de la donnée à la production", "Mettre {uc_low} en production", "Ce que nous livrons"]
+
+ENJEUX_VARIANTS = [("Enjeux IA · {t}", "L'IA appliquée à {n}"), ("Contexte · {t}", "Pourquoi l'IA pour {n}"),
+                   ("Le contexte {t}", "{t} face à l'IA"), ("Enjeux · {t}", "Ce que l'IA change pour {n}")]
+
+CTA_VARIANTS = [
+    ("Parlons de {uc_low}.", "Un échange de 30 minutes pour cadrer {ctx} et chiffrer la valeur atteignable."),
+    ("Un projet sur {uc_low} ?", "Échangeons 30 minutes pour qualifier {ctx} et les premiers gains."),
+    ("Avançons sur {uc_low}.", "30 minutes pour identifier le meilleur point de départ sur {ctx}."),
+    ("Passons de l'idée à la production.", "Cadrons ensemble {ctx} lors d'un premier échange de 30 minutes."),
+    ("Prêt pour {uc_low} ?", "Un premier échange pour transformer {ctx} en résultats mesurables."),
+    ("Donnons de la valeur à votre IA.", "30 minutes pour cadrer {ctx} et définir un premier jalon."),
+]
+
+FEATURE_FRAMES = [
+    "Conçu, évalué sur vos données, puis industrialisé par Atlas.",
+    "Mis en œuvre avec vos équipes et mesuré en production.",
+    "Intégré à vos systèmes, avec garde-fous et supervision humaine.",
+    "Déployé progressivement, du prototype au passage à l'échelle.",
+    "Avec évaluation qualité systématique avant toute mise en production.",
+    "Adapté à {dim_low} et à vos contraintes de conformité.",
+    "Documenté et transféré à vos équipes pour gagner en autonomie.",
+    "Sous contrôle humain pour les décisions sensibles.",
+    "Avec des métriques de valeur suivies dès le premier jalon.",
+    "Sans dépendance à un éditeur ou à un cloud particulier.",
+    "Sécurisé, traçable et conforme à l'AI Act dès la conception.",
+    "Branché sur vos données réelles, pas sur un jeu de démonstration.",
+]
+
+EXTRA_METRICS = [
+    ("×3,5", "ROI médian à 12 mois"), ("4-6 sem.", "jusqu'au 1ᵉʳ prototype"), ("−40%", "de temps de traitement"),
+    ("100%", "conforme AI Act"), ("+30%", "de productivité"), ("2-4 mois", "jusqu'à la production"),
+    ("−25%", "de coûts opérationnels"), ("×2", "de capacité traitée"), ("+20 pts", "de satisfaction"),
+    ("−50%", "de tâches manuelles"), ("J+90", "premiers gains mesurés"), ("98%", "de fiabilité visée"),
+]
+
+METHOD_VARIANTS = [
+    [("01 — Cadrer", "Qualifier le besoin autour de {ctx}, fixer la cible de valeur et les garde-fous."),
+     ("02 — Prototyper", "Prouver la valeur sur données réelles, évaluation rigoureuse, décision go / no-go factuelle."),
+     ("03 — Industrialiser", "Mise en production : MLOps / LLMOps, sécurité, conformité AI Act, monitoring et qualité."),
+     ("04 — Mettre à l'échelle", "Diffuser les usages, mesurer l'impact, former les équipes et transmettre l'autonomie.")],
+    [("01 — Diagnostiquer", "Comprendre {ctx}, cartographier données et processus, identifier la valeur réelle."),
+     ("02 — Expérimenter", "Construire un prototype sur vos données, l'évaluer sans complaisance, décider sur des faits."),
+     ("03 — Déployer", "Industrialiser avec sécurité, observabilité et conformité ; maîtriser les coûts."),
+     ("04 — Diffuser", "Étendre les usages, suivre l'impact et rendre vos équipes autonomes.")],
+    [("01 — Aligner", "Relier {ctx} aux objectifs de la direction et aux contraintes du terrain."),
+     ("02 — Prouver", "Un cas pilote évalué sur données réelles, avec critères de succès définis d'avance."),
+     ("03 — Sécuriser & industrialiser", "Passage en production robuste : qualité, sécurité, conformité AI Act, monitoring."),
+     ("04 — Pérenniser", "Mesure de la valeur, amélioration continue et transfert de compétences.")],
 ]
 
 def section_block(kicker, h2, body_html):
@@ -374,10 +458,15 @@ def gen_usecase_dim(uc, kind, dim):
         rel += [(f"/villes/{c['slug']}/{uc['slug']}.html", f"{uc['title']} · {c['title']}") for c in nearby(CITIES, dim, 3)]
 
     canonical = BASE + seg
-    intro = pick(INTRO_VARIANTS, uc["slug"], dim["slug"]).format(
-        uc_cap=uc["title"], uc_low=uc["name"], sector_low=dim_low)
+    if dim.get("stat"):
+        enj_body += f'<p class="mono" style="color:var(--accent);font-size:13.5px;margin:10px 0 0;">{esc(dim["stat"])}</p>'
+    intro = pick(INTRO_VARIANTS, uc["slug"], dim["slug"]).format(uc_cap=uc["title"], uc_low=uc["name"], dim_low=dim["name"], dim_title=dim["title"])
+    cross = pick(CROSS_VARIANTS, dim["slug"], uc["slug"]).format(uc_low=uc["name"], dim_low=dim["name"], dim_title=dim["title"], uc_title=uc["title"])
+    sol_h2 = pick(SOLUTION_H2, uc["slug"], dim["slug"]).format(uc_title=uc["title"], uc_low=uc["name"])
+    feats = [(b, pick(FEATURE_FRAMES, uc["slug"], dim["slug"], i).format(dim_low=dim["name"])) for i, b in enumerate(uc["bullets"])]
+    metrics = [tuple(uc["metric"])] + pick_n([m for m in EXTRA_METRICS if m[1] != uc["metric"][1]], 3, uc["slug"], dim["slug"])
+    cta_t, cta_l = pick(CTA_VARIANTS, uc["slug"], dim["slug"])
     qa = [(uc["faq"][0][0], uc["faq"][0][1]), (uc["faq"][1][0], uc["faq"][1][1]), contextual_q]
-    metrics = [tuple(uc["metric"]), ("4-6 sem.", "jusqu'au 1ᵉʳ prototype"), ("×3,5", "ROI médian à 12 mois"), ("100%", "conforme AI Act")]
     rel += [(f"/{svc['slug']}.html", f"Notre expertise : {svc['short']}")]
 
     schemas = [service_schema(canonical, f"{uc['title']} — {dim['title']}", uc["title"], uc["desc"], about),
@@ -385,16 +474,16 @@ def gen_usecase_dim(uc, kind, dim):
     body = (hero(f"{svc['short']} · {dim['title']}", h1, intro, crumbs_html(crumbs_items))
             + '<a id="contenu"></a>'
             + section_block(enj_k, enj_h, enj_body)
-            + section_block("Ce que nous mettons en place", f"{uc['title']} — concrètement",
-                            f'<p class="lead" style="font-size:16.5px;color:var(--muted);">{esc(uc["desc"])}</p>'
-                            + features_grid([(b, "Mis en œuvre par Atlas, évalué puis industrialisé en production.") for b in uc["bullets"]]))
+            + section_block(pick(["Notre réponse", "En pratique", "Notre dispositif", "Concrètement"], uc["slug"], dim["slug"]), sol_h2,
+                            f'<p class="lead" style="font-size:16.5px;color:var(--muted);">{esc(cross)}</p>'
+                            + features_grid(feats))
             + approach_section(ctx)
             + metric_band(metrics)
             + faq_html(qa)
             + related_html(related_title, rel)
-            + cta(f"Parlons de {uc['name']}.", f"Un échange de 30 minutes pour cadrer {ctx} et identifier la valeur atteignable."))
+            + cta(cta_t.format(uc_low=uc["name"], ctx=ctx), cta_l.format(uc_low=uc["name"], ctx=ctx)))
     page = head(title, desc, canonical, schemas) + body + footer(related_title, rel[:5]) + TAIL
-    write(seg.lstrip("/"), page, "0.5")
+    write(seg.lstrip("/"), page, "0.6" if kind == "sector" else "0.5")
 
 def nearby(lst, item, n):
     """Deterministic neighbours of item within lst (excluding item)."""
@@ -437,7 +526,7 @@ def gen_service_dim(svc, kind, dim):
         (f"En quoi consiste {svc['name']} {prep} ?", f"Atlas adapte {svc['name']} à votre contexte : diagnostic, cadrage, prototype évaluable puis industrialisation conforme et durable."),
         ("Êtes-vous indépendants des éditeurs ?", "Oui, strictement. Nos recommandations ne servent que votre intérêt : le choix des modèles et plateformes se fait sur vos contraintes, jamais sur une commission."),
     ]
-    metrics = [("×3,5", "ROI médian à 12 mois"), ("4-6 sem.", "jusqu'au 1ᵉʳ prototype"), ("120+", "cas d'usage déployés"), ("100%", "conforme AI Act")]
+    metrics = pick_n(EXTRA_METRICS, 4, svc["slug"], dim["slug"])
     rel = [(f"/{svc['slug']}.html", f"Notre offre {svc['short']}")]
     if kind == "sector":
         rel += [(f"/secteurs/{dim['slug']}/{u['slug']}.html", u["title"]) for u in nearby(USECASES, {"slug": svc["slug"]}, 6)]
@@ -453,7 +542,8 @@ def gen_service_dim(svc, kind, dim):
             + metric_band(metrics)
             + faq_html(qa)
             + related_html("Cas d'usage associés", rel)
-            + cta("Avançons ensemble.", f"Un échange de 30 minutes pour cadrer {svc['name']} {prep}."))
+            + cta(pick(["Avançons ensemble.", "Donnons un cap à votre IA.", "Passons à l'action."], svc["slug"], dim["slug"]),
+                  f"Un échange de 30 minutes pour cadrer {svc['name']} {prep}."))
     write(seg.lstrip("/"), head(title, desc, canonical, schemas) + body + footer("Cas d'usage", rel[:5]) + TAIL, "0.5")
 
 # ---------------- dimension × city (local + vertical) ----------------
@@ -518,14 +608,15 @@ def gen_dim_hub(kind, dim):
         svc_children = [(f"/fonctions/{dim['slug']}/{s['slug']}.html", s["title"]) for s in SERVICES]
     else:
         seg = f"/villes/{dim['slug']}/index.html"; root = "/villes/"; rootname = "Villes"
-        title = f"Cabinet de conseil en IA à {dim['title']} | Atlas"
-        desc = f"Atlas, cabinet de conseil en transformation IA à {dim['title']} ({dim['region']}) : stratégie, audit, automatisation et agents IA pour les organisations de la région."
+        ls = ", ".join(dim.get("local_sectors", []))
+        title = f"Conseil en intelligence artificielle à {dim['title']} | Atlas"
+        desc = f"Cabinet indépendant de conseil en IA à {dim['title']} ({dim['region']}) : {dim.get('economy','')[:118]}"
         h1 = f"Conseil en transformation IA à <span class=\"grad\">{esc(dim['title'])}</span>"
-        intro = f"Atlas accompagne les entreprises, ETI et acteurs publics de {dim['title']} et de la région {dim['region']} sur toute leur trajectoire IA."
-        children = [(f"/villes/{dim['slug']}/{u['slug']}.html", u["title"], u["desc"]) for u in USECASES]
-        svc_children = [(f"/villes/{dim['slug']}/{s['slug']}.html", s["title"]) for s in SERVICES]
-        extra_html = (related_html("Par secteur d'activité", [(f"/villes/{dim['slug']}/secteur-{s['slug']}.html", s["title"]) for s in SECTORS])
-                      + related_html("Par fonction métier", [(f"/villes/{dim['slug']}/fonction-{f['slug']}.html", f["title"]) for f in FUNCTIONS]))
+        intro = f"{dim.get('economy','')} Filières clés : {ls}. {dim.get('angle','')}"
+        children = [(f"/cas-usage/{u['slug']}.html", u["title"], u["desc"]) for u in pick_n(USECASES, 24, dim["slug"])]
+        svc_children = [(f"/{s['slug']}.html", s["title"]) for s in SERVICES]
+        extra_html = (related_html("Explorer par secteur", [(f"/secteurs/{s['slug']}/", s["title"]) for s in SECTORS])
+                      + related_html("Explorer par fonction", [(f"/fonctions/{f['slug']}/", f["title"]) for f in FUNCTIONS]))
     canonical = BASE + seg.replace("index.html", "")
     crumbs_items = [("Accueil", "/index.html"), (rootname, root), (dim["title"], canonical)]
     cards = "".join(link_card(h, t, s) for h, t, s in children)
@@ -592,7 +683,7 @@ def gen_usecase_hub(uc):
                             features_grid([(b, "Conçu, évalué puis industrialisé par Atlas.") for b in uc["bullets"]]))
             + related_html("Par secteur", sec_links)
             + related_html("Par fonction métier", fn_links)
-            + related_html("Par ville", city_links[:30])
+            + related_html("Atlas partout en France", [("/villes/", "Conseil en IA par ville →")])
             + faq_html(qa)
             + cta(f"Parlons de {uc['name']}.", "Un échange de 30 minutes pour cadrer votre besoin et la valeur atteignable."))
     write(seg.lstrip("/"), head(title, desc, canonical, schemas) + body + footer("Nos expertises", [(f"/{svc['slug']}.html", svc["short"])]) + TAIL, "0.6")
@@ -627,27 +718,17 @@ def main():
         p = os.path.join(ROOT, d)
         if os.path.isdir(p):
             shutil.rmtree(p)
-    # leaves
+    # leaves (city-leaf families removed: near-duplicate -> consolidated into rich city hubs)
     for uc in USECASES:
         for s in SECTORS:
             gen_usecase_dim(uc, "sector", s)
         for fn in FUNCTIONS:
             gen_usecase_dim(uc, "function", fn)
-        for c in CITIES:
-            gen_usecase_dim(uc, "city", c)
     for svc in SERVICES:
         for s in SECTORS:
             gen_service_dim(svc, "sector", s)
         for fn in FUNCTIONS:
             gen_service_dim(svc, "function", fn)
-        for c in CITIES:
-            gen_service_dim(svc, "city", c)
-    # dimension × city (local + vertical)
-    for c in CITIES:
-        for s in SECTORS:
-            gen_dim_city("sector", s, c)
-        for fn in FUNCTIONS:
-            gen_dim_city("function", fn, c)
     # hubs
     for s in SECTORS:
         gen_dim_hub("sector", s)

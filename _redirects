@@ -1,0 +1,4 @@
+# Consolidation : les anciennes feuilles "par ville" (quasi-doublons) sont
+# redirigées vers le hub local. Le hub /villes/:city/ (index.html) est servi
+# normalement car le fichier statique a la priorité sur cette règle non forcée.
+/villes/:city/*  /villes/:city/  301
