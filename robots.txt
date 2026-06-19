@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://atlasconseil.netlify.app/sitemap_index.xml
+Sitemap: https://atlasconseil.netlify.app/sitemap-index.xml

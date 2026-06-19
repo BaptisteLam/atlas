@@ -761,11 +761,15 @@ def write_sitemaps():
         sitemap_files.append(fn)
     smaps = ["sitemap.xml"] + sitemap_files
     idx_rows = "".join(f'<sitemap><loc>{BASE}/{fn}</loc><lastmod>{LASTMOD}</lastmod></sitemap>' for fn in smaps)
-    with open(os.path.join(ROOT, "sitemap_index.xml"), "w", encoding="utf-8") as f:
-        f.write(f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{idx_rows}</sitemapindex>\n')
+    index_xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{idx_rows}</sitemapindex>\n'
+    # emit the index under both common spellings so any GSC submission resolves
+    for name in ("sitemap_index.xml", "sitemap-index.xml"):
+        with open(os.path.join(ROOT, name), "w", encoding="utf-8") as f:
+            f.write(index_xml)
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8") as f:
-        f.write("User-agent: *\nAllow: /\n\nSitemap: " + BASE + "/sitemap_index.xml\n")
-    print(f"sitemaps: {len(sitemap_files)} pseo file(s), index references {len(smaps)} sitemaps")
+        f.write("User-agent: *\nAllow: /\n\nSitemap: " + BASE + "/sitemap_index.xml\nSitemap: " + BASE + "/sitemap-index.xml\n")
+    total = sum(len(ch) for ch in chunks)
+    print(f"sitemaps: {len(sitemap_files)} pseo file(s), {total} programmatic URLs; index references {len(smaps)} sitemaps")
 
 if __name__ == "__main__":
     main()
