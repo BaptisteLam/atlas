@@ -169,7 +169,7 @@ h1,h2,h3{font-weight:600;letter-spacing:-.025em;margin:0;}
 .scroll-cue{position:absolute;left:50%;margin-left:-9px;bottom:22px;z-index:5;color:var(--faint);animation:atlas-bounce 2.2s ease-in-out infinite;}
 
 /* solar system (home) — centred via margins so the parallax transform never fights the centring */
-.solar{position:absolute;left:50%;top:50%;width:780px;height:780px;margin:-320px 0 0 -390px;z-index:0;pointer-events:none;}
+.solar{position:absolute;left:50%;top:50%;width:780px;height:780px;margin:-250px 0 0 -390px;z-index:0;pointer-events:none;}
 .solar .ring{position:absolute;border:1px solid rgba(120,170,255,.2);border-radius:50%;}
 .solar .r1{inset:300px;border-color:rgba(120,170,255,.34);}
 .solar .r2{inset:230px;border-color:rgba(120,170,255,.24);}
@@ -401,7 +401,7 @@ h1,h2,h3{font-weight:600;letter-spacing:-.025em;margin:0;}
   .split,.split.rev{grid-template-columns:1fr;gap:30px;}
   .quote-main{padding:30px 24px;}
   .hero-inner{min-height:640px;padding:80px 20px 84px;}
-  .solar{width:560px;height:560px;margin:-220px 0 0 -280px;}
+  .solar{width:560px;height:560px;margin:-165px 0 0 -280px;}
   .solar .r1{inset:210px;}.solar .r2{inset:160px;}.solar .r3{inset:96px;}.solar .r4{inset:34px;}
   .solar .o1{inset:96px;}.solar .o2{inset:160px;}.solar .o3{inset:34px;}.solar .o4{inset:210px;}
   .solar .sun-glow{width:270px;height:270px;margin:-135px 0 0 -135px;}
